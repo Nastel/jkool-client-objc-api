@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'jKooliOSStreaming_Example' do
+  pod 'jKooliOSStreaming', :path => '../'
+
+  target 'jKooliOSStreaming_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
