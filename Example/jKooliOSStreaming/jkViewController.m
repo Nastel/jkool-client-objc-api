@@ -100,10 +100,10 @@
     [activity stream: cb];
 }
 
-/*- (IBAction)query:(id)sender {
+- (IBAction)query:(id)sender {
     
     // Initialize Streaming and specify callback handler
-    [jKoolQuerying setToken:@"pMxldK4vZxoI4yQs1VHhASZmusLja9Td"];
+    [jKoolQuerying setToken:@"your-token"];
     NSObject *cb = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
     
     // Query
@@ -112,12 +112,12 @@
     [jkQuerying query:query withMaxRows:50 forHandler:cb];
     
 
-}*/
+}
 
-- (IBAction)query:(id)sender {
+/*- (IBAction)query:(id)sender {
     
     // Initialize Streaming and specify callback handler
-    [jKoolQuerying setToken:@"pMxldK4vZxoI4yQs1VHhASZmusLja9Td"];
+    [jKoolQuerying setToken:@"your-token"];
    
     
     // Query
@@ -126,7 +126,7 @@
     [jkQuerying query:query withMaxRows:50 forHandler:self];
     
     
-}
+}*/
 
 - (void) handlejKoolResponse:(NSData *) data  {
     
