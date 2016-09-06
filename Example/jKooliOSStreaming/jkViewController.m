@@ -46,6 +46,7 @@
 
 - (IBAction)stream:(id)sender {
     [jKoolStreaming setToken:@"your-token"];
+    
     // Stream Event
     jkEvent *event = [[jkEvent alloc] initWithName:@"testEvent"];
     [event setMsgText:@"hello world"] ;
@@ -99,7 +100,6 @@
 }
 
 - (IBAction)query:(id)sender {
-    // prod
     [jKoolQuerying setToken:@"your-token"];
     jKoolQuerying *jkQuerying = [[jKoolQuerying alloc] init];
     NSString *query = @"get events";
@@ -109,11 +109,10 @@
 }
 
 - (void) handlejKoolResponse:(NSString *) data {
-// Popup
     [super handlejKoolResponse:data];
     
     UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:@"Stream Data"
+                                  alertControllerWithTitle:@"jKool Data"
                                   message:data
                                   preferredStyle:UIAlertControllerStyleActionSheet
                                   ];
