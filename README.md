@@ -9,7 +9,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Requirements  
 
 ## Installation
 
@@ -27,3 +27,4 @@ jKool LLC
 ## License
 
 Please refer to the LICENSE file.
+  
