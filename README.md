@@ -22,8 +22,8 @@ pod "jKooliOSStreaming"
 
 ## Author
 
-cbdbeb9, cbernardone@jkoolcloud.com
+jKool LLC
 
 ## License
 
-jKooliOSStreaming is available under the MIT license. See the LICENSE file for more info.
+Please refer to the LICENSE file.
