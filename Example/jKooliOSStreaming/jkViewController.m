@@ -100,7 +100,7 @@
 
 - (IBAction)query:(id)sender {
     // prod
-    [jKoolQuerying setToken:@"pMxldK4vZxoI4yQs1VHhASZmusLja9Td"];
+    [jKoolQuerying setToken:@"your-token"];
     jKoolQuerying *jkQuerying = [[jKoolQuerying alloc] init];
     NSString *query = @"get events";
     [jkQuerying query:query withMaxRows:50 forHandler:self];
