@@ -8,7 +8,7 @@
 
 #import "jKoolService.h"
 #import "jkConstants.h"
-#import "jKoolViewController.h"
+#import "jKoolCallbackHandler.h"
 
 @implementation jKoolService
 @synthesize sendResponse;
@@ -23,7 +23,7 @@ didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSe
 {
     NSString * str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSLog(@"Received String %@",str);
-    [sendResponse handlejKoolResponse:str];
+    [sendResponse handlejKoolResponse:data];
 }
 
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error

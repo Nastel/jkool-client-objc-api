@@ -11,13 +11,13 @@
 #import "jkEvent.h"
 #import "jkActivity.h"
 #import "jkSnapshot.h"
-#import "jKoolViewController.h"
+#import "jKoolCallbackHandler.h"
 
 @interface jKoolService : NSObject
 {
     
 }
 
-@property jKoolViewController *sendResponse;
+@property jKoolCallbackHandler *sendResponse;
 
 @end

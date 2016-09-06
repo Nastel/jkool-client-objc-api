@@ -23,7 +23,7 @@ static NSString *token = nil;
     }
 }
 
-- (void)query:(NSString *)query withMaxRows:(int) maxRows forHandler:(UIViewController *) handler{
+- (void)query:(NSString *)query withMaxRows:(int) maxRows forHandler:(NSObject *) handler{
     query = [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSString *queryUrl = [NSString stringWithFormat:@"%@?jk_query=%@&jk_maxRows=%i&jk_token=%@", QueryingUrl, query, maxRows, token];
     NSURL *url = [NSURL URLWithString:queryUrl];

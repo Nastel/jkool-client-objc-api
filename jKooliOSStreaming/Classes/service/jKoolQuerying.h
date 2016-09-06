@@ -15,7 +15,7 @@
 
 @interface jKoolQuerying : jKoolService
 
-- (void)query:(NSString *)query withMaxRows:(int) maxRows forHandler:(UIViewController *) handler;
+- (void)query:(NSString *)query withMaxRows:(int) maxRows forHandler:(NSObject *) handler;
 + (NSString*)token;
 + (void)setToken:(NSString*)jkToken;
 
