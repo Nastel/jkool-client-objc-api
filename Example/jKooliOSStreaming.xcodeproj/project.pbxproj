@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18907EDF764D233A3F84FA4A /* Pods_jKooliOSStreaming_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA11B215C60076BEDEF90D3 /* Pods_jKooliOSStreaming_Example.framework */; };
+		4A53D3471D7F44CE007274F3 /* jkCallbackHandlerStreaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A53D3461D7F44CE007274F3 /* jkCallbackHandlerStreaming.m */; };
+		4A53D34A1D7F6227007274F3 /* jkCallbackHandlerQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A53D3491D7F6227007274F3 /* jkCallbackHandlerQuery.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,6 +41,10 @@
 		0919DE818BF095F23B586B16 /* Pods-jKooliOSStreaming_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jKooliOSStreaming_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-jKooliOSStreaming_Tests/Pods-jKooliOSStreaming_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		0EA5D3F4D2A9C527C4121F4D /* Pods-jKooliOSStreaming_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jKooliOSStreaming_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-jKooliOSStreaming_Example/Pods-jKooliOSStreaming_Example.release.xcconfig"; sourceTree = "<group>"; };
 		20A642D5FE8B7427D100A8EF /* Pods-jKooliOSStreaming_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jKooliOSStreaming_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jKooliOSStreaming_Tests/Pods-jKooliOSStreaming_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A53D3451D7F44CE007274F3 /* jkCallbackHandlerStreaming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jkCallbackHandlerStreaming.h; sourceTree = "<group>"; };
+		4A53D3461D7F44CE007274F3 /* jkCallbackHandlerStreaming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jkCallbackHandlerStreaming.m; sourceTree = "<group>"; };
+		4A53D3481D7F6227007274F3 /* jkCallbackHandlerQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jkCallbackHandlerQuery.h; sourceTree = "<group>"; };
+		4A53D3491D7F6227007274F3 /* jkCallbackHandlerQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jkCallbackHandlerQuery.m; sourceTree = "<group>"; };
 		55C3434C3681465435621BCF /* Pods_jKooliOSStreaming_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jKooliOSStreaming_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA4734DA6A81B450C5B98A1 /* Pods-jKooliOSStreaming_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jKooliOSStreaming_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jKooliOSStreaming_Example/Pods-jKooliOSStreaming_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* jKooliOSStreaming_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jKooliOSStreaming_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +136,10 @@
 		6003F593195388D20070C39A /* Example for jKooliOSStreaming */ = {
 			isa = PBXGroup;
 			children = (
+				4A53D3481D7F6227007274F3 /* jkCallbackHandlerQuery.h */,
+				4A53D3491D7F6227007274F3 /* jkCallbackHandlerQuery.m */,
+				4A53D3451D7F44CE007274F3 /* jkCallbackHandlerStreaming.h */,
+				4A53D3461D7F44CE007274F3 /* jkCallbackHandlerStreaming.m */,
 				6003F59C195388D20070C39A /* jkAppDelegate.h */,
 				6003F59D195388D20070C39A /* jkAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -391,7 +401,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* jkAppDelegate.m in Sources */,
+				4A53D34A1D7F6227007274F3 /* jkCallbackHandlerQuery.m in Sources */,
 				6003F5A7195388D20070C39A /* jkViewController.m in Sources */,
+				4A53D3471D7F44CE007274F3 /* jkCallbackHandlerStreaming.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
