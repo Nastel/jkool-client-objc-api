@@ -182,7 +182,7 @@
     return values;
 }
 
-- (void) stream: (UIViewController *) handler {
+- (void) stream: (NSObject *) handler {
     jKoolStreaming *jkStreaming = [[jKoolStreaming alloc] init];
     [jkStreaming stream:self forPath:@"event" forHandler:handler] ;
 }
