@@ -1,0 +1,16 @@
+PODS:
+  - jKooliOSStreaming (0.1.0)
+
+DEPENDENCIES:
+  - jKooliOSStreaming (from `../`)
+
+EXTERNAL SOURCES:
+  jKooliOSStreaming:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  jKooliOSStreaming: 6167f90b1cfe45f5caec54ef0774e184d1a5c10e
+
+PODFILE CHECKSUM: 708ece7c6d7fadce9cea8bf0f73e1da6568ab0c1
+
+COCOAPODS: 1.0.1

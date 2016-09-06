@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Jk View Controller-->
         <scene sceneID="wQg-tq-qST">
             <objects>
                 <viewController id="whP-gf-Uak" customClass="jkViewController" sceneMemberID="viewController">
@@ -16,7 +16,35 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXv-Fi-1sC">
+                                <rect key="frame" x="20" y="28" width="560" height="278"/>
+                                <state key="normal" title="Query jKool"/>
+                                <connections>
+                                    <action selector="query:" destination="whP-gf-Uak" eventType="touchDown" id="ZtJ-Pd-2zg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwZ-N6-Qfl">
+                                <rect key="frame" x="20" y="314" width="560" height="278"/>
+                                <state key="normal" title="Stream to jKool"/>
+                                <connections>
+                                    <action selector="stream:" destination="whP-gf-Uak" eventType="touchDown" id="fSj-ga-9ae"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rXv-Fi-1sC" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="8" symbolic="YES" id="3oC-NZ-wB6"/>
+                            <constraint firstItem="KwZ-N6-Qfl" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" symbolic="YES" id="AK3-a6-eWP"/>
+                            <constraint firstItem="KwZ-N6-Qfl" firstAttribute="width" secondItem="rXv-Fi-1sC" secondAttribute="width" id="BIG-80-2gN"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="KwZ-N6-Qfl" secondAttribute="bottom" constant="8" symbolic="YES" id="IxQ-ta-O5h"/>
+                            <constraint firstItem="KwZ-N6-Qfl" firstAttribute="top" secondItem="rXv-Fi-1sC" secondAttribute="bottom" constant="8" symbolic="YES" id="JFY-7H-UVL"/>
+                            <constraint firstAttribute="trailing" secondItem="KwZ-N6-Qfl" secondAttribute="trailing" constant="20" symbolic="YES" id="Jls-RV-kGV"/>
+                            <constraint firstItem="rXv-Fi-1sC" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" symbolic="YES" id="Orh-8e-2I4"/>
+                            <constraint firstItem="KwZ-N6-Qfl" firstAttribute="top" secondItem="rXv-Fi-1sC" secondAttribute="bottom" constant="8" symbolic="YES" id="Px2-Cj-6Iz"/>
+                            <constraint firstItem="KwZ-N6-Qfl" firstAttribute="height" secondItem="rXv-Fi-1sC" secondAttribute="height" id="XkS-Qs-Ybu"/>
+                            <constraint firstAttribute="trailing" secondItem="rXv-Fi-1sC" secondAttribute="trailing" constant="20" symbolic="YES" id="c5F-OP-ku0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>

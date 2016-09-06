@@ -7,11 +7,9 @@
 //
 
 @import UIKit;
-#import "jKoolViewController.h"
 
-@interface jkViewController : jKoolViewController
+@interface jKoolViewController : UIViewController
 
-- (IBAction)stream:(id)sender;
 - (void) handlejKoolResponse:(NSString *) data;
 
 @end
