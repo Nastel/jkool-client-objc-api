@@ -35,8 +35,8 @@
                                     <action selector="stream:" destination="whP-gf-Uak" eventType="touchDown" id="fSj-ga-9ae"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-6Q-KvW">
-                                <rect key="frame" x="180" y="244" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-6Q-KvW">
+                                <rect key="frame" x="180" y="244" width="248" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="LMN-tz-ddd"/>
