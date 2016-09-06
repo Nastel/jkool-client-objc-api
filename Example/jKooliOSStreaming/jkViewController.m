@@ -24,13 +24,11 @@
 #import "jkProperty.h"
 #import "jkActivity.h"
 #import "jkSnapshot.h"
-#import "jKoolViewController.h"
-
-@interface jkViewController ()
-
-@end
+#import "jkCallbackHandlerStreaming.h"
+#import "jkCallbackHandlerQuery.h"
 
 @implementation jkViewController
+@synthesize queryText;
 
 - (void)viewDidLoad
 {
@@ -45,9 +43,12 @@
 }
 
 - (IBAction)stream:(id)sender {
+
+    // Initialize streaming and specify callback handler.
     [jKoolStreaming setToken:@"your-token"];
+    NSObject *cb = [[jkCallbackHandlerStreaming alloc] initWithViewController:self];
     
-    // Stream Event
+    // Stream Event with snapshot and properties
     jkEvent *event = [[jkEvent alloc] initWithName:@"testEvent"];
     [event setMsgText:@"hello world"] ;
     [event setReasonCode:9];
@@ -96,24 +97,43 @@
     [properties addObject:property_activity_1];
     [properties addObject:property_activity_2];
     [activity setProperties:properties];
-    [activity stream: self];
+    [activity stream: cb];
 }
 
+/*- (IBAction)query:(id)sender {
+    
+    // Initialize Streaming and specify callback handler
+    [jKoolQuerying setToken:@"pMxldK4vZxoI4yQs1VHhASZmusLja9Td"];
+    NSObject *cb = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
+    
+    // Query
+    jKoolQuerying *jkQuerying = [[jKoolQuerying alloc] init];
+    NSString *query = @"get events";
+    [jkQuerying query:query withMaxRows:50 forHandler:cb];
+    
+
+}*/
+
 - (IBAction)query:(id)sender {
-    [jKoolQuerying setToken:@"your-token"];
+    
+    // Initialize Streaming and specify callback handler
+    [jKoolQuerying setToken:@"pMxldK4vZxoI4yQs1VHhASZmusLja9Td"];
+   
+    
+    // Query
     jKoolQuerying *jkQuerying = [[jKoolQuerying alloc] init];
     NSString *query = @"get events";
     [jkQuerying query:query withMaxRows:50 forHandler:self];
     
-
+    
 }
 
-- (void) handlejKoolResponse:(NSString *) data {
-    [super handlejKoolResponse:data];
+- (void) handlejKoolResponse:(NSData *) data  {
     
+    NSString * str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     UIAlertController * alert=   [UIAlertController
                                   alertControllerWithTitle:@"jKool Data"
-                                  message:data
+                                  message:str
                                   preferredStyle:UIAlertControllerStyleActionSheet
                                   ];
     
@@ -129,11 +149,12 @@
     
     [alert addAction:ok];
     
-    
     alert.popoverPresentationController.sourceView = self.view;
     alert.popoverPresentationController.sourceRect = CGRectMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0, 1.0, 1.0);
     
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+
 
 @end

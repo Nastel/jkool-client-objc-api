@@ -18,11 +18,14 @@
  */
 
 @import UIKit;
-#import "jKoolViewController.h"
 
-@interface jkViewController : jKoolViewController
-
+@interface jkViewController : UIViewController
+{
+    IBOutlet UITextView *queryText;
+}
+@property (retain) UITextView * queryText;
 - (IBAction)stream:(id)sender;
-- (void) handlejKoolResponse:(NSString *) data;
+- (IBAction)query:(id)sender;
+
 
 @end
