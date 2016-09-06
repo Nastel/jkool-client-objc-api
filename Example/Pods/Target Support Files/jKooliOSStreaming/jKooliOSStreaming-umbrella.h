@@ -8,11 +8,11 @@
 #import "jkProperty.h"
 #import "jkSnapshot.h"
 #import "jkTrackable.h"
+#import "jKoolCallbackHandler.h"
 #import "jKoolQuerying.h"
 #import "jKoolService.h"
 #import "jKoolStreamDeviceInfo.h"
 #import "jKoolStreaming.h"
-#import "jKoolViewController.h"
 
 FOUNDATION_EXPORT double jKooliOSStreamingVersionNumber;
 FOUNDATION_EXPORT const unsigned char jKooliOSStreamingVersionString[];
