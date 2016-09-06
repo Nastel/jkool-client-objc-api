@@ -14,7 +14,7 @@
  * THIS SOFTWARE OR ITS DERIVATIVES.
  *
  * CopyrightVersion 1.0
- *
+ * 
  */
 #import "jKoolAppDelegate.h"
 
