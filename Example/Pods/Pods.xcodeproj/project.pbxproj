@@ -8,40 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		0C5D51D38ADADFF9DEF39BBEE71DCF1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		0D1DDD9972CF080B88DBDB927F926ED3 /* jkSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A84694F30901B546986B6E3776DCE9 /* jkSnapshot.m */; };
-		12CA3BCE4CFA439C5A6EC88D7C151EE8 /* jkSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = C5155B1637ECC54D1E865631EC3AC880 /* jkSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		147A0A414DF3E85F69FA28AF7699128C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		20D27A52AAB76F7B283D74701FC793B5 /* jKoolQuerying.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0562C7C5AAF41CAC2B6EE1BCCD8DA4 /* jKoolQuerying.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		244BEC629C63112D4CEFCCCFAC86B58E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		2DE790794E5F13B3CB5140A47235233D /* jKooliOSStreaming-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B46DA906D882E5C5A0A2290C166FB /* jKooliOSStreaming-dummy.m */; };
-		355CFF3D7058B965D035237C31DCC1E8 /* jKoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4438360FC80B0455DDADC7926E8F03 /* jKoolViewController.m */; };
-		38845C95EA888C72AC1AD445238C7CC6 /* jkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B67296401BB13FDBE17FFCB27C8F52 /* jkEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EEC2DFF8ED796C010B815E8259A6FCC /* jKoolStreamDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B2DF99F1BC3EC949EDFE76E5859434 /* jKoolStreamDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C1B8770AAA6C45585665515D5956AEA /* jKoolAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DD957DED566DFD56BAAAE50BD2DCFEA1 /* jKoolAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D5BAA95EDA39B9B9F5C456DCBA28D48 /* jKoolAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F30CD13655E73CA5E88028A4FB91CD /* jKoolAppDelegate.m */; };
-		56D8B563AD3FFB8F1AA5AAFA8934ACB8 /* jkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FE693CA3DF2FDBCE72D171AC984181 /* jkConstants.m */; };
-		5787BD37670B20E5CC1C95FD3DA80863 /* jkActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CFD34DFF81ACCA617357253627ED1D /* jkActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B929EF9EB62887E0124E6D159BEDDE6 /* jkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C9AC32D3CC55F9284D9EE20AC779 /* jkEvent.m */; };
+		2B4F1ED7BC716FAD200A2A41ADF5539D /* jKoolAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F30CD13655E73CA5E88028A4FB91CD /* jKoolAppDelegate.m */; };
+		353FDC9404AF40C8DAE71B74DE65AA74 /* jkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FE693CA3DF2FDBCE72D171AC984181 /* jkConstants.m */; };
+		3ACE20395B46D56F49146FC6F3E0A587 /* jkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B67296401BB13FDBE17FFCB27C8F52 /* jkEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CA9B5D82C5986458400022802319B4B /* jkProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 712309345A8974CBC6304B97A45BA1B9 /* jkProperty.m */; };
+		3E48C42BD3411AE90C2DA8CDFB7DAE67 /* jKoolStreaming.h in Headers */ = {isa = PBXBuildFile; fileRef = 96183802727AA1E1FBD31C984F0793EC /* jKoolStreaming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		417DDEC9727695FBF2206055238CA503 /* jkProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB6489020AE80A8933EB96051670D93 /* jkProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		447EC32A707E9EBBC5396CEACCA0AD37 /* jKoolApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A6549414641B98CE0F52E22FECD405 /* jKoolApplication.m */; };
+		50C8A933B519D181199FD9F2CAEC3AD1 /* jkActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491178F13C99D4CF5DF6628C318DA7A /* jkActivity.m */; };
 		6D7BDAFC707AE9CD90D9DDA90296B80F /* Pods-jKooliOSStreaming_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9958055172DE74A4FADCD01E98DF46A /* Pods-jKooliOSStreaming_Tests-dummy.m */; };
-		6DA9B02CEDE0BCF6AECF5F89F435A38D /* jKoolStreaming.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B7F1432387C9E502EEA17643E434D4 /* jKoolStreaming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F6E0C2E148A95DDDD81BC1D0CC49518 /* jKooliOSStreaming-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 405DB5806310495C3551FF3097A8B602 /* jKooliOSStreaming-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		720F1AB421A30F97B336BD3C296D3116 /* jKoolStreamDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 57461C52540F7CF0F3E14293FE3059AC /* jKoolStreamDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E783ABCC8BEE12D6C96EE1C253A9C30 /* jKoolCallbackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AF5F979133A66A1821B9FD9308AE7E /* jKoolCallbackHandler.m */; };
 		81F63842CECD7D47E208A4B469BE4BE6 /* Pods-jKooliOSStreaming_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B26F1E1EA6349F45BD39B94D5DB9DE7 /* Pods-jKooliOSStreaming_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		841E731C752AC2EF7D31821A99956910 /* jKoolService.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A4F94CC5448D4F039D67510E175A2 /* jKoolService.m */; };
-		94CF85F795F1097FE638B5109E086D2C /* jKoolStreamDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B0AD0DA782E112FB135F916DB4E58 /* jKoolStreamDeviceInfo.m */; };
-		94EECECEDE74D1B3CABB8BE4A244F1BB /* jkTrackable.h in Headers */ = {isa = PBXBuildFile; fileRef = C41B4BC311C86C6CA496BB05D3C66F94 /* jkTrackable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AE0295E4E923F93C736C8C3B00D810A /* jKoolViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 34E9F56AD9DD85E054B2FCC42F771A8F /* jKoolViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87B859F6C3E8D1883BBAB012FFE98092 /* jKoolStreamDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C3F69BE7311A215D6C105A5829DA3 /* jKoolStreamDeviceInfo.m */; };
+		908651CA257DF071DE3E476DC3D8FC66 /* jKoolAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DD957DED566DFD56BAAAE50BD2DCFEA1 /* jKoolAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C98E073D315783E809A115A414153F3 /* jKoolStreaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 591AB0DD3F5A33DDC12021240BB66D93 /* jKoolStreaming.m */; };
 		9EAB08E1D4986EABD43FCE8B1CB27E71 /* Pods-jKooliOSStreaming_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C57A1049A2DF40AC3354FCD1A69D576 /* Pods-jKooliOSStreaming_Example-dummy.m */; };
-		9F04E7D14F60D61AEC10EE7EA96D4641 /* jKoolService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B48222BBBA64595ADDD05E33F3F7614 /* jKoolService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A286ABD7489C0E72E0F60AF0960ECA91 /* jKoolQuerying.h in Headers */ = {isa = PBXBuildFile; fileRef = E6A7816E26112BBA3F47B2EDC6373104 /* jKoolQuerying.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A54603F61BB9CF28E7E5071BB053D321 /* jkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C9AC32D3CC55F9284D9EE20AC779 /* jkEvent.m */; };
+		B093C710CBEFFD84402AD5AB7AC3DEBC /* jkSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A84694F30901B546986B6E3776DCE9 /* jkSnapshot.m */; };
 		B191C91A9B74498BDCEB17B8E1D01A9A /* Pods-jKooliOSStreaming_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B3CB88A411C090E3806F81C3727DCE1 /* Pods-jKooliOSStreaming_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA488F91A91025CD1C7D3FEFF585E174 /* jkTrackable.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FD45B813B1F9EFB4AB7B3E107A979 /* jkTrackable.m */; };
-		BC998D27F9499114112BB387F44E3A6F /* jkProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB6489020AE80A8933EB96051670D93 /* jkProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C979C1FB86DF7402E62496E1835E7206 /* jKoolApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A6549414641B98CE0F52E22FECD405 /* jKoolApplication.m */; };
-		CAF3B747DE58A404DCE70C709F8AB79A /* jkActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491178F13C99D4CF5DF6628C318DA7A /* jkActivity.m */; };
-		D9B6FBBEB160FDBE785B7000B0D9B7D4 /* jKoolStreaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE088659201B3B1FC8044B6CA8F67CD /* jKoolStreaming.m */; };
-		DB94FD0C754987B78ACBE5D361FCE05A /* jKoolApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = E12ECCCC4C9D9C00702DEC841CD7DC59 /* jKoolApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4AA0920C21191C9D805326DE6874838 /* jkConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8C9268CBB0AE15B72C99DC0C9110F1 /* jkConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F547255642D4662EA60C678B0314B396 /* jKooliOSStreaming-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 405DB5806310495C3551FF3097A8B602 /* jKooliOSStreaming-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEAB90351947E01A264637E80B02ED27 /* jKoolQuerying.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E4E8DC0EF382F4F74C772C5808D97 /* jKoolQuerying.m */; };
-		FF51CF6CA7A819E34EC36E95C5AA5E33 /* jkProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 712309345A8974CBC6304B97A45BA1B9 /* jkProperty.m */; };
+		D37E36E2A58DAEA4BB08BDBE4E554F6D /* jKooliOSStreaming-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B46DA906D882E5C5A0A2290C166FB /* jKooliOSStreaming-dummy.m */; };
+		D68EC66158EF4D0BDC18F67215D7C772 /* jkTrackable.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FD45B813B1F9EFB4AB7B3E107A979 /* jkTrackable.m */; };
+		D73A9234035AD2C96F86FBF9B1EAA352 /* jKoolService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A25F027E42DE65C3EEA973D1F663295 /* jKoolService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5D0C9CE6425C1348EC3889CB1BF4CC1 /* jKoolQuerying.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ADB73F836ABBAF395E93B267DFB500 /* jKoolQuerying.m */; };
+		E7E7EA8BD34D0DB0A703E215BF4FED01 /* jkActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CFD34DFF81ACCA617357253627ED1D /* jkActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E887530CC40BB81CDDF24CC898C04814 /* jKoolApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = E12ECCCC4C9D9C00702DEC841CD7DC59 /* jKoolApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA6F0A616F898702FB30942419DA7522 /* jKoolCallbackHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CCD3FD07C2C93442B52E8FE12741084 /* jKoolCallbackHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFAB4A489FCFD00082278E2F4401A6A2 /* jkSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = C5155B1637ECC54D1E865631EC3AC880 /* jkSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9724F59D824975F2435AF5B5499D573 /* jkTrackable.h in Headers */ = {isa = PBXBuildFile; fileRef = C41B4BC311C86C6CA496BB05D3C66F94 /* jkTrackable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB70353100569B681AEF55DFFB5C0A55 /* jkConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8C9268CBB0AE15B72C99DC0C9110F1 /* jkConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD51C6A72F81FB0BF640F8DB7C3DDAE7 /* jKoolService.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B733A7D8D0F61EAFA87080A57496CC /* jKoolService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,8 @@
 /* Begin PBXFileReference section */
 		00933AAF849FC320B73D5F2EE7E067E4 /* Pods-jKooliOSStreaming_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-jKooliOSStreaming_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		09A84694F30901B546986B6E3776DCE9 /* jkSnapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkSnapshot.m; sourceTree = "<group>"; };
-		0FE088659201B3B1FC8044B6CA8F67CD /* jKoolStreaming.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolStreaming.m; sourceTree = "<group>"; };
 		181FD45B813B1F9EFB4AB7B3E107A979 /* jkTrackable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkTrackable.m; sourceTree = "<group>"; };
+		185C3F69BE7311A215D6C105A5829DA3 /* jKoolStreamDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolStreamDeviceInfo.m; sourceTree = "<group>"; };
 		1AB838775929F3DF8D10AA185DE88B79 /* jKooliOSStreaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = jKooliOSStreaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB6489020AE80A8933EB96051670D93 /* jkProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkProperty.h; sourceTree = "<group>"; };
 		2A83CD6F0EAF4A3A075C6428BBF2D3C9 /* Pods_jKooliOSStreaming_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jKooliOSStreaming_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,40 +66,41 @@
 		2C57A1049A2DF40AC3354FCD1A69D576 /* Pods-jKooliOSStreaming_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-jKooliOSStreaming_Example-dummy.m"; sourceTree = "<group>"; };
 		2F8FB7E6697105CD9FC06E4F7C54B988 /* jKooliOSStreaming-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "jKooliOSStreaming-prefix.pch"; sourceTree = "<group>"; };
 		30B23D4CDF4FD629D86F07EA35583C2B /* Pods-jKooliOSStreaming_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-jKooliOSStreaming_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		34E9F56AD9DD85E054B2FCC42F771A8F /* jKoolViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolViewController.h; sourceTree = "<group>"; };
 		3B3CB88A411C090E3806F81C3727DCE1 /* Pods-jKooliOSStreaming_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-jKooliOSStreaming_Example-umbrella.h"; sourceTree = "<group>"; };
 		405DB5806310495C3551FF3097A8B602 /* jKooliOSStreaming-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "jKooliOSStreaming-umbrella.h"; sourceTree = "<group>"; };
 		43F0CC0123F0D3D9DEBF15F0EE0824F6 /* Pods-jKooliOSStreaming_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jKooliOSStreaming_Example.release.xcconfig"; sourceTree = "<group>"; };
 		44A6549414641B98CE0F52E22FECD405 /* jKoolApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolApplication.m; sourceTree = "<group>"; };
-		460E4E8DC0EF382F4F74C772C5808D97 /* jKoolQuerying.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolQuerying.m; sourceTree = "<group>"; };
 		46A06F6C6D9226CE9681C375728F201F /* Pods-jKooliOSStreaming_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jKooliOSStreaming_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4A25F027E42DE65C3EEA973D1F663295 /* jKoolService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolService.h; sourceTree = "<group>"; };
 		4B8BF8AB721F976D609D91FE72976772 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		502B20D7221B8D18EBDCA92AA63FF5FC /* Pods-jKooliOSStreaming_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jKooliOSStreaming_Tests-resources.sh"; sourceTree = "<group>"; };
 		5133D09C446B1EEA9463164ED6FA07E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		555B46DA906D882E5C5A0A2290C166FB /* jKooliOSStreaming-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "jKooliOSStreaming-dummy.m"; sourceTree = "<group>"; };
-		5B48222BBBA64595ADDD05E33F3F7614 /* jKoolService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolService.h; sourceTree = "<group>"; };
-		5F3B0AD0DA782E112FB135F916DB4E58 /* jKoolStreamDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolStreamDeviceInfo.m; sourceTree = "<group>"; };
+		57461C52540F7CF0F3E14293FE3059AC /* jKoolStreamDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolStreamDeviceInfo.h; sourceTree = "<group>"; };
+		591AB0DD3F5A33DDC12021240BB66D93 /* jKoolStreaming.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolStreaming.m; sourceTree = "<group>"; };
+		6CCD3FD07C2C93442B52E8FE12741084 /* jKoolCallbackHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolCallbackHandler.h; sourceTree = "<group>"; };
 		712309345A8974CBC6304B97A45BA1B9 /* jkProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkProperty.m; sourceTree = "<group>"; };
 		7AEA23208E97E7BBA2BAB1E407252372 /* Pods-jKooliOSStreaming_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-jKooliOSStreaming_Tests.modulemap"; sourceTree = "<group>"; };
 		7BCD04B3451D42C2E5F8BC0E5D3861C4 /* Pods-jKooliOSStreaming_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-jKooliOSStreaming_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		800A4F94CC5448D4F039D67510E175A2 /* jKoolService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolService.m; sourceTree = "<group>"; };
 		837201728C24155DE3E8DE16EE91B8C0 /* Pods-jKooliOSStreaming_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jKooliOSStreaming_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8491178F13C99D4CF5DF6628C318DA7A /* jkActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkActivity.m; sourceTree = "<group>"; };
 		853E8B9D4F2FD0AD5176D2D39AE356FD /* Pods-jKooliOSStreaming_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jKooliOSStreaming_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C0562C7C5AAF41CAC2B6EE1BCCD8DA4 /* jKoolQuerying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolQuerying.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94ADB73F836ABBAF395E93B267DFB500 /* jKoolQuerying.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolQuerying.m; sourceTree = "<group>"; };
+		96183802727AA1E1FBD31C984F0793EC /* jKoolStreaming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolStreaming.h; sourceTree = "<group>"; };
 		A9958055172DE74A4FADCD01E98DF46A /* Pods-jKooliOSStreaming_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-jKooliOSStreaming_Tests-dummy.m"; sourceTree = "<group>"; };
 		AA8C9268CBB0AE15B72C99DC0C9110F1 /* jkConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkConstants.h; sourceTree = "<group>"; };
-		AD4438360FC80B0455DDADC7926E8F03 /* jKoolViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolViewController.m; sourceTree = "<group>"; };
 		AF7BBBC48B953172896859A812B50717 /* Pods-jKooliOSStreaming_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jKooliOSStreaming_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		B1B7F1432387C9E502EEA17643E434D4 /* jKoolStreaming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolStreaming.h; sourceTree = "<group>"; };
+		B1AF5F979133A66A1821B9FD9308AE7E /* jKoolCallbackHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolCallbackHandler.m; sourceTree = "<group>"; };
 		B5DBF6BF176EF47B3B6690E2CC967091 /* jKooliOSStreaming.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = jKooliOSStreaming.modulemap; sourceTree = "<group>"; };
 		BCB3601035563A8752BA63B4A957DA9F /* jKooliOSStreaming.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = jKooliOSStreaming.xcconfig; sourceTree = "<group>"; };
 		C41B4BC311C86C6CA496BB05D3C66F94 /* jkTrackable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkTrackable.h; sourceTree = "<group>"; };
 		C4F30CD13655E73CA5E88028A4FB91CD /* jKoolAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolAppDelegate.m; sourceTree = "<group>"; };
 		C4FE693CA3DF2FDBCE72D171AC984181 /* jkConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkConstants.m; sourceTree = "<group>"; };
 		C5155B1637ECC54D1E865631EC3AC880 /* jkSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkSnapshot.h; sourceTree = "<group>"; };
+		C9B733A7D8D0F61EAFA87080A57496CC /* jKoolService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolService.m; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D0B2DF99F1BC3EC949EDFE76E5859434 /* jKoolStreamDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolStreamDeviceInfo.h; sourceTree = "<group>"; };
 		D2CFD34DFF81ACCA617357253627ED1D /* jkActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkActivity.h; sourceTree = "<group>"; };
 		D462C96C82969EEA7CE1CBF15C943548 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA20CBEC2DDD1570153B6AE1FFDE161 /* Pods-jKooliOSStreaming_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-jKooliOSStreaming_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		E12ECCCC4C9D9C00702DEC841CD7DC59 /* jKoolApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolApplication.h; sourceTree = "<group>"; };
 		E3D882F9884C1B9B0E98C7D47BE50B51 /* Pods-jKooliOSStreaming_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jKooliOSStreaming_Example-resources.sh"; sourceTree = "<group>"; };
 		E5B3C9AC32D3CC55F9284D9EE20AC779 /* jkEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkEvent.m; sourceTree = "<group>"; };
-		E6A7816E26112BBA3F47B2EDC6373104 /* jKoolQuerying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolQuerying.h; sourceTree = "<group>"; };
 		F7B67296401BB13FDBE17FFCB27C8F52 /* jkEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkEvent.h; sourceTree = "<group>"; };
 		F819F1DDBF692D473E490CD351205013 /* Pods-jKooliOSStreaming_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jKooliOSStreaming_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FC90BA1DA5A2D54A769739D30B7DC652 /* Pods_jKooliOSStreaming_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jKooliOSStreaming_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +158,23 @@
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		615826F3F26A4A249C0D39D43C10458B /* service */ = {
+			isa = PBXGroup;
+			children = (
+				6CCD3FD07C2C93442B52E8FE12741084 /* jKoolCallbackHandler.h */,
+				B1AF5F979133A66A1821B9FD9308AE7E /* jKoolCallbackHandler.m */,
+				8C0562C7C5AAF41CAC2B6EE1BCCD8DA4 /* jKoolQuerying.h */,
+				94ADB73F836ABBAF395E93B267DFB500 /* jKoolQuerying.m */,
+				4A25F027E42DE65C3EEA973D1F663295 /* jKoolService.h */,
+				C9B733A7D8D0F61EAFA87080A57496CC /* jKoolService.m */,
+				57461C52540F7CF0F3E14293FE3059AC /* jKoolStreamDeviceInfo.h */,
+				185C3F69BE7311A215D6C105A5829DA3 /* jKoolStreamDeviceInfo.m */,
+				96183802727AA1E1FBD31C984F0793EC /* jKoolStreaming.h */,
+				591AB0DD3F5A33DDC12021240BB66D93 /* jKoolStreaming.m */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		6BED15EFD27F575450251B6BFCB6BAC2 /* Development Pods */ = {
@@ -223,7 +240,7 @@
 				E12ECCCC4C9D9C00702DEC841CD7DC59 /* jKoolApplication.h */,
 				44A6549414641B98CE0F52E22FECD405 /* jKoolApplication.m */,
 				EC859D8F6B7DACD6A24871BB28D05313 /* model */,
-				DCB6634E5BDD3BC947FA6BECF20AC158 /* service */,
+				615826F3F26A4A249C0D39D43C10458B /* service */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -244,23 +261,6 @@
 			);
 			name = "Pods-jKooliOSStreaming_Tests";
 			path = "Target Support Files/Pods-jKooliOSStreaming_Tests";
-			sourceTree = "<group>";
-		};
-		DCB6634E5BDD3BC947FA6BECF20AC158 /* service */ = {
-			isa = PBXGroup;
-			children = (
-				E6A7816E26112BBA3F47B2EDC6373104 /* jKoolQuerying.h */,
-				460E4E8DC0EF382F4F74C772C5808D97 /* jKoolQuerying.m */,
-				5B48222BBBA64595ADDD05E33F3F7614 /* jKoolService.h */,
-				800A4F94CC5448D4F039D67510E175A2 /* jKoolService.m */,
-				D0B2DF99F1BC3EC949EDFE76E5859434 /* jKoolStreamDeviceInfo.h */,
-				5F3B0AD0DA782E112FB135F916DB4E58 /* jKoolStreamDeviceInfo.m */,
-				B1B7F1432387C9E502EEA17643E434D4 /* jKoolStreaming.h */,
-				0FE088659201B3B1FC8044B6CA8F67CD /* jKoolStreaming.m */,
-				34E9F56AD9DD85E054B2FCC42F771A8F /* jKoolViewController.h */,
-				AD4438360FC80B0455DDADC7926E8F03 /* jKoolViewController.m */,
-			);
-			path = service;
 			sourceTree = "<group>";
 		};
 		E613716B4784653674BD1F4703364E99 /* jKooliOSStreaming */ = {
@@ -316,27 +316,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		442B3ED934D2DF258A690EC138A5F9B7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5787BD37670B20E5CC1C95FD3DA80863 /* jkActivity.h in Headers */,
-				F4AA0920C21191C9D805326DE6874838 /* jkConstants.h in Headers */,
-				38845C95EA888C72AC1AD445238C7CC6 /* jkEvent.h in Headers */,
-				4C1B8770AAA6C45585665515D5956AEA /* jKoolAppDelegate.h in Headers */,
-				DB94FD0C754987B78ACBE5D361FCE05A /* jKoolApplication.h in Headers */,
-				F547255642D4662EA60C678B0314B396 /* jKooliOSStreaming-umbrella.h in Headers */,
-				A286ABD7489C0E72E0F60AF0960ECA91 /* jKoolQuerying.h in Headers */,
-				9F04E7D14F60D61AEC10EE7EA96D4641 /* jKoolService.h in Headers */,
-				3EEC2DFF8ED796C010B815E8259A6FCC /* jKoolStreamDeviceInfo.h in Headers */,
-				6DA9B02CEDE0BCF6AECF5F89F435A38D /* jKoolStreaming.h in Headers */,
-				9AE0295E4E923F93C736C8C3B00D810A /* jKoolViewController.h in Headers */,
-				BC998D27F9499114112BB387F44E3A6F /* jkProperty.h in Headers */,
-				12CA3BCE4CFA439C5A6EC88D7C151EE8 /* jkSnapshot.h in Headers */,
-				94EECECEDE74D1B3CABB8BE4A244F1BB /* jkTrackable.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BDF2C3AA56F254EF7FE1124C22554C0F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,6 +329,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F63842CECD7D47E208A4B469BE4BE6 /* Pods-jKooliOSStreaming_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA23D22354630B93B1F6B11737CD053 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E7EA8BD34D0DB0A703E215BF4FED01 /* jkActivity.h in Headers */,
+				FB70353100569B681AEF55DFFB5C0A55 /* jkConstants.h in Headers */,
+				3ACE20395B46D56F49146FC6F3E0A587 /* jkEvent.h in Headers */,
+				908651CA257DF071DE3E476DC3D8FC66 /* jKoolAppDelegate.h in Headers */,
+				E887530CC40BB81CDDF24CC898C04814 /* jKoolApplication.h in Headers */,
+				EA6F0A616F898702FB30942419DA7522 /* jKoolCallbackHandler.h in Headers */,
+				6F6E0C2E148A95DDDD81BC1D0CC49518 /* jKooliOSStreaming-umbrella.h in Headers */,
+				20D27A52AAB76F7B283D74701FC793B5 /* jKoolQuerying.h in Headers */,
+				D73A9234035AD2C96F86FBF9B1EAA352 /* jKoolService.h in Headers */,
+				720F1AB421A30F97B336BD3C296D3116 /* jKoolStreamDeviceInfo.h in Headers */,
+				3E48C42BD3411AE90C2DA8CDFB7DAE67 /* jKoolStreaming.h in Headers */,
+				417DDEC9727695FBF2206055238CA503 /* jkProperty.h in Headers */,
+				EFAB4A489FCFD00082278E2F4401A6A2 /* jkSnapshot.h in Headers */,
+				F9724F59D824975F2435AF5B5499D573 /* jkTrackable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,9 +395,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB3568BD7E2D732FC758728FFD78D5EE /* Build configuration list for PBXNativeTarget "jKooliOSStreaming" */;
 			buildPhases = (
-				D016D2D5711BDA4C0897E8E66C4A000E /* Sources */,
+				775CBA282A3F160B8A71838DE290D744 /* Sources */,
 				0A1E924AE5FD5578F76D715615816B3F /* Frameworks */,
-				442B3ED934D2DF258A690EC138A5F9B7 /* Headers */,
+				EDA23D22354630B93B1F6B11737CD053 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -445,32 +445,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		775CBA282A3F160B8A71838DE290D744 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C8A933B519D181199FD9F2CAEC3AD1 /* jkActivity.m in Sources */,
+				353FDC9404AF40C8DAE71B74DE65AA74 /* jkConstants.m in Sources */,
+				A54603F61BB9CF28E7E5071BB053D321 /* jkEvent.m in Sources */,
+				2B4F1ED7BC716FAD200A2A41ADF5539D /* jKoolAppDelegate.m in Sources */,
+				447EC32A707E9EBBC5396CEACCA0AD37 /* jKoolApplication.m in Sources */,
+				7E783ABCC8BEE12D6C96EE1C253A9C30 /* jKoolCallbackHandler.m in Sources */,
+				D37E36E2A58DAEA4BB08BDBE4E554F6D /* jKooliOSStreaming-dummy.m in Sources */,
+				E5D0C9CE6425C1348EC3889CB1BF4CC1 /* jKoolQuerying.m in Sources */,
+				FD51C6A72F81FB0BF640F8DB7C3DDAE7 /* jKoolService.m in Sources */,
+				87B859F6C3E8D1883BBAB012FFE98092 /* jKoolStreamDeviceInfo.m in Sources */,
+				9C98E073D315783E809A115A414153F3 /* jKoolStreaming.m in Sources */,
+				3CA9B5D82C5986458400022802319B4B /* jkProperty.m in Sources */,
+				B093C710CBEFFD84402AD5AB7AC3DEBC /* jkSnapshot.m in Sources */,
+				D68EC66158EF4D0BDC18F67215D7C772 /* jkTrackable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91224B5CD8AFD22205EE35BB329440AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6D7BDAFC707AE9CD90D9DDA90296B80F /* Pods-jKooliOSStreaming_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D016D2D5711BDA4C0897E8E66C4A000E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAF3B747DE58A404DCE70C709F8AB79A /* jkActivity.m in Sources */,
-				56D8B563AD3FFB8F1AA5AAFA8934ACB8 /* jkConstants.m in Sources */,
-				6B929EF9EB62887E0124E6D159BEDDE6 /* jkEvent.m in Sources */,
-				4D5BAA95EDA39B9B9F5C456DCBA28D48 /* jKoolAppDelegate.m in Sources */,
-				C979C1FB86DF7402E62496E1835E7206 /* jKoolApplication.m in Sources */,
-				2DE790794E5F13B3CB5140A47235233D /* jKooliOSStreaming-dummy.m in Sources */,
-				FEAB90351947E01A264637E80B02ED27 /* jKoolQuerying.m in Sources */,
-				841E731C752AC2EF7D31821A99956910 /* jKoolService.m in Sources */,
-				94CF85F795F1097FE638B5109E086D2C /* jKoolStreamDeviceInfo.m in Sources */,
-				D9B6FBBEB160FDBE785B7000B0D9B7D4 /* jKoolStreaming.m in Sources */,
-				355CFF3D7058B965D035237C31DCC1E8 /* jKoolViewController.m in Sources */,
-				FF51CF6CA7A819E34EC36E95C5AA5E33 /* jkProperty.m in Sources */,
-				0D1DDD9972CF080B88DBDB927F926ED3 /* jkSnapshot.m in Sources */,
-				BA488F91A91025CD1C7D3FEFF585E174 /* jkTrackable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
