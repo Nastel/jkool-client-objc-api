@@ -16,18 +16,14 @@
  * CopyrightVersion 1.0
  *
  */
-
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "jkEvent.h"
-#import "jkActivity.h"
-#import "jkSnapshot.h"
-#import "jKoolService.h"
 
-@interface jKoolQuerying : jKoolService
+@interface JsonParser : NSObject
 
-- (void)query:(NSString *)query withMaxRows:(int) maxRows forHandler:(NSObject *) handler;
-+ (NSString*)token;
-+ (void)setToken:(NSString*)jkToken;
+@property (readonly) NSMutableArray *receivedJsons;
+
+-(NSDictionary *)lastReceivedJson;
+
+-(void) acceptString:(NSString *)string;
 
 @end

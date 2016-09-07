@@ -17,13 +17,12 @@
 *
 */
 
-@import UIKit;
+#import <UIKit/UIKit.h>
+#import "JsonParser.h"
 
-@interface jKoolCallbackHandler : NSObject
+@interface WebsocketClient : NSObject
 
-@property (retain) UIViewController * vc;
-
-- (void) handlejKoolResponse:(NSData *) data;
-- (id)initWithViewController: (UIViewController *) vc;
+@property JsonParser *jsonParser;
+@property NSString *dataToSend;
 
 @end
