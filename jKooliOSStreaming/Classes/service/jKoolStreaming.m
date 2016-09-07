@@ -4,7 +4,7 @@
 //
 //  Created by Catherine Bernardone on 7/5/16.
 //  Copyright © 2016 jKool. All rights reserved.
-// 
+//
 
 #import "jKoolStreaming.h"
 #import "jkConstants.h"
