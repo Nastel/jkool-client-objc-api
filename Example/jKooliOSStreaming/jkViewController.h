@@ -18,6 +18,7 @@
  */
 
 @import UIKit;
+#import <SocketRocket/SRWebSocket.h>
 
 @interface jkViewController : UIViewController
 {

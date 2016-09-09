@@ -26,8 +26,12 @@
 #import "jkSnapshot.h"
 #import "jkCallbackHandlerStreaming.h"
 #import "jkCallbackHandlerQuery.h"
+#import "jKoolWebsocketClient.h"
 
 @implementation jkViewController
+{
+    SRWebSocket *webSocket;
+}
 @synthesize queryText;
 
 - (void)viewDidLoad
@@ -114,6 +118,13 @@
 
 }
 
+- (IBAction)subscribe:(id)sender {
+    [self connectWebSocket];
+    queryText.text = nil;
+    
+    
+}
+
 /*- (IBAction)query:(id)sender {
     
     // Initialize Streaming and specify callback handler
@@ -154,6 +165,40 @@
     
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+
+
+
+
+- (void)connectWebSocket {
+    webSocket.delegate = nil;
+    webSocket = nil;
+    
+    NSString *urlString = @"ws://jkool.jkoolcloud.com/jkool-service/jkqlasync";
+    SRWebSocket *newWebSocket = [[SRWebSocket alloc] initWithURL:[NSURL URLWithString:urlString]];
+    newWebSocket.delegate = self;
+    
+    [newWebSocket open];
+}
+
+- (void)webSocketDidOpen:(SRWebSocket *)newWebSocket {
+    webSocket = newWebSocket;
+    [webSocket send:@"{\"jk_token\":\"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28\",\"jk_query\":\"subscribe to events\",\"jk_maxrows\":10,\"jk_subid\":\"$sub/9577682d-26ae-4f50-8293-cd4640a368f6\"}"];
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error {
+    [self connectWebSocket];
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean {
+    [self connectWebSocket];
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message {
+    queryText.text = [NSString stringWithFormat:@"%@\n%@", queryText.text, message];
+}
+
+
 
 
 
