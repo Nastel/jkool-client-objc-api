@@ -13,6 +13,8 @@
 #import "jKoolService.h"
 #import "jKoolStreamDeviceInfo.h"
 #import "jKoolStreaming.h"
+#import "jKoolWebsocketClient.h"
+#import "JsonParser.h"
 
 FOUNDATION_EXPORT double jKooliOSStreamingVersionNumber;
 FOUNDATION_EXPORT const unsigned char jKooliOSStreamingVersionString[];
