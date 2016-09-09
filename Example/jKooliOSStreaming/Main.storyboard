@@ -15,51 +15,82 @@
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXv-Fi-1sC">
-                                <rect key="frame" x="20" y="28" width="560" height="196"/>
+                                <rect key="frame" x="25" y="45" width="270" height="30"/>
                                 <state key="normal" title="Query jKool"/>
                                 <connections>
                                     <action selector="query:" destination="whP-gf-Uak" eventType="touchDown" id="ZtJ-Pd-2zg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwZ-N6-Qfl">
-                                <rect key="frame" x="20" y="452" width="560" height="140"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="8nW-BB-Baz"/>
-                                </constraints>
+                                <rect key="frame" x="25" y="100" width="270" height="30"/>
                                 <state key="normal" title="Stream to jKool"/>
                                 <connections>
                                     <action selector="stream:" destination="whP-gf-Uak" eventType="touchDown" id="fSj-ga-9ae"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-6Q-KvW">
-                                <rect key="frame" x="180" y="244" width="248" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbD-6a-TOQ">
+                                <rect key="frame" x="25" y="154" width="270" height="30"/>
+                                <state key="normal" title="Subscribe"/>
+                                <connections>
+                                    <action selector="subscribe:" destination="whP-gf-Uak" eventType="touchDown" id="RHl-WT-KZI"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-6Q-KvW">
+                                <rect key="frame" x="20" y="209" width="280" height="334"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="LMN-tz-ddd"/>
-                                    <constraint firstAttribute="width" constant="240" id="ksF-9w-HWu"/>
+                                    <constraint firstAttribute="width" constant="348" id="O8M-Rq-a4n"/>
+                                    <constraint firstAttribute="width" constant="348" id="Obv-Jh-b9b"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="O8M-Rq-a4n"/>
+                                        <exclude reference="Obv-Jh-b9b"/>
+                                    </mask>
+                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="KwZ-N6-Qfl" secondAttribute="bottom" constant="8" symbolic="YES" id="A1C-DX-K6I"/>
-                            <constraint firstItem="rXv-Fi-1sC" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="8" symbolic="YES" id="APY-T2-HdX"/>
-                            <constraint firstItem="KwZ-N6-Qfl" firstAttribute="top" secondItem="OvE-6Q-KvW" secondAttribute="bottom" constant="80" id="BoW-gg-8nu"/>
-                            <constraint firstItem="rXv-Fi-1sC" firstAttribute="centerX" secondItem="OvE-6Q-KvW" secondAttribute="centerX" id="EEZ-7p-ToY"/>
-                            <constraint firstItem="OvE-6Q-KvW" firstAttribute="top" secondItem="rXv-Fi-1sC" secondAttribute="bottom" constant="20" id="HKZ-r1-rMC"/>
-                            <constraint firstItem="rXv-Fi-1sC" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="K7e-bQ-vE0"/>
-                            <constraint firstItem="rXv-Fi-1sC" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="Pcr-wy-sbc"/>
-                            <constraint firstItem="rXv-Fi-1sC" firstAttribute="leading" secondItem="KwZ-N6-Qfl" secondAttribute="leading" id="hkY-fk-6RR"/>
-                            <constraint firstItem="rXv-Fi-1sC" firstAttribute="trailing" secondItem="KwZ-N6-Qfl" secondAttribute="trailing" id="nRG-CI-GgC"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="OvE-6Q-KvW" secondAttribute="bottom" constant="25" id="5x6-4V-QgC"/>
+                            <constraint firstItem="KwZ-N6-Qfl" firstAttribute="height" secondItem="rXv-Fi-1sC" secondAttribute="height" id="8SQ-E6-86N"/>
+                            <constraint firstItem="OvE-6Q-KvW" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" symbolic="YES" id="9Lq-B6-rV4"/>
+                            <constraint firstItem="KwZ-N6-Qfl" firstAttribute="width" secondItem="rXv-Fi-1sC" secondAttribute="width" id="DTa-S7-3j9"/>
+                            <constraint firstItem="rXv-Fi-1sC" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="25" id="E1q-fF-Vpj"/>
+                            <constraint firstItem="OvE-6Q-KvW" firstAttribute="top" secondItem="lbD-6a-TOQ" secondAttribute="bottom" constant="26" id="Ekj-yu-wYK"/>
+                            <constraint firstItem="lbD-6a-TOQ" firstAttribute="centerX" secondItem="KwZ-N6-Qfl" secondAttribute="centerX" id="FqL-Z5-Ozg"/>
+                            <constraint firstItem="KwZ-N6-Qfl" firstAttribute="top" secondItem="rXv-Fi-1sC" secondAttribute="bottom" constant="25" id="P3x-SE-cGP"/>
+                            <constraint firstAttribute="trailing" secondItem="rXv-Fi-1sC" secondAttribute="trailing" constant="25" id="TN5-Dc-1PD"/>
+                            <constraint firstItem="lbD-6a-TOQ" firstAttribute="top" secondItem="KwZ-N6-Qfl" secondAttribute="bottom" constant="24" id="Wg8-0O-9tg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OvE-6Q-KvW" secondAttribute="trailing" constant="25" id="XrX-em-Io1"/>
+                            <constraint firstItem="rXv-Fi-1sC" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="25" id="Y7a-nl-4gb"/>
+                            <constraint firstItem="lbD-6a-TOQ" firstAttribute="height" secondItem="KwZ-N6-Qfl" secondAttribute="height" id="cLU-FX-93l"/>
+                            <constraint firstItem="lbD-6a-TOQ" firstAttribute="width" secondItem="rXv-Fi-1sC" secondAttribute="width" id="d1Q-gc-aGk"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="OvE-6Q-KvW" secondAttribute="bottom" constant="30" id="gYe-19-u6y"/>
+                            <constraint firstItem="lbD-6a-TOQ" firstAttribute="height" secondItem="rXv-Fi-1sC" secondAttribute="height" id="iBv-OV-lsO"/>
+                            <constraint firstItem="lbD-6a-TOQ" firstAttribute="centerX" secondItem="rXv-Fi-1sC" secondAttribute="centerX" id="o0E-ae-Z4p"/>
+                            <constraint firstItem="OvE-6Q-KvW" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="25" id="oFs-JE-YJV"/>
+                            <constraint firstItem="OvE-6Q-KvW" firstAttribute="top" secondItem="lbD-6a-TOQ" secondAttribute="bottom" constant="25" id="onN-fC-aE8"/>
+                            <constraint firstItem="lbD-6a-TOQ" firstAttribute="width" secondItem="KwZ-N6-Qfl" secondAttribute="width" id="qHp-fj-yWa"/>
+                            <constraint firstAttribute="trailing" secondItem="OvE-6Q-KvW" secondAttribute="trailing" constant="20" symbolic="YES" id="y4C-tJ-e83"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ekj-yu-wYK"/>
+                                <exclude reference="XrX-em-Io1"/>
+                                <exclude reference="oFs-JE-YJV"/>
+                                <exclude reference="gYe-19-u6y"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="queryText" destination="OvE-6Q-KvW" id="0vm-ur-8lE"/>
                     </connections>
