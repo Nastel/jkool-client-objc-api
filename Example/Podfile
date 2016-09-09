@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'jKooliOSStreaming_Example' do
   pod 'jKooliOSStreaming', :path => '../'
+  pod 'SocketRocket'
 
   target 'jKooliOSStreaming_Tests' do
     inherit! :search_paths
