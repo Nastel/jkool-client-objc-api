@@ -7,126 +7,172 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C5D51D38ADADFF9DEF39BBEE71DCF1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		147A0A414DF3E85F69FA28AF7699128C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		20D27A52AAB76F7B283D74701FC793B5 /* jKoolQuerying.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0562C7C5AAF41CAC2B6EE1BCCD8DA4 /* jKoolQuerying.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		244BEC629C63112D4CEFCCCFAC86B58E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		2B4F1ED7BC716FAD200A2A41ADF5539D /* jKoolAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F30CD13655E73CA5E88028A4FB91CD /* jKoolAppDelegate.m */; };
-		353FDC9404AF40C8DAE71B74DE65AA74 /* jkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FE693CA3DF2FDBCE72D171AC984181 /* jkConstants.m */; };
-		3ACE20395B46D56F49146FC6F3E0A587 /* jkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B67296401BB13FDBE17FFCB27C8F52 /* jkEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CA9B5D82C5986458400022802319B4B /* jkProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 712309345A8974CBC6304B97A45BA1B9 /* jkProperty.m */; };
-		3E48C42BD3411AE90C2DA8CDFB7DAE67 /* jKoolStreaming.h in Headers */ = {isa = PBXBuildFile; fileRef = 96183802727AA1E1FBD31C984F0793EC /* jKoolStreaming.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		417DDEC9727695FBF2206055238CA503 /* jkProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB6489020AE80A8933EB96051670D93 /* jkProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		447EC32A707E9EBBC5396CEACCA0AD37 /* jKoolApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A6549414641B98CE0F52E22FECD405 /* jKoolApplication.m */; };
-		4A42EBDE1D8055C10076FD64 /* WebsocketClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A42EBDC1D8055C10076FD64 /* WebsocketClient.h */; };
-		4A42EBDF1D8055C10076FD64 /* WebsocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A42EBDD1D8055C10076FD64 /* WebsocketClient.m */; };
-		4A42EBE21D8087D00076FD64 /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A42EBE11D8087D00076FD64 /* JsonParser.m */; };
-		50C8A933B519D181199FD9F2CAEC3AD1 /* jkActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491178F13C99D4CF5DF6628C318DA7A /* jkActivity.m */; };
+		012597AABC16F16C29CEAD6F696170D7 /* jkSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = CC59DD60A8598DF9C9E8ABE5ACC43239 /* jkSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		062A4F300D4B48E58033F1429C96E26C /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0898C057D730CBD238D8673C57F96246 /* SRWebSocket.m */; };
+		0B38EC62FC0B78ECFB139B5FDDC11E6B /* jKoolService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F23F3CBE10E2C644E1EDAEF7825815A /* jKoolService.m */; };
+		0B85D796C48D5D84E4AF636D8DD4AB64 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CAF4AB1ECD042E4FED766B8370F6530 /* Security.framework */; };
+		0C5D51D38ADADFF9DEF39BBEE71DCF1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */; };
+		0EB58D27CA3B3588933740DD38370D9F /* JsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = FD1A17BFE01DF4F7FCC644000927B8DF /* JsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EFE525599ECFADB956E314C7B499D2D /* jKoolAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DDB8F601A1E8A62F1DBF2FC9ACF9EB /* jKoolAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F57EA161E8E6C710198B25E5A1D6DAB /* SocketRocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6006CA1202529404CCB0FA1975B10213 /* SocketRocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29D984668B0E809C46AC8886A835FE6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */; };
+		2B7640C250E9BDFD932A77F58E63D501 /* jKoolStreamDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A5ACDCC39A4BB06862910155101F0FA9 /* jKoolStreamDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		311A12D1B7A9F71910A12ABB2FAB84DD /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932176CAC4E66CD1DF6CF8B352798BC /* SocketRocket-dummy.m */; };
+		349CEC76E9553753C3762AA8D601610C /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = BD74F82EA2CCB617119AE5011205E40C /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37B197A4DEF533714380C40535795C1C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5135EC14FA83C331E94D40C19DAB0764 /* CFNetwork.framework */; };
+		3E25F4D88C93E605D6833830A841951B /* jKoolApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC274DD3E9C3F16F99039F01AFAC /* jKoolApplication.m */; };
+		4263A6FDB6470EFFF1DD67776DA4D712 /* jkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 10387AF473D33FBE017AF5E9E3FB182A /* jkConstants.m */; };
+		439321A76835305D79B46C4820B75118 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */; };
+		46EBE79C526DD7EFE7AFB4500D4C63FE /* Pods-jKooliOSStreaming_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C57A1049A2DF40AC3354FCD1A69D576 /* Pods-jKooliOSStreaming_Example-dummy.m */; };
+		4FF2946D6452945449FE78FF91C7AD8C /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E9850CAF51231F87401C9D5963EE39 /* SocketRocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CE0690172F8FD17A322CF1BC9671A4 /* jKoolStreamDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2ADB698B22564BC9D4B87B506FEE6F7 /* jKoolStreamDeviceInfo.m */; };
+		59A042D0EEA9C34D798642DFBE8A5DEA /* jKoolQuerying.h in Headers */ = {isa = PBXBuildFile; fileRef = 70669E72F0F36036DE72BD6EB3CAADD2 /* jKoolQuerying.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D19F10184DD5D9CF6FCD37B83CF1745 /* jKoolQuerying.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D72AE9BBB9C7051C814354FE3CA23 /* jKoolQuerying.m */; };
+		61B074A9A872D2B266C1B984C1EF54E3 /* jkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 568932C77A92B7E12844C647E356C6F3 /* jkEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		629E7F7275101D5BFC05F563B686E23A /* jKoolStreaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 86477B786DAD8EE91CCBE71E6F66869B /* jKoolStreaming.m */; };
+		6D05C25DCF4EFE6171D91DBC467F2894 /* jKoolWebsocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8605B4189C94A858210B04F92D38402C /* jKoolWebsocketClient.m */; };
 		6D7BDAFC707AE9CD90D9DDA90296B80F /* Pods-jKooliOSStreaming_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9958055172DE74A4FADCD01E98DF46A /* Pods-jKooliOSStreaming_Tests-dummy.m */; };
-		6F6E0C2E148A95DDDD81BC1D0CC49518 /* jKooliOSStreaming-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 405DB5806310495C3551FF3097A8B602 /* jKooliOSStreaming-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		720F1AB421A30F97B336BD3C296D3116 /* jKoolStreamDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 57461C52540F7CF0F3E14293FE3059AC /* jKoolStreamDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E783ABCC8BEE12D6C96EE1C253A9C30 /* jKoolCallbackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AF5F979133A66A1821B9FD9308AE7E /* jKoolCallbackHandler.m */; };
+		74A156DD154F14C54BC7916052150F3F /* jkConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 40280EA2FF55D8E09ECB06A19FD2F046 /* jkConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79963108DD0BAED5FE21587F3D125DE7 /* jkActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 073EA73682642B7C15F748A1B83992E5 /* jkActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BC9A31D254DB1130C5D79275C872C15 /* jKoolStreaming.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A446C75FF5F620CBB086E44598F8E65 /* jKoolStreaming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80734D8E5852C698C766B943206AA64C /* jkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5AD5699A6EEF121CE4B7B113121881 /* jkEvent.m */; };
 		81F63842CECD7D47E208A4B469BE4BE6 /* Pods-jKooliOSStreaming_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B26F1E1EA6349F45BD39B94D5DB9DE7 /* Pods-jKooliOSStreaming_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87B859F6C3E8D1883BBAB012FFE98092 /* jKoolStreamDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C3F69BE7311A215D6C105A5829DA3 /* jKoolStreamDeviceInfo.m */; };
-		908651CA257DF071DE3E476DC3D8FC66 /* jKoolAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DD957DED566DFD56BAAAE50BD2DCFEA1 /* jKoolAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98E073D315783E809A115A414153F3 /* jKoolStreaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 591AB0DD3F5A33DDC12021240BB66D93 /* jKoolStreaming.m */; };
-		9EAB08E1D4986EABD43FCE8B1CB27E71 /* Pods-jKooliOSStreaming_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C57A1049A2DF40AC3354FCD1A69D576 /* Pods-jKooliOSStreaming_Example-dummy.m */; };
-		A54603F61BB9CF28E7E5071BB053D321 /* jkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C9AC32D3CC55F9284D9EE20AC779 /* jkEvent.m */; };
-		B093C710CBEFFD84402AD5AB7AC3DEBC /* jkSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A84694F30901B546986B6E3776DCE9 /* jkSnapshot.m */; };
-		B191C91A9B74498BDCEB17B8E1D01A9A /* Pods-jKooliOSStreaming_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B3CB88A411C090E3806F81C3727DCE1 /* Pods-jKooliOSStreaming_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D37E36E2A58DAEA4BB08BDBE4E554F6D /* jKooliOSStreaming-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B46DA906D882E5C5A0A2290C166FB /* jKooliOSStreaming-dummy.m */; };
-		D68EC66158EF4D0BDC18F67215D7C772 /* jkTrackable.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FD45B813B1F9EFB4AB7B3E107A979 /* jkTrackable.m */; };
-		D73A9234035AD2C96F86FBF9B1EAA352 /* jKoolService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A25F027E42DE65C3EEA973D1F663295 /* jKoolService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5D0C9CE6425C1348EC3889CB1BF4CC1 /* jKoolQuerying.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ADB73F836ABBAF395E93B267DFB500 /* jKoolQuerying.m */; };
-		E7E7EA8BD34D0DB0A703E215BF4FED01 /* jkActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CFD34DFF81ACCA617357253627ED1D /* jkActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E887530CC40BB81CDDF24CC898C04814 /* jKoolApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = E12ECCCC4C9D9C00702DEC841CD7DC59 /* jKoolApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA6F0A616F898702FB30942419DA7522 /* jKoolCallbackHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CCD3FD07C2C93442B52E8FE12741084 /* jKoolCallbackHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFAB4A489FCFD00082278E2F4401A6A2 /* jkSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = C5155B1637ECC54D1E865631EC3AC880 /* jkSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9724F59D824975F2435AF5B5499D573 /* jkTrackable.h in Headers */ = {isa = PBXBuildFile; fileRef = C41B4BC311C86C6CA496BB05D3C66F94 /* jkTrackable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB70353100569B681AEF55DFFB5C0A55 /* jkConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8C9268CBB0AE15B72C99DC0C9110F1 /* jkConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD51C6A72F81FB0BF640F8DB7C3DDAE7 /* jKoolService.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B733A7D8D0F61EAFA87080A57496CC /* jKoolService.m */; };
+		8ED458F893A59520C49B183139E7973A /* jKooliOSStreaming-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B46DA906D882E5C5A0A2290C166FB /* jKooliOSStreaming-dummy.m */; };
+		94232698848C87E1F71947300CC3279C /* jkProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97F171E262B0C637487512B6562BC3 /* jkProperty.m */; };
+		A2F83C122EB85A6808C003A984C407D1 /* jkTrackable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C31292A08D38BA4D3C44BE90607391D /* jkTrackable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0CFA0263662DBA0D8A40A0CE67254D7 /* jkProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B5C0CBD737926BDDE5854E7161FB09F /* jkProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B103C021C55903DB1785883CDBA85969 /* Pods-jKooliOSStreaming_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B3CB88A411C090E3806F81C3727DCE1 /* Pods-jKooliOSStreaming_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B109A91DE8428BCECC7104FEF3D9D260 /* jkActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = E5632AEB853992D2FE0FBED14363B1AC /* jkActivity.m */; };
+		C03A5B25BAA2EA8B42F5B12BFF9E058F /* jKoolService.h in Headers */ = {isa = PBXBuildFile; fileRef = DA60E60C43334593CC65B86325D988FF /* jKoolService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C15AC14BB9902CF34311F6D5883A806F /* jkSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 916987C19834AA41B0FC20B70787C502 /* jkSnapshot.m */; };
+		D57B9512F7D886CDFF863FCA2DE88414 /* jKoolCallbackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AAFB6BDF40AF74805215AD8FDEE7EC /* jKoolCallbackHandler.m */; };
+		E0EDE638E3EF6F050007E7BD41CFBCD6 /* jkTrackable.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BAAF531A501A5E23106A2C44FF1136 /* jkTrackable.m */; };
+		E4BF3E3933D00EBB99839F327CAEABF1 /* jKooliOSStreaming-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 405DB5806310495C3551FF3097A8B602 /* jKooliOSStreaming-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE71F78623C5753D9AD14085451401A7 /* jKoolCallbackHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 082D92B56B01F5404DAF28FF9928C7D3 /* jKoolCallbackHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F364780DE3757619E3C991CD3CABDFE3 /* jKoolApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B5C5ADF83ED477CAE9437E9000D00C /* jKoolApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F619A40A308D2FDD987434E213471C70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */; };
+		F7157292A05C3475443D26A4E539FDC5 /* jKoolAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D63DF3B487BC12BF831B14B074D8C3 /* jKoolAppDelegate.m */; };
+		FA671CF514B8D907094FC541AF87E1E6 /* jKoolWebsocketClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 486C21E7638C82618545C62A4953A3BA /* jKoolWebsocketClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC2A674E834DAC72AF3E02389C616F28 /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AC36E253722F97FA330841C45B5EC8 /* JsonParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BBA9D3F4D3F353F7CE529D83F0C751F6 /* PBXContainerItemProxy */ = {
+		4F3FCE296F687D82501DE82607081789 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BE45C9CDEC69D3D6B6D6491A525C547F;
+			remoteGlobalIDString = 9B79E8955E5671DCA0B8D274D7514C5A;
+			remoteInfo = SocketRocket;
+		};
+		64DAAC77E1A3A2FA0E4FA58863A82966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43A203B386525440DE0DF0D8C052B25A;
 			remoteInfo = jKooliOSStreaming;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00933AAF849FC320B73D5F2EE7E067E4 /* Pods-jKooliOSStreaming_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-jKooliOSStreaming_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		09A84694F30901B546986B6E3776DCE9 /* jkSnapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkSnapshot.m; sourceTree = "<group>"; };
-		181FD45B813B1F9EFB4AB7B3E107A979 /* jkTrackable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkTrackable.m; sourceTree = "<group>"; };
-		185C3F69BE7311A215D6C105A5829DA3 /* jKoolStreamDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolStreamDeviceInfo.m; sourceTree = "<group>"; };
-		1AB838775929F3DF8D10AA185DE88B79 /* jKooliOSStreaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = jKooliOSStreaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FB6489020AE80A8933EB96051670D93 /* jkProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkProperty.h; sourceTree = "<group>"; };
-		2A83CD6F0EAF4A3A075C6428BBF2D3C9 /* Pods_jKooliOSStreaming_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jKooliOSStreaming_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F9A13A45229435B4B4BED4D5A693FF /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		073EA73682642B7C15F748A1B83992E5 /* jkActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkActivity.h; sourceTree = "<group>"; };
+		082D92B56B01F5404DAF28FF9928C7D3 /* jKoolCallbackHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolCallbackHandler.h; sourceTree = "<group>"; };
+		0898C057D730CBD238D8673C57F96246 /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		0B5C0CBD737926BDDE5854E7161FB09F /* jkProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkProperty.h; sourceTree = "<group>"; };
+		10387AF473D33FBE017AF5E9E3FB182A /* jkConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkConstants.m; sourceTree = "<group>"; };
 		2B26F1E1EA6349F45BD39B94D5DB9DE7 /* Pods-jKooliOSStreaming_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-jKooliOSStreaming_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2C57A1049A2DF40AC3354FCD1A69D576 /* Pods-jKooliOSStreaming_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-jKooliOSStreaming_Example-dummy.m"; sourceTree = "<group>"; };
 		2F8FB7E6697105CD9FC06E4F7C54B988 /* jKooliOSStreaming-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "jKooliOSStreaming-prefix.pch"; sourceTree = "<group>"; };
 		30B23D4CDF4FD629D86F07EA35583C2B /* Pods-jKooliOSStreaming_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-jKooliOSStreaming_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		32D0E23ABC1AF7DAD4ACF6640B9C9BCD /* Pods_jKooliOSStreaming_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jKooliOSStreaming_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E9850CAF51231F87401C9D5963EE39 /* SocketRocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SocketRocket.h; path = SocketRocket/SocketRocket.h; sourceTree = "<group>"; };
 		3B3CB88A411C090E3806F81C3727DCE1 /* Pods-jKooliOSStreaming_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-jKooliOSStreaming_Example-umbrella.h"; sourceTree = "<group>"; };
+		40280EA2FF55D8E09ECB06A19FD2F046 /* jkConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkConstants.h; sourceTree = "<group>"; };
 		405DB5806310495C3551FF3097A8B602 /* jKooliOSStreaming-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "jKooliOSStreaming-umbrella.h"; sourceTree = "<group>"; };
+		42C26F9843CE43F96D3C1421E7531F29 /* Pods_jKooliOSStreaming_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jKooliOSStreaming_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F0CC0123F0D3D9DEBF15F0EE0824F6 /* Pods-jKooliOSStreaming_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jKooliOSStreaming_Example.release.xcconfig"; sourceTree = "<group>"; };
-		44A6549414641B98CE0F52E22FECD405 /* jKoolApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolApplication.m; sourceTree = "<group>"; };
 		46A06F6C6D9226CE9681C375728F201F /* Pods-jKooliOSStreaming_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jKooliOSStreaming_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4A25F027E42DE65C3EEA973D1F663295 /* jKoolService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolService.h; sourceTree = "<group>"; };
-		4A42EBDC1D8055C10076FD64 /* WebsocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebsocketClient.h; sourceTree = "<group>"; };
-		4A42EBDD1D8055C10076FD64 /* WebsocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebsocketClient.m; sourceTree = "<group>"; };
-		4A42EBE01D8087BC0076FD64 /* JsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonParser.h; sourceTree = "<group>"; };
-		4A42EBE11D8087D00076FD64 /* JsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonParser.m; sourceTree = "<group>"; };
+		486C21E7638C82618545C62A4953A3BA /* jKoolWebsocketClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolWebsocketClient.h; sourceTree = "<group>"; };
+		4B25B68109E2B8C5B35F0A73504F1705 /* SocketRocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SocketRocket.modulemap; sourceTree = "<group>"; };
 		4B8BF8AB721F976D609D91FE72976772 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C31292A08D38BA4D3C44BE90607391D /* jkTrackable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkTrackable.h; sourceTree = "<group>"; };
 		502B20D7221B8D18EBDCA92AA63FF5FC /* Pods-jKooliOSStreaming_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jKooliOSStreaming_Tests-resources.sh"; sourceTree = "<group>"; };
 		5133D09C446B1EEA9463164ED6FA07E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5135EC14FA83C331E94D40C19DAB0764 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		51D63DF3B487BC12BF831B14B074D8C3 /* jKoolAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolAppDelegate.m; sourceTree = "<group>"; };
+		538737BED43BD8F031C86732CC75CB81 /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
 		555B46DA906D882E5C5A0A2290C166FB /* jKooliOSStreaming-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "jKooliOSStreaming-dummy.m"; sourceTree = "<group>"; };
-		57461C52540F7CF0F3E14293FE3059AC /* jKoolStreamDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolStreamDeviceInfo.h; sourceTree = "<group>"; };
-		591AB0DD3F5A33DDC12021240BB66D93 /* jKoolStreaming.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolStreaming.m; sourceTree = "<group>"; };
-		6CCD3FD07C2C93442B52E8FE12741084 /* jKoolCallbackHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolCallbackHandler.h; sourceTree = "<group>"; };
-		712309345A8974CBC6304B97A45BA1B9 /* jkProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkProperty.m; sourceTree = "<group>"; };
+		568932C77A92B7E12844C647E356C6F3 /* jkEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkEvent.h; sourceTree = "<group>"; };
+		6006CA1202529404CCB0FA1975B10213 /* SocketRocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-umbrella.h"; sourceTree = "<group>"; };
+		6A446C75FF5F620CBB086E44598F8E65 /* jKoolStreaming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolStreaming.h; sourceTree = "<group>"; };
+		70669E72F0F36036DE72BD6EB3CAADD2 /* jKoolQuerying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolQuerying.h; sourceTree = "<group>"; };
+		7932176CAC4E66CD1DF6CF8B352798BC /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
 		7AEA23208E97E7BBA2BAB1E407252372 /* Pods-jKooliOSStreaming_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-jKooliOSStreaming_Tests.modulemap"; sourceTree = "<group>"; };
 		7BCD04B3451D42C2E5F8BC0E5D3861C4 /* Pods-jKooliOSStreaming_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-jKooliOSStreaming_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7CAF4AB1ECD042E4FED766B8370F6530 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		7F23F3CBE10E2C644E1EDAEF7825815A /* jKoolService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolService.m; sourceTree = "<group>"; };
 		837201728C24155DE3E8DE16EE91B8C0 /* Pods-jKooliOSStreaming_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jKooliOSStreaming_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8491178F13C99D4CF5DF6628C318DA7A /* jkActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkActivity.m; sourceTree = "<group>"; };
+		847D72AE9BBB9C7051C814354FE3CA23 /* jKoolQuerying.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolQuerying.m; sourceTree = "<group>"; };
 		853E8B9D4F2FD0AD5176D2D39AE356FD /* Pods-jKooliOSStreaming_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jKooliOSStreaming_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C0562C7C5AAF41CAC2B6EE1BCCD8DA4 /* jKoolQuerying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolQuerying.h; sourceTree = "<group>"; };
+		8605B4189C94A858210B04F92D38402C /* jKoolWebsocketClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolWebsocketClient.m; sourceTree = "<group>"; };
+		86477B786DAD8EE91CCBE71E6F66869B /* jKoolStreaming.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolStreaming.m; sourceTree = "<group>"; };
+		916987C19834AA41B0FC20B70787C502 /* jkSnapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkSnapshot.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94ADB73F836ABBAF395E93B267DFB500 /* jKoolQuerying.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolQuerying.m; sourceTree = "<group>"; };
-		96183802727AA1E1FBD31C984F0793EC /* jKoolStreaming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolStreaming.h; sourceTree = "<group>"; };
+		9A33F57D14BABB8E67F58C0FCF2D7CF8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FAFC896148BAC2B2B61C2F118AFF3FB /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
+		A5ACDCC39A4BB06862910155101F0FA9 /* jKoolStreamDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolStreamDeviceInfo.h; sourceTree = "<group>"; };
 		A9958055172DE74A4FADCD01E98DF46A /* Pods-jKooliOSStreaming_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-jKooliOSStreaming_Tests-dummy.m"; sourceTree = "<group>"; };
-		AA8C9268CBB0AE15B72C99DC0C9110F1 /* jkConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkConstants.h; sourceTree = "<group>"; };
 		AF7BBBC48B953172896859A812B50717 /* Pods-jKooliOSStreaming_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jKooliOSStreaming_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		B1AF5F979133A66A1821B9FD9308AE7E /* jKoolCallbackHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolCallbackHandler.m; sourceTree = "<group>"; };
+		B3AC36E253722F97FA330841C45B5EC8 /* JsonParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JsonParser.m; sourceTree = "<group>"; };
 		B5DBF6BF176EF47B3B6690E2CC967091 /* jKooliOSStreaming.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = jKooliOSStreaming.modulemap; sourceTree = "<group>"; };
+		B69411D5A91C0EB89F5CE995F6FB46E2 /* jKooliOSStreaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = jKooliOSStreaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB3601035563A8752BA63B4A957DA9F /* jKooliOSStreaming.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = jKooliOSStreaming.xcconfig; sourceTree = "<group>"; };
-		C41B4BC311C86C6CA496BB05D3C66F94 /* jkTrackable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkTrackable.h; sourceTree = "<group>"; };
-		C4F30CD13655E73CA5E88028A4FB91CD /* jKoolAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolAppDelegate.m; sourceTree = "<group>"; };
-		C4FE693CA3DF2FDBCE72D171AC984181 /* jkConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkConstants.m; sourceTree = "<group>"; };
-		C5155B1637ECC54D1E865631EC3AC880 /* jkSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkSnapshot.h; sourceTree = "<group>"; };
-		C9B733A7D8D0F61EAFA87080A57496CC /* jKoolService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolService.m; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D2CFD34DFF81ACCA617357253627ED1D /* jkActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkActivity.h; sourceTree = "<group>"; };
+		BD74F82EA2CCB617119AE5011205E40C /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		C9DDB8F601A1E8A62F1DBF2FC9ACF9EB /* jKoolAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolAppDelegate.h; sourceTree = "<group>"; };
+		CC59DD60A8598DF9C9E8ABE5ACC43239 /* jkSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkSnapshot.h; sourceTree = "<group>"; };
+		D0B5C5ADF83ED477CAE9437E9000D00C /* jKoolApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolApplication.h; sourceTree = "<group>"; };
 		D462C96C82969EEA7CE1CBF15C943548 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5AD5699A6EEF121CE4B7B113121881 /* jkEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkEvent.m; sourceTree = "<group>"; };
+		DA60E60C43334593CC65B86325D988FF /* jKoolService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolService.h; sourceTree = "<group>"; };
 		DBA20CBEC2DDD1570153B6AE1FFDE161 /* Pods-jKooliOSStreaming_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-jKooliOSStreaming_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DD957DED566DFD56BAAAE50BD2DCFEA1 /* jKoolAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolAppDelegate.h; sourceTree = "<group>"; };
+		DE97F171E262B0C637487512B6562BC3 /* jkProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkProperty.m; sourceTree = "<group>"; };
+		DF7DEC274DD3E9C3F16F99039F01AFAC /* jKoolApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolApplication.m; sourceTree = "<group>"; };
 		E087F6A3ED0AC49F68BE66684C0595E0 /* Pods-jKooliOSStreaming_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-jKooliOSStreaming_Example.modulemap"; sourceTree = "<group>"; };
-		E12ECCCC4C9D9C00702DEC841CD7DC59 /* jKoolApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jKoolApplication.h; sourceTree = "<group>"; };
+		E2ADB698B22564BC9D4B87B506FEE6F7 /* jKoolStreamDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolStreamDeviceInfo.m; sourceTree = "<group>"; };
 		E3D882F9884C1B9B0E98C7D47BE50B51 /* Pods-jKooliOSStreaming_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jKooliOSStreaming_Example-resources.sh"; sourceTree = "<group>"; };
-		E5B3C9AC32D3CC55F9284D9EE20AC779 /* jkEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkEvent.m; sourceTree = "<group>"; };
-		F7B67296401BB13FDBE17FFCB27C8F52 /* jkEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = jkEvent.h; sourceTree = "<group>"; };
+		E5632AEB853992D2FE0FBED14363B1AC /* jkActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkActivity.m; sourceTree = "<group>"; };
+		E7AAFB6BDF40AF74805215AD8FDEE7EC /* jKoolCallbackHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jKoolCallbackHandler.m; sourceTree = "<group>"; };
+		EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F0BAAF531A501A5E23106A2C44FF1136 /* jkTrackable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = jkTrackable.m; sourceTree = "<group>"; };
 		F819F1DDBF692D473E490CD351205013 /* Pods-jKooliOSStreaming_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jKooliOSStreaming_Example-frameworks.sh"; sourceTree = "<group>"; };
-		FC90BA1DA5A2D54A769739D30B7DC652 /* Pods_jKooliOSStreaming_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jKooliOSStreaming_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1A17BFE01DF4F7FCC644000927B8DF /* JsonParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JsonParser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A1E924AE5FD5578F76D715615816B3F /* Frameworks */ = {
+		1F9C468F8A03739E74992EDC0ADA41BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147A0A414DF3E85F69FA28AF7699128C /* Foundation.framework in Frameworks */,
+				37B197A4DEF533714380C40535795C1C /* CFNetwork.framework in Frameworks */,
+				439321A76835305D79B46C4820B75118 /* Foundation.framework in Frameworks */,
+				0B85D796C48D5D84E4AF636D8DD4AB64 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4104895037A5ABDB1C57FE5F474FFFD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F619A40A308D2FDD987434E213471C70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47E559E0F9B5E3E3F59A17DFB4469E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29D984668B0E809C46AC8886A835FE6D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,14 +181,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C5D51D38ADADFF9DEF39BBEE71DCF1F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8CA777D0BD76F67AADE99D90AEF41B74 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				244BEC629C63112D4CEFCCCFAC86B58E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,33 +197,87 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		1178F420F04662BB9B205EF659BBA2AB /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				5135EC14FA83C331E94D40C19DAB0764 /* CFNetwork.framework */,
+				EABC45C2732A4ED943A7E8ECF24F14F7 /* Foundation.framework */,
+				7CAF4AB1ECD042E4FED766B8370F6530 /* Security.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		615826F3F26A4A249C0D39D43C10458B /* service */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A42EBDC1D8055C10076FD64 /* WebsocketClient.h */,
-				4A42EBDD1D8055C10076FD64 /* WebsocketClient.m */,
-				6CCD3FD07C2C93442B52E8FE12741084 /* jKoolCallbackHandler.h */,
-				B1AF5F979133A66A1821B9FD9308AE7E /* jKoolCallbackHandler.m */,
-				8C0562C7C5AAF41CAC2B6EE1BCCD8DA4 /* jKoolQuerying.h */,
-				94ADB73F836ABBAF395E93B267DFB500 /* jKoolQuerying.m */,
-				4A25F027E42DE65C3EEA973D1F663295 /* jKoolService.h */,
-				C9B733A7D8D0F61EAFA87080A57496CC /* jKoolService.m */,
-				57461C52540F7CF0F3E14293FE3059AC /* jKoolStreamDeviceInfo.h */,
-				185C3F69BE7311A215D6C105A5829DA3 /* jKoolStreamDeviceInfo.m */,
-				96183802727AA1E1FBD31C984F0793EC /* jKoolStreaming.h */,
-				591AB0DD3F5A33DDC12021240BB66D93 /* jKoolStreaming.m */,
-				4A42EBE01D8087BC0076FD64 /* JsonParser.h */,
-				4A42EBE11D8087D00076FD64 /* JsonParser.m */,
+				1178F420F04662BB9B205EF659BBA2AB /* iOS */,
 			);
-			path = service;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BC5BB9131A0352DC7A56885F70B9B25 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDB8F601A1E8A62F1DBF2FC9ACF9EB /* jKoolAppDelegate.h */,
+				51D63DF3B487BC12BF831B14B074D8C3 /* jKoolAppDelegate.m */,
+				D0B5C5ADF83ED477CAE9437E9000D00C /* jKoolApplication.h */,
+				DF7DEC274DD3E9C3F16F99039F01AFAC /* jKoolApplication.m */,
+				4AD2605C2888D5E3DE5B7511EFF8BE6D /* model */,
+				E09C796FE92083C1B48EC64A8DFA5F07 /* service */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		48F8056B745205E1043044816A516DC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B69411D5A91C0EB89F5CE995F6FB46E2 /* jKooliOSStreaming.framework */,
+				32D0E23ABC1AF7DAD4ACF6640B9C9BCD /* Pods_jKooliOSStreaming_Example.framework */,
+				42C26F9843CE43F96D3C1421E7531F29 /* Pods_jKooliOSStreaming_Tests.framework */,
+				01F9A13A45229435B4B4BED4D5A693FF /* SocketRocket.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AD2605C2888D5E3DE5B7511EFF8BE6D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				073EA73682642B7C15F748A1B83992E5 /* jkActivity.h */,
+				E5632AEB853992D2FE0FBED14363B1AC /* jkActivity.m */,
+				40280EA2FF55D8E09ECB06A19FD2F046 /* jkConstants.h */,
+				10387AF473D33FBE017AF5E9E3FB182A /* jkConstants.m */,
+				568932C77A92B7E12844C647E356C6F3 /* jkEvent.h */,
+				DA5AD5699A6EEF121CE4B7B113121881 /* jkEvent.m */,
+				0B5C0CBD737926BDDE5854E7161FB09F /* jkProperty.h */,
+				DE97F171E262B0C637487512B6562BC3 /* jkProperty.m */,
+				CC59DD60A8598DF9C9E8ABE5ACC43239 /* jkSnapshot.h */,
+				916987C19834AA41B0FC20B70787C502 /* jkSnapshot.m */,
+				4C31292A08D38BA4D3C44BE90607391D /* jkTrackable.h */,
+				F0BAAF531A501A5E23106A2C44FF1136 /* jkTrackable.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4FF663BB937700D1580BDAB7F3EF0D97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DC3187DB7279173E5C52E8BE8D2FEB1 /* SocketRocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58568D630B39E76CA642F3332E1A45D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A33F57D14BABB8E67F58C0FCF2D7CF8 /* Info.plist */,
+				4B25B68109E2B8C5B35F0A73504F1705 /* SocketRocket.modulemap */,
+				9FAFC896148BAC2B2B61C2F118AFF3FB /* SocketRocket.xcconfig */,
+				7932176CAC4E66CD1DF6CF8B352798BC /* SocketRocket-dummy.m */,
+				538737BED43BD8F031C86732CC75CB81 /* SocketRocket-prefix.pch */,
+				6006CA1202529404CCB0FA1975B10213 /* SocketRocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SocketRocket";
 			sourceTree = "<group>";
 		};
 		6BED15EFD27F575450251B6BFCB6BAC2 /* Development Pods */ = {
@@ -214,46 +306,27 @@
 			path = "Target Support Files/Pods-jKooliOSStreaming_Example";
 			sourceTree = "<group>";
 		};
-		712BB0463CB3EEED161B5BD73D902A0C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1AB838775929F3DF8D10AA185DE88B79 /* jKooliOSStreaming.framework */,
-				2A83CD6F0EAF4A3A075C6428BBF2D3C9 /* Pods_jKooliOSStreaming_Example.framework */,
-				FC90BA1DA5A2D54A769739D30B7DC652 /* Pods_jKooliOSStreaming_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				6BED15EFD27F575450251B6BFCB6BAC2 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				712BB0463CB3EEED161B5BD73D902A0C /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				4FF663BB937700D1580BDAB7F3EF0D97 /* Pods */,
+				48F8056B745205E1043044816A516DC3 /* Products */,
 				E62542FE456D83E1D5CFD760549B0E22 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		8DC3187DB7279173E5C52E8BE8D2FEB1 /* SocketRocket */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				37E9850CAF51231F87401C9D5963EE39 /* SocketRocket.h */,
+				BD74F82EA2CCB617119AE5011205E40C /* SRWebSocket.h */,
+				0898C057D730CBD238D8673C57F96246 /* SRWebSocket.m */,
+				58568D630B39E76CA642F3332E1A45D5 /* Support Files */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D47A21F969C0E5BE90E887A593357105 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				DD957DED566DFD56BAAAE50BD2DCFEA1 /* jKoolAppDelegate.h */,
-				C4F30CD13655E73CA5E88028A4FB91CD /* jKoolAppDelegate.m */,
-				E12ECCCC4C9D9C00702DEC841CD7DC59 /* jKoolApplication.h */,
-				44A6549414641B98CE0F52E22FECD405 /* jKoolApplication.m */,
-				EC859D8F6B7DACD6A24871BB28D05313 /* model */,
-				615826F3F26A4A249C0D39D43C10458B /* service */,
-			);
-			path = Classes;
+			path = SocketRocket;
 			sourceTree = "<group>";
 		};
 		DC6E2BDBFBB539D178886AB54FCA5143 /* Pods-jKooliOSStreaming_Tests */ = {
@@ -274,10 +347,31 @@
 			path = "Target Support Files/Pods-jKooliOSStreaming_Tests";
 			sourceTree = "<group>";
 		};
+		E09C796FE92083C1B48EC64A8DFA5F07 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				082D92B56B01F5404DAF28FF9928C7D3 /* jKoolCallbackHandler.h */,
+				E7AAFB6BDF40AF74805215AD8FDEE7EC /* jKoolCallbackHandler.m */,
+				70669E72F0F36036DE72BD6EB3CAADD2 /* jKoolQuerying.h */,
+				847D72AE9BBB9C7051C814354FE3CA23 /* jKoolQuerying.m */,
+				DA60E60C43334593CC65B86325D988FF /* jKoolService.h */,
+				7F23F3CBE10E2C644E1EDAEF7825815A /* jKoolService.m */,
+				A5ACDCC39A4BB06862910155101F0FA9 /* jKoolStreamDeviceInfo.h */,
+				E2ADB698B22564BC9D4B87B506FEE6F7 /* jKoolStreamDeviceInfo.m */,
+				6A446C75FF5F620CBB086E44598F8E65 /* jKoolStreaming.h */,
+				86477B786DAD8EE91CCBE71E6F66869B /* jKoolStreaming.m */,
+				486C21E7638C82618545C62A4953A3BA /* jKoolWebsocketClient.h */,
+				8605B4189C94A858210B04F92D38402C /* jKoolWebsocketClient.m */,
+				FD1A17BFE01DF4F7FCC644000927B8DF /* JsonParser.h */,
+				B3AC36E253722F97FA330841C45B5EC8 /* JsonParser.m */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		E613716B4784653674BD1F4703364E99 /* jKooliOSStreaming */ = {
 			isa = PBXGroup;
 			children = (
-				D47A21F969C0E5BE90E887A593357105 /* Classes */,
+				2BC5BB9131A0352DC7A56885F70B9B25 /* Classes */,
 			);
 			path = jKooliOSStreaming;
 			sourceTree = "<group>";
@@ -289,25 +383,6 @@
 				DC6E2BDBFBB539D178886AB54FCA5143 /* Pods-jKooliOSStreaming_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		EC859D8F6B7DACD6A24871BB28D05313 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				D2CFD34DFF81ACCA617357253627ED1D /* jkActivity.h */,
-				8491178F13C99D4CF5DF6628C318DA7A /* jkActivity.m */,
-				AA8C9268CBB0AE15B72C99DC0C9110F1 /* jkConstants.h */,
-				C4FE693CA3DF2FDBCE72D171AC984181 /* jkConstants.m */,
-				F7B67296401BB13FDBE17FFCB27C8F52 /* jkEvent.h */,
-				E5B3C9AC32D3CC55F9284D9EE20AC779 /* jkEvent.m */,
-				1FB6489020AE80A8933EB96051670D93 /* jkProperty.h */,
-				712309345A8974CBC6304B97A45BA1B9 /* jkProperty.m */,
-				C5155B1637ECC54D1E865631EC3AC880 /* jkSnapshot.h */,
-				09A84694F30901B546986B6E3776DCE9 /* jkSnapshot.m */,
-				C41B4BC311C86C6CA496BB05D3C66F94 /* jkTrackable.h */,
-				181FD45B813B1F9EFB4AB7B3E107A979 /* jkTrackable.m */,
-			);
-			path = model;
 			sourceTree = "<group>";
 		};
 		F2F51C8860BE13CDE6A9735992C6D8EF /* Support Files */ = {
@@ -327,11 +402,44 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BDF2C3AA56F254EF7FE1124C22554C0F /* Headers */ = {
+		1153D5FE79C299BE4AE69B5244146593 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B191C91A9B74498BDCEB17B8E1D01A9A /* Pods-jKooliOSStreaming_Example-umbrella.h in Headers */,
+				79963108DD0BAED5FE21587F3D125DE7 /* jkActivity.h in Headers */,
+				74A156DD154F14C54BC7916052150F3F /* jkConstants.h in Headers */,
+				61B074A9A872D2B266C1B984C1EF54E3 /* jkEvent.h in Headers */,
+				1EFE525599ECFADB956E314C7B499D2D /* jKoolAppDelegate.h in Headers */,
+				F364780DE3757619E3C991CD3CABDFE3 /* jKoolApplication.h in Headers */,
+				EE71F78623C5753D9AD14085451401A7 /* jKoolCallbackHandler.h in Headers */,
+				E4BF3E3933D00EBB99839F327CAEABF1 /* jKooliOSStreaming-umbrella.h in Headers */,
+				59A042D0EEA9C34D798642DFBE8A5DEA /* jKoolQuerying.h in Headers */,
+				C03A5B25BAA2EA8B42F5B12BFF9E058F /* jKoolService.h in Headers */,
+				2B7640C250E9BDFD932A77F58E63D501 /* jKoolStreamDeviceInfo.h in Headers */,
+				7BC9A31D254DB1130C5D79275C872C15 /* jKoolStreaming.h in Headers */,
+				FA671CF514B8D907094FC541AF87E1E6 /* jKoolWebsocketClient.h in Headers */,
+				B0CFA0263662DBA0D8A40A0CE67254D7 /* jkProperty.h in Headers */,
+				012597AABC16F16C29CEAD6F696170D7 /* jkSnapshot.h in Headers */,
+				A2F83C122EB85A6808C003A984C407D1 /* jkTrackable.h in Headers */,
+				0EB58D27CA3B3588933740DD38370D9F /* JsonParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CA784E3CF840D53F399D3FAAAD09BC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B103C021C55903DB1785883CDBA85969 /* Pods-jKooliOSStreaming_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD3B803EE592F987ECF0D104C7F3817 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F57EA161E8E6C710198B25E5A1D6DAB /* SocketRocket-umbrella.h in Headers */,
+				4FF2946D6452945449FE78FF91C7AD8C /* SocketRocket.h in Headers */,
+				349CEC76E9553753C3762AA8D601610C /* SRWebSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,49 +451,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDA23D22354630B93B1F6B11737CD053 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7E7EA8BD34D0DB0A703E215BF4FED01 /* jkActivity.h in Headers */,
-				4A42EBDE1D8055C10076FD64 /* WebsocketClient.h in Headers */,
-				FB70353100569B681AEF55DFFB5C0A55 /* jkConstants.h in Headers */,
-				3ACE20395B46D56F49146FC6F3E0A587 /* jkEvent.h in Headers */,
-				908651CA257DF071DE3E476DC3D8FC66 /* jKoolAppDelegate.h in Headers */,
-				E887530CC40BB81CDDF24CC898C04814 /* jKoolApplication.h in Headers */,
-				EA6F0A616F898702FB30942419DA7522 /* jKoolCallbackHandler.h in Headers */,
-				6F6E0C2E148A95DDDD81BC1D0CC49518 /* jKooliOSStreaming-umbrella.h in Headers */,
-				20D27A52AAB76F7B283D74701FC793B5 /* jKoolQuerying.h in Headers */,
-				D73A9234035AD2C96F86FBF9B1EAA352 /* jKoolService.h in Headers */,
-				720F1AB421A30F97B336BD3C296D3116 /* jKoolStreamDeviceInfo.h in Headers */,
-				3E48C42BD3411AE90C2DA8CDFB7DAE67 /* jKoolStreaming.h in Headers */,
-				417DDEC9727695FBF2206055238CA503 /* jkProperty.h in Headers */,
-				EFAB4A489FCFD00082278E2F4401A6A2 /* jkSnapshot.h in Headers */,
-				F9724F59D824975F2435AF5B5499D573 /* jkTrackable.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2C8E47583A5EBE89169557245B2C1ED5 /* Pods-jKooliOSStreaming_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 27626DCF8E51919DF7E3452ED84EAE16 /* Build configuration list for PBXNativeTarget "Pods-jKooliOSStreaming_Example" */;
-			buildPhases = (
-				74FAA6B82CD1F41AFAB49060589E68D6 /* Sources */,
-				8CA777D0BD76F67AADE99D90AEF41B74 /* Frameworks */,
-				BDF2C3AA56F254EF7FE1124C22554C0F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2013D909EF91BCC7965C6163222035AE /* PBXTargetDependency */,
-			);
-			name = "Pods-jKooliOSStreaming_Example";
-			productName = "Pods-jKooliOSStreaming_Example";
-			productReference = 2A83CD6F0EAF4A3A075C6428BBF2D3C9 /* Pods_jKooliOSStreaming_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		2E37CD0258A289911B3D9A178373DCF8 /* Pods-jKooliOSStreaming_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F2A7394E87B6FC0A04E81D9C883D053 /* Build configuration list for PBXNativeTarget "Pods-jKooliOSStreaming_Tests" */;
@@ -400,16 +468,16 @@
 			);
 			name = "Pods-jKooliOSStreaming_Tests";
 			productName = "Pods-jKooliOSStreaming_Tests";
-			productReference = FC90BA1DA5A2D54A769739D30B7DC652 /* Pods_jKooliOSStreaming_Tests.framework */;
+			productReference = 42C26F9843CE43F96D3C1421E7531F29 /* Pods_jKooliOSStreaming_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BE45C9CDEC69D3D6B6D6491A525C547F /* jKooliOSStreaming */ = {
+		43A203B386525440DE0DF0D8C052B25A /* jKooliOSStreaming */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB3568BD7E2D732FC758728FFD78D5EE /* Build configuration list for PBXNativeTarget "jKooliOSStreaming" */;
+			buildConfigurationList = 42EC757BE7570E5C174EE939C3CAC5BA /* Build configuration list for PBXNativeTarget "jKooliOSStreaming" */;
 			buildPhases = (
-				775CBA282A3F160B8A71838DE290D744 /* Sources */,
-				0A1E924AE5FD5578F76D715615816B3F /* Frameworks */,
-				EDA23D22354630B93B1F6B11737CD053 /* Headers */,
+				5D09EAF8F9FE3102CCD055B7DC963ED9 /* Sources */,
+				47E559E0F9B5E3E3F59A17DFB4469E1C /* Frameworks */,
+				1153D5FE79C299BE4AE69B5244146593 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -417,7 +485,43 @@
 			);
 			name = jKooliOSStreaming;
 			productName = jKooliOSStreaming;
-			productReference = 1AB838775929F3DF8D10AA185DE88B79 /* jKooliOSStreaming.framework */;
+			productReference = B69411D5A91C0EB89F5CE995F6FB46E2 /* jKooliOSStreaming.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B79E8955E5671DCA0B8D274D7514C5A /* SocketRocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E07DCAA41EBEE82D1DFB065A666E9296 /* Build configuration list for PBXNativeTarget "SocketRocket" */;
+			buildPhases = (
+				47A8DE45FF8A6A85047D673C1938B039 /* Sources */,
+				1F9C468F8A03739E74992EDC0ADA41BD /* Frameworks */,
+				2FD3B803EE592F987ECF0D104C7F3817 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketRocket;
+			productName = SocketRocket;
+			productReference = 01F9A13A45229435B4B4BED4D5A693FF /* SocketRocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF9DBE85871106506731CF3FF964AA81 /* Pods-jKooliOSStreaming_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90CF3CA146BA6749F9C9FB4470D6DAE4 /* Build configuration list for PBXNativeTarget "Pods-jKooliOSStreaming_Example" */;
+			buildPhases = (
+				4672A0A167F22D92FD1BE75041CBB26F /* Sources */,
+				4104895037A5ABDB1C57FE5F474FFFD4 /* Frameworks */,
+				2CA784E3CF840D53F399D3FAAAD09BC8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E331E23F4119A3466BFA121C12304A2 /* PBXTargetDependency */,
+				28B532EB99FAA231EC5A8DE0209E75A4 /* PBXTargetDependency */,
+			);
+			name = "Pods-jKooliOSStreaming_Example";
+			productName = "Pods-jKooliOSStreaming_Example";
+			productReference = 32D0E23ABC1AF7DAD4ACF6640B9C9BCD /* Pods_jKooliOSStreaming_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -437,46 +541,56 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 712BB0463CB3EEED161B5BD73D902A0C /* Products */;
+			productRefGroup = 48F8056B745205E1043044816A516DC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE45C9CDEC69D3D6B6D6491A525C547F /* jKooliOSStreaming */,
-				2C8E47583A5EBE89169557245B2C1ED5 /* Pods-jKooliOSStreaming_Example */,
+				43A203B386525440DE0DF0D8C052B25A /* jKooliOSStreaming */,
+				EF9DBE85871106506731CF3FF964AA81 /* Pods-jKooliOSStreaming_Example */,
 				2E37CD0258A289911B3D9A178373DCF8 /* Pods-jKooliOSStreaming_Tests */,
+				9B79E8955E5671DCA0B8D274D7514C5A /* SocketRocket */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		74FAA6B82CD1F41AFAB49060589E68D6 /* Sources */ = {
+		4672A0A167F22D92FD1BE75041CBB26F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EAB08E1D4986EABD43FCE8B1CB27E71 /* Pods-jKooliOSStreaming_Example-dummy.m in Sources */,
+				46EBE79C526DD7EFE7AFB4500D4C63FE /* Pods-jKooliOSStreaming_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		775CBA282A3F160B8A71838DE290D744 /* Sources */ = {
+		47A8DE45FF8A6A85047D673C1938B039 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50C8A933B519D181199FD9F2CAEC3AD1 /* jkActivity.m in Sources */,
-				4A42EBDF1D8055C10076FD64 /* WebsocketClient.m in Sources */,
-				353FDC9404AF40C8DAE71B74DE65AA74 /* jkConstants.m in Sources */,
-				A54603F61BB9CF28E7E5071BB053D321 /* jkEvent.m in Sources */,
-				2B4F1ED7BC716FAD200A2A41ADF5539D /* jKoolAppDelegate.m in Sources */,
-				447EC32A707E9EBBC5396CEACCA0AD37 /* jKoolApplication.m in Sources */,
-				7E783ABCC8BEE12D6C96EE1C253A9C30 /* jKoolCallbackHandler.m in Sources */,
-				D37E36E2A58DAEA4BB08BDBE4E554F6D /* jKooliOSStreaming-dummy.m in Sources */,
-				E5D0C9CE6425C1348EC3889CB1BF4CC1 /* jKoolQuerying.m in Sources */,
-				FD51C6A72F81FB0BF640F8DB7C3DDAE7 /* jKoolService.m in Sources */,
-				87B859F6C3E8D1883BBAB012FFE98092 /* jKoolStreamDeviceInfo.m in Sources */,
-				9C98E073D315783E809A115A414153F3 /* jKoolStreaming.m in Sources */,
-				3CA9B5D82C5986458400022802319B4B /* jkProperty.m in Sources */,
-				B093C710CBEFFD84402AD5AB7AC3DEBC /* jkSnapshot.m in Sources */,
-				4A42EBE21D8087D00076FD64 /* JsonParser.m in Sources */,
-				D68EC66158EF4D0BDC18F67215D7C772 /* jkTrackable.m in Sources */,
+				311A12D1B7A9F71910A12ABB2FAB84DD /* SocketRocket-dummy.m in Sources */,
+				062A4F300D4B48E58033F1429C96E26C /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D09EAF8F9FE3102CCD055B7DC963ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B109A91DE8428BCECC7104FEF3D9D260 /* jkActivity.m in Sources */,
+				4263A6FDB6470EFFF1DD67776DA4D712 /* jkConstants.m in Sources */,
+				80734D8E5852C698C766B943206AA64C /* jkEvent.m in Sources */,
+				F7157292A05C3475443D26A4E539FDC5 /* jKoolAppDelegate.m in Sources */,
+				3E25F4D88C93E605D6833830A841951B /* jKoolApplication.m in Sources */,
+				D57B9512F7D886CDFF863FCA2DE88414 /* jKoolCallbackHandler.m in Sources */,
+				8ED458F893A59520C49B183139E7973A /* jKooliOSStreaming-dummy.m in Sources */,
+				5D19F10184DD5D9CF6FCD37B83CF1745 /* jKoolQuerying.m in Sources */,
+				0B38EC62FC0B78ECFB139B5FDDC11E6B /* jKoolService.m in Sources */,
+				56CE0690172F8FD17A322CF1BC9671A4 /* jKoolStreamDeviceInfo.m in Sources */,
+				629E7F7275101D5BFC05F563B686E23A /* jKoolStreaming.m in Sources */,
+				6D05C25DCF4EFE6171D91DBC467F2894 /* jKoolWebsocketClient.m in Sources */,
+				94232698848C87E1F71947300CC3279C /* jkProperty.m in Sources */,
+				C15AC14BB9902CF34311F6D5883A806F /* jkSnapshot.m in Sources */,
+				E0EDE638E3EF6F050007E7BD41CFBCD6 /* jkTrackable.m in Sources */,
+				FC2A674E834DAC72AF3E02389C616F28 /* JsonParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,11 +605,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2013D909EF91BCC7965C6163222035AE /* PBXTargetDependency */ = {
+		28B532EB99FAA231EC5A8DE0209E75A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = jKooliOSStreaming;
-			target = BE45C9CDEC69D3D6B6D6491A525C547F /* jKooliOSStreaming */;
-			targetProxy = BBA9D3F4D3F353F7CE529D83F0C751F6 /* PBXContainerItemProxy */;
+			target = 43A203B386525440DE0DF0D8C052B25A /* jKooliOSStreaming */;
+			targetProxy = 64DAAC77E1A3A2FA0E4FA58863A82966 /* PBXContainerItemProxy */;
+		};
+		4E331E23F4119A3466BFA121C12304A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 9B79E8955E5671DCA0B8D274D7514C5A /* SocketRocket */;
+			targetProxy = 4F3FCE296F687D82501DE82607081789 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -538,42 +658,9 @@
 			};
 			name = Release;
 		};
-		1125F067661A50A3918B8EAF9736522B /* Debug */ = {
+		292E161D728793838E654DAE0AC78E0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46A06F6C6D9226CE9681C375728F201F /* Pods-jKooliOSStreaming_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-jKooliOSStreaming_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-jKooliOSStreaming_Example/Pods-jKooliOSStreaming_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_jKooliOSStreaming_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		26706B45094DC03A1D81B142676AA119 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43F0CC0123F0D3D9DEBF15F0EE0824F6 /* Pods-jKooliOSStreaming_Example.release.xcconfig */;
+			baseConfigurationReference = BCB3601035563A8752BA63B4A957DA9F /* jKooliOSStreaming.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -584,18 +671,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-jKooliOSStreaming_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/jKooliOSStreaming/jKooliOSStreaming-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/jKooliOSStreaming/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-jKooliOSStreaming_Example/Pods-jKooliOSStreaming_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/jKooliOSStreaming/jKooliOSStreaming.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_jKooliOSStreaming_Example;
+				PRODUCT_NAME = jKooliOSStreaming;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -637,6 +720,35 @@
 			};
 			name = Debug;
 		};
+		7144FF7B697677083664312403E81A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FAFC896148BAC2B2B61C2F118AFF3FB /* SocketRocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		847CEF2FF8F6C324C8B0B60659BFE949 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 837201728C24155DE3E8DE16EE91B8C0 /* Pods-jKooliOSStreaming_Tests.release.xcconfig */;
@@ -670,7 +782,36 @@
 			};
 			name = Release;
 		};
-		8AA2F308A2934E0C7C3FCB1D1905D11C /* Debug */ = {
+		978F47F12CE4DB81CE9992E80A2A5619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FAFC896148BAC2B2B61C2F118AFF3FB /* SocketRocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SocketRocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SocketRocket/SocketRocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SocketRocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3117C1BAE3CFE9D5158F64A58CA075D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCB3601035563A8752BA63B4A957DA9F /* jKooliOSStreaming.xcconfig */;
 			buildSettings = {
@@ -698,35 +839,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		A09D28DFB0A32C967CB70239EAE5DABA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCB3601035563A8752BA63B4A957DA9F /* jKooliOSStreaming.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/jKooliOSStreaming/jKooliOSStreaming-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/jKooliOSStreaming/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/jKooliOSStreaming/jKooliOSStreaming.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = jKooliOSStreaming;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -770,18 +882,75 @@
 			};
 			name = Debug;
 		};
+		F10605ED74B69D7CDBA245DD07687A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43F0CC0123F0D3D9DEBF15F0EE0824F6 /* Pods-jKooliOSStreaming_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-jKooliOSStreaming_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-jKooliOSStreaming_Example/Pods-jKooliOSStreaming_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_jKooliOSStreaming_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB2E273C62EF05366409B9AC270D093D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46A06F6C6D9226CE9681C375728F201F /* Pods-jKooliOSStreaming_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-jKooliOSStreaming_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-jKooliOSStreaming_Example/Pods-jKooliOSStreaming_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_jKooliOSStreaming_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27626DCF8E51919DF7E3452ED84EAE16 /* Build configuration list for PBXNativeTarget "Pods-jKooliOSStreaming_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1125F067661A50A3918B8EAF9736522B /* Debug */,
-				26706B45094DC03A1D81B142676AA119 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -800,11 +969,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB3568BD7E2D732FC758728FFD78D5EE /* Build configuration list for PBXNativeTarget "jKooliOSStreaming" */ = {
+		42EC757BE7570E5C174EE939C3CAC5BA /* Build configuration list for PBXNativeTarget "jKooliOSStreaming" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8AA2F308A2934E0C7C3FCB1D1905D11C /* Debug */,
-				A09D28DFB0A32C967CB70239EAE5DABA /* Release */,
+				B3117C1BAE3CFE9D5158F64A58CA075D /* Debug */,
+				292E161D728793838E654DAE0AC78E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90CF3CA146BA6749F9C9FB4470D6DAE4 /* Build configuration list for PBXNativeTarget "Pods-jKooliOSStreaming_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2E273C62EF05366409B9AC270D093D /* Debug */,
+				F10605ED74B69D7CDBA245DD07687A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E07DCAA41EBEE82D1DFB065A666E9296 /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				978F47F12CE4DB81CE9992E80A2A5619 /* Debug */,
+				7144FF7B697677083664312403E81A2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
