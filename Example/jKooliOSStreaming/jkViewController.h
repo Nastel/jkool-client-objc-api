@@ -18,9 +18,9 @@
  */
 
 @import UIKit;
-#import <SocketRocket/SRWebSocket.h>
+#include "jKoolWebsocketClient.h"
 
-@interface jkViewController : UIViewController
+@interface jkViewController : UIViewController 
 {
     IBOutlet UITextView *queryText;
 }
