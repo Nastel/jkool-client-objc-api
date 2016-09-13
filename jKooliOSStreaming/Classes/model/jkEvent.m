@@ -84,6 +84,20 @@
     _msgSize = msgSize;
 }
 
+
+// Msg Tag
+- (NSString *)msgTag {
+    if (!_msgTag) {
+        _msgTag = [[UIDevice currentDevice] name];
+    }
+    
+    return _msgTag;
+}
+
+- (void)setMsgTag:(NSString *)msgTag {
+    _msgTag = msgTag;
+}
+
 - (id)init {
     self = [super init];
     [self setType: JK_TYPE_EVENT];    

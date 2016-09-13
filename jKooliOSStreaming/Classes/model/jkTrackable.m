@@ -91,6 +91,20 @@
     _server = server;
 }
 
+// Tid
+- (long)tid {
+    if (!_tid) {
+        mach_port_t machTID = pthread_mach_thread_np(pthread_self());
+        _tid = machTID;
+    }
+    
+    return _tid;
+}
+
+- (void)setTid:(long)tid {
+    _tid = tid;
+}
+
 // Network Address
 - (NSString *)netAddr {
     if (!_netAddr) {

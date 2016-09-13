@@ -83,9 +83,6 @@ static jkLocation *location;
     [event setMsgText:@"hello world"] ;
     [event setReasonCode:9];
     [event setException:@"my exception"];
-    [event setPid:123.0];
-    [event setTid:456.0];
-    [event setMsgTag:@"hello tag"];
     [event setUser:@"Cathy"];
     
     [event setGeoAddr:[location getCoordinates]];
@@ -117,8 +114,6 @@ static jkLocation *location;
     [activity setJkStatus:JK_END];
     [activity setReasonCode:9];
     [activity setException:@"my exception"];
-    [activity setPid:123.0];
-    [activity setTid:456.0];
     [activity setUser:@"Cathy"];
     [activity setGeoAddr:[location getCoordinates]];
     [activity setResource:@"my resource"];
