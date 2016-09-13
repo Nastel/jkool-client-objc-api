@@ -117,6 +117,7 @@
     _appl = appl;
 }
 
+
 // Geo
 - (NSString *)geoAddr {
     if (!_geoAddr) {
@@ -256,16 +257,6 @@
     self = [super init];
     NSUUID *theUUID = [NSUUID UUID];
     _trackingId = [theUUID UUIDString];
-    
-    // Location
-    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-    if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-        [locationManager requestWhenInUseAuthorization];
-    }
-    locationManager.delegate = self;
-    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    [locationManager startUpdatingLocation];
-    
     return self;
 }
 
@@ -418,18 +409,6 @@
     return values;
 }
 
-
-- (void)locationManager:(CLLocationManager *)manager
-     didUpdateLocations:(NSArray *)locations {
-    {
-        detectedLocation = [locations lastObject];
-    }}
-
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{
-    NSLog(@"didFailWithError: %@", error);
-    
-}
 
 
 @end

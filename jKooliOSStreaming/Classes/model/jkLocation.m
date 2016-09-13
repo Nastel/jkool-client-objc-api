@@ -23,11 +23,12 @@
 @implementation jkLocation
 
 @synthesize detectedLocation = _detectedLocation;
+CLLocationManager *locationManager;
 
 
 - (void) kickOffLocationing {
 
-    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    locationManager = [[CLLocationManager alloc] init];
     if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [locationManager requestWhenInUseAuthorization];
     }
@@ -40,6 +41,9 @@
      didUpdateLocations:(NSArray *)locations {
     {
         _detectedLocation = [locations lastObject];
+        NSLog([NSString stringWithFormat:@"%f,f",_detectedLocation.coordinate.latitude, _detectedLocation.coordinate.longitude]);
+        [locationManager stopUpdatingLocation];
+
     }}
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
@@ -49,7 +53,7 @@
 }
 
 - (NSString *) getCoordinates{
-    return [NSString stringWithFormat:@"%@,@", _detectedLocation.coordinate.latitude, _detectedLocation.coordinate.longitude];
+    return [NSString stringWithFormat:@"%f,%f", _detectedLocation.coordinate.latitude, _detectedLocation.coordinate.longitude];
 }
 
 

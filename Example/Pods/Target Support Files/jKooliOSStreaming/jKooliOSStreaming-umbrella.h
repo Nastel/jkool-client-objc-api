@@ -5,6 +5,7 @@
 #import "jkActivity.h"
 #import "jkConstants.h"
 #import "jkEvent.h"
+#import "jkLocation.h"
 #import "jkProperty.h"
 #import "jkSnapshot.h"
 #import "jkTrackable.h"
