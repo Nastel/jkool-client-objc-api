@@ -26,8 +26,10 @@
 
 @interface jKoolStreaming : jKoolService
 
-- (void)stream:(jkTrackable *)trackable forPath:(NSString *) path forHandler:(UIViewController *) handler;
+- (void)stream:(jkTrackable *)trackable  forUrl:(NSString*) path;
+- (void)initializeStream:(NSObject *) handler;
 + (NSString*)token;
 + (void)setToken:(NSString*)jkToken;
+- (void) stopStreaming;
 
 @end

@@ -20,7 +20,8 @@
 #import <Foundation/Foundation.h>
 #import "jkTrackable.h"
 
-@interface jkEvent : jkTrackable
+
+@interface jkEvent : jkTrackable 
 {
 
 }
@@ -40,7 +41,7 @@
 - (id)initWithName: (NSString*)name andTimeUsecAsLong:(long)timeUsec andTrackingId:(NSString*)trackingId;
 - (id)initWithNameAndTimeUsec: (NSString*)name andTimeUsecAsDate:(NSDate*)timeUsec andTrackingId:(NSString*)trackingId;
 - (NSString *) path;
-- (void) stream: (NSObject *) handler;
+//- (void) stream: (jKoolStreaming *) jkStreaming forHandler: (NSObject *) handler;
 
 
 

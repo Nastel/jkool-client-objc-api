@@ -25,6 +25,7 @@
 
 @implementation jkEvent
 
+
 @synthesize msgCharset = _msgCharset;
 @synthesize msgText = _msgText;
 @synthesize msgTag = _msgTag;
@@ -85,7 +86,7 @@
 
 - (id)init {
     self = [super init];
-    [self setType: JK_TYPE_EVENT];
+    [self setType: JK_TYPE_EVENT];    
     return self;
     
 }
@@ -182,10 +183,16 @@
     return values;
 }
 
-- (void) stream: (NSObject *) handler {
-    jKoolStreaming *jkStreaming = [[jKoolStreaming alloc] init];
-    [jkStreaming stream:self forPath:@"event" forHandler:handler] ;
-}
+//- (void) stream: (NSObject *) handler {
+//    jKoolStreaming *jkStreaming = [[jKoolStreaming alloc] init];
+//    [jkStreaming stream:self] ;
+//}
+
+//- (void) stream: (jKoolStreaming *) jkStreaming forHandler: (NSObject *) handler {
+//    [jkStreaming stream:self] ;
+//}
+
+
 
 
 @end

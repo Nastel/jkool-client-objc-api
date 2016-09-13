@@ -19,8 +19,9 @@
 
 #import <Foundation/Foundation.h>
 #import "jkConstants.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface jkTrackable : NSObject
+@interface jkTrackable : NSObject <CLLocationManagerDelegate>
 
 @property enum CompCodes compCode;
 @property enum Severities jkSeverity;

@@ -39,15 +39,15 @@
 
 @synthesize sendResponse = _sendResponse;
 @synthesize subscribeUrl = _subscribeUrl;
+@synthesize subId = _subId;
+@synthesize token = _token;
 
 
 - (void)subscribe:(NSString *)jkQuery withMaxRows:(int) maxRows withToken:(NSString *) token withSubId:(NSString *) subId forHandler:(NSObject *) handler{
     _subscribeUrl = [NSString stringWithFormat:@"{\"jk_token\":\"%@\",\"jk_query\":\"%@\",\"jk_maxrows\":%i,\"jk_subid\":\"%@\"}", token, jkQuery, maxRows, subId];
     _sendResponse = handler;
-    [self connectWebSocket];
-   }
-
-- (void)connectWebSocket {
+    _subId = subId;
+    _token = token;
     webSocket.delegate = nil;
     webSocket = nil;
     
@@ -55,8 +55,15 @@
     SRWebSocket *newWebSocket = [[SRWebSocket alloc] initWithURL:[NSURL URLWithString:urlString]];
     newWebSocket.delegate = self;
     [newWebSocket open];
-    //[NSThread sleepForTimeInterval:10000];
+   }
+
+
+- (void)unsubscribe{
+    NSString *unsubscribeUrl = [NSString stringWithFormat:@"{\"jk_token\":\"%@\",\"jk_query\":\"%@\",\"jk_subid\":\"%@\"}", _token, @"unsubscribe to", _subId];
+    [webSocket send:unsubscribeUrl];
+    [webSocket close];
 }
+
 
 - (void)webSocketDidOpen:(SRWebSocket *)newWebSocket {
     webSocket = newWebSocket;

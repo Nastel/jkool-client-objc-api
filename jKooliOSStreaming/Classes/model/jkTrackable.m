@@ -21,8 +21,12 @@
 #import "jkConstants.h"
 #import "jkProperty.h"
 #import "jkSnapshot.h"
+#include <pthread.h>
 
 @implementation jkTrackable
+{
+    CLLocation* detectedLocation;
+}
 
 @synthesize compCode = _compCode;
 @synthesize jkSeverity = _jkSeverity;
@@ -74,6 +78,8 @@
 
 // Server
 - (NSString *)server {
+    NSString *username = [[UIDevice currentDevice] name];
+    mach_port_t machTID = pthread_mach_thread_np(pthread_self());
     if (!_server) {
         _server = DefaultServer;
     }
@@ -111,9 +117,14 @@
     _appl = appl;
 }
 
+// stringByAppendingFormat:@"%f,%f", location.coordinate.latitude, location.coordinate.longitude]
 // Geo
 - (NSString *)geoAddr {
-    if (!_geoAddr) {
+    if (!_geoAddr && detectedLocation != nil)
+    {
+        _geoAddr = [NSString stringWithFormat:@"%@,@", detectedLocation.coordinate.latitude, detectedLocation.coordinate.longitude];
+    }
+    else if (!_geoAddr) {
         _geoAddr = DefaultGeoAddr;
     }
     
@@ -250,6 +261,16 @@
     self = [super init];
     NSUUID *theUUID = [NSUUID UUID];
     _trackingId = [theUUID UUIDString];
+    
+    // Location
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [locationManager requestWhenInUseAuthorization];
+    }
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [locationManager startUpdatingLocation];
+    
     return self;
 }
 
@@ -403,6 +424,17 @@
 }
 
 
+- (void)locationManager:(CLLocationManager *)manager
+     didUpdateLocations:(NSArray *)locations {
+    {
+        detectedLocation = [locations lastObject];
+    }}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"didFailWithError: %@", error);
+    
+}
 
 
 @end

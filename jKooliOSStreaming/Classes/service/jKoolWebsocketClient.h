@@ -23,13 +23,12 @@
 
 @interface jKoolWebsocketClient : NSObject
 
-@property NSString *jkQuery;
-@property NSString *maxRows;
 @property NSString *token;
 @property NSString *subId;
 @property NSString *subscribeUrl;
 @property jKoolCallbackHandler *sendResponse;
 
 - (void)subscribe:(NSString *)jkQuery withMaxRows:(int) maxRows withToken:(NSString *) token withSubId:(NSString *) subId forHandler:(NSObject *) handler;
+- (void)unsubscribe;
 
 @end

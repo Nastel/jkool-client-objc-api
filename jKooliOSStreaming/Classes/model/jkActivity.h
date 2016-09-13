@@ -20,6 +20,7 @@
 #import <Foundation/Foundation.h>
 #import "jkTrackable.h"
 #import "jkConstants.h"
+//#import "jKoolService.h"
 
 @interface jkActivity : jkTrackable
 {
@@ -32,7 +33,7 @@
 - (id)initWithName: (NSString*)name andTrackingId:(NSString*)trackingId;
 - (id)initWithName: (NSString*)name andTimeUsecAsLong:(long)timeUsec andTrackingId:(NSString*)trackingId;
 - (id)initWithNameAndTimeUsec: (NSString*)name andTimeUsecAsDate:(NSDate*)timeUsec andTrackingId:(NSString*)trackingId;
-- (void) stream: (NSObject *) handler;
+//- (void) stream: (jKoolService *)jkStreaming forHandler: (NSObject *) handler;
 
 
 @end

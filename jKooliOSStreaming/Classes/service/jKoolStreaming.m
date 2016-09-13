@@ -21,6 +21,9 @@
 #import "jkConstants.h"
 
 static NSMutableString *g_token = nil;
+static NSURLSessionConfiguration *defaultConfigObject;
+static NSURLSession *defaultSession;
+static NSURL *url;
 
 @implementation jKoolStreaming
 
@@ -36,14 +39,23 @@ static NSMutableString *g_token = nil;
     }
 }
 
-- (void)stream:(jkTrackable *)trackable forPath:(NSString *) path forHandler:(UIViewController *) handler{
+- (void)initializeStream:(NSObject *) handler {
+    defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+    defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: self delegateQueue: [NSOperationQueue mainQueue]];
+    if (handler != nil)
+    {
+        [self setSendResponse:handler];
+    }
+
+   }
+
+
+- (void)stream:(jkTrackable *)trackable  forUrl:(NSString*) path{
+   url = [NSURL URLWithString:[StreamingUrl stringByAppendingString:path]];
    NSDictionary *jKoolDict = [self createJson:trackable];
    NSData *requestData = [NSJSONSerialization  dataWithJSONObject:jKoolDict options:NSJSONWritingPrettyPrinted error:0];
     NSString *strData = [[NSString alloc]initWithData:requestData encoding:NSUTF8StringEncoding];
     NSLog(@"%@",strData);
-    NSURL *url = [NSURL URLWithString:[StreamingUrl stringByAppendingString:path]];
-    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
-    NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: self delegateQueue: [NSOperationQueue mainQueue]];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     [request setHTTPMethod:@"POST"];
     [request addValue:g_token forHTTPHeaderField:@"token"];
@@ -51,10 +63,11 @@ static NSMutableString *g_token = nil;
     [request setHTTPBody: requestData];
     NSURLSessionDataTask * dataTask = [defaultSession dataTaskWithRequest:request];
     [dataTask resume];
-    if (handler != nil)
-    {
-        [self setSendResponse:handler];
-    }
+}
+
+- (void) stopStreaming
+{
+    defaultSession.invalidateAndCancel;
 }
 
 
