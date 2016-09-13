@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-6Q-KvW">
-                                <rect key="frame" x="20" y="209" width="280" height="334"/>
+                                <rect key="frame" x="20" y="241" width="280" height="302"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="348" id="O8M-Rq-a4n"/>
@@ -56,9 +56,17 @@
                                     </mask>
                                 </variation>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhR-aE-F6T">
+                                <rect key="frame" x="20" y="203" width="280" height="30"/>
+                                <state key="normal" title="Unsubscribe"/>
+                                <connections>
+                                    <action selector="unsubscribe:" destination="whP-gf-Uak" eventType="touchDown" id="a98-6P-ZVv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OvE-6Q-KvW" firstAttribute="top" secondItem="AhR-aE-F6T" secondAttribute="bottom" constant="8" symbolic="YES" id="1CC-YQ-23Q"/>
                             <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="OvE-6Q-KvW" secondAttribute="bottom" constant="25" id="5x6-4V-QgC"/>
                             <constraint firstItem="KwZ-N6-Qfl" firstAttribute="height" secondItem="rXv-Fi-1sC" secondAttribute="height" id="8SQ-E6-86N"/>
                             <constraint firstItem="OvE-6Q-KvW" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" symbolic="YES" id="9Lq-B6-rV4"/>
@@ -66,8 +74,10 @@
                             <constraint firstItem="rXv-Fi-1sC" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="25" id="E1q-fF-Vpj"/>
                             <constraint firstItem="OvE-6Q-KvW" firstAttribute="top" secondItem="lbD-6a-TOQ" secondAttribute="bottom" constant="26" id="Ekj-yu-wYK"/>
                             <constraint firstItem="lbD-6a-TOQ" firstAttribute="centerX" secondItem="KwZ-N6-Qfl" secondAttribute="centerX" id="FqL-Z5-Ozg"/>
+                            <constraint firstItem="AhR-aE-F6T" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" symbolic="YES" id="NKB-la-WPM"/>
                             <constraint firstItem="KwZ-N6-Qfl" firstAttribute="top" secondItem="rXv-Fi-1sC" secondAttribute="bottom" constant="25" id="P3x-SE-cGP"/>
                             <constraint firstAttribute="trailing" secondItem="rXv-Fi-1sC" secondAttribute="trailing" constant="25" id="TN5-Dc-1PD"/>
+                            <constraint firstItem="AhR-aE-F6T" firstAttribute="top" secondItem="lbD-6a-TOQ" secondAttribute="bottom" constant="19" id="UAW-cZ-udd"/>
                             <constraint firstItem="lbD-6a-TOQ" firstAttribute="top" secondItem="KwZ-N6-Qfl" secondAttribute="bottom" constant="24" id="Wg8-0O-9tg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OvE-6Q-KvW" secondAttribute="trailing" constant="25" id="XrX-em-Io1"/>
                             <constraint firstItem="rXv-Fi-1sC" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="25" id="Y7a-nl-4gb"/>
@@ -79,6 +89,7 @@
                             <constraint firstItem="OvE-6Q-KvW" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="25" id="oFs-JE-YJV"/>
                             <constraint firstItem="OvE-6Q-KvW" firstAttribute="top" secondItem="lbD-6a-TOQ" secondAttribute="bottom" constant="25" id="onN-fC-aE8"/>
                             <constraint firstItem="lbD-6a-TOQ" firstAttribute="width" secondItem="KwZ-N6-Qfl" secondAttribute="width" id="qHp-fj-yWa"/>
+                            <constraint firstAttribute="trailing" secondItem="AhR-aE-F6T" secondAttribute="trailing" constant="20" symbolic="YES" id="rT2-fD-mi8"/>
                             <constraint firstAttribute="trailing" secondItem="OvE-6Q-KvW" secondAttribute="trailing" constant="20" symbolic="YES" id="y4C-tJ-e83"/>
                         </constraints>
                         <variation key="default">
@@ -86,6 +97,7 @@
                                 <exclude reference="Ekj-yu-wYK"/>
                                 <exclude reference="XrX-em-Io1"/>
                                 <exclude reference="oFs-JE-YJV"/>
+                                <exclude reference="onN-fC-aE8"/>
                                 <exclude reference="gYe-19-u6y"/>
                             </mask>
                         </variation>

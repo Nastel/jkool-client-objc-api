@@ -18,7 +18,7 @@
  */
 
 @import UIKit;
-#include "jKoolWebsocketClient.h"
+#import "jKoolWebsocketClient.h"
 
 @interface jkViewController : UIViewController 
 {

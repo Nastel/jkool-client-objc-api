@@ -32,27 +32,34 @@
 @implementation jkViewController
 
 static jKoolWebsocketClient *jkWebsocketClient;
+static jKoolStreaming *jkStreaming ;
 
 @synthesize queryText;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    queryText.text = nil;
+    // Initialize streaming and specify callback handler.
+    [jKoolStreaming setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
+    NSObject *cb = [[jkCallbackHandlerStreaming alloc] initWithViewController:self];
+    jkStreaming = [[jKoolStreaming alloc] init];
+    [jkStreaming initializeStream:cb];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:YES];
+    [jkWebsocketClient unsubscribe];
+    [jkStreaming stopStreaming];
 }
 
 - (IBAction)stream:(id)sender {
-
-    // Initialize streaming and specify callback handler.
-    [jKoolStreaming setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
-    NSObject *cb = [[jkCallbackHandlerStreaming alloc] initWithViewController:self];
-    
     // Stream Event with snapshot and properties
     jkEvent *event = [[jkEvent alloc] initWithName:@"testEvent"];
     [event setMsgText:@"hello world"] ;
@@ -62,7 +69,7 @@ static jKoolWebsocketClient *jkWebsocketClient;
     [event setTid:456.0];
     [event setMsgTag:@"hello tag"];
     [event setUser:@"Cathy"];
-    [event setGeoAddr:@"72.45,80.56"];
+  //  [event setGeoAddr:@"72.45,80.56"];
     [event setResource:@"my resource"];
     jkProperty *property_event_1 = [[jkProperty alloc] initWithName:@"test1 property" andType:@"test1 type" andValue:@"test1 value"];
     jkProperty *property_event_2 = [[jkProperty alloc] initWithName:@"test2 property" andType:@"test2 type" andValue:@"test2 value"];
@@ -84,7 +91,7 @@ static jKoolWebsocketClient *jkWebsocketClient;
     NSMutableArray * snapshots = [[NSMutableArray alloc] init];
     [snapshots addObject:snapshot];
     [event setSnapshots:snapshots];
-    [event stream: nil];
+    [jkStreaming stream:event forUrl:@"event"];
     
     // Stream Activity
     jkActivity *activity = [[jkActivity alloc] initWithName:@"test activity"];
@@ -102,7 +109,12 @@ static jKoolWebsocketClient *jkWebsocketClient;
     [properties addObject:property_activity_1];
     [properties addObject:property_activity_2];
     [activity setProperties:properties];
-    [activity stream: cb];
+    [jkStreaming stream:activity forUrl:@"activity"] ;
+    
+    
+    // Give it a little time to finish, then stop streaming.
+    //[NSThread sleepForTimeInterval:10.0f];
+    //[jkStreaming stopStreaming];
 }
 
 - (IBAction)query:(id)sender {
@@ -120,13 +132,14 @@ static jKoolWebsocketClient *jkWebsocketClient;
 }
 
 - (IBAction)subscribe:(id)sender {
-    //[self connectWebSocket];
     NSObject *cb = [[jkCallbackHandlerWebsocket alloc] initWithViewController:self];
     queryText.text = nil;
     jkWebsocketClient = [[jKoolWebsocketClient alloc] init];
     [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"  withSubId:@"$sub/9577682d-26ae-4f50-8293-cd4640a368f6"  forHandler:cb];
-    
-    
+}
+
+- (IBAction)unsubscribe:(id)sender {
+    [jkWebsocketClient unsubscribe];
 }
 
 /*- (IBAction)query:(id)sender {
@@ -169,7 +182,6 @@ static jKoolWebsocketClient *jkWebsocketClient;
     
     [self presentViewController:alert animated:YES completion:nil];
 }
-
 
 
 
