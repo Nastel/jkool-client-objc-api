@@ -27,8 +27,7 @@
 @implementation jkCallbackHandlerWebsocket
 
 
-- (void) handlejKoolResponse:(NSData *) data  {
-    //NSString * str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+- (void) handlejKoolResponse:(NSString *) data  {
     ((jkViewController *)[self vc]).queryText.text = data;
 }
 
