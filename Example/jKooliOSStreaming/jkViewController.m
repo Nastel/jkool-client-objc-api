@@ -28,12 +28,16 @@
 #import "jkCallbackHandlerQuery.h"
 #import "jkCallbackHandlerWebsocket.h"
 #import "jKoolWebsocketClient.h"
+#import "jkAppDelegate.h"
+#import "jkLocation.h"
 
 @implementation jkViewController
 
 static jKoolWebsocketClient *jkWebsocketClient;
 static jKoolStreaming *jkStreaming ;
 static jKoolQuerying *jkQuerying;
+static jkLocation *location;
+
 
 @synthesize queryText;
 
@@ -41,16 +45,23 @@ static jKoolQuerying *jkQuerying;
 {
     [super viewDidLoad];
     queryText.text = nil;
+    
     // Initialize streaming and specify callback handler.
     [jKoolStreaming setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
     NSObject *cbStream = [[jkCallbackHandlerStreaming alloc] initWithViewController:self];
     jkStreaming = [[jKoolStreaming alloc] init];
     [jkStreaming initializeStream:cbStream];
+   
     // Initialize Querying and specify callback handler
     [jKoolQuerying setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
     NSObject *cbQuery = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
     jkQuerying = [[jKoolQuerying alloc] init];
     [jkQuerying initializeQuery:cbQuery];
+    
+    // Kick-off locationing
+    location = [[jkLocation alloc] init];
+    [location kickOffLocationing];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,7 +87,8 @@ static jKoolQuerying *jkQuerying;
     [event setTid:456.0];
     [event setMsgTag:@"hello tag"];
     [event setUser:@"Cathy"];
-  //  [event setGeoAddr:@"72.45,80.56"];
+    
+    [event setGeoAddr:[location getCoordinates]];
     [event setResource:@"my resource"];
     jkProperty *property_event_1 = [[jkProperty alloc] initWithName:@"test1 property" andType:@"test1 type" andValue:@"test1 value"];
     jkProperty *property_event_2 = [[jkProperty alloc] initWithName:@"test2 property" andType:@"test2 type" andValue:@"test2 value"];
@@ -108,7 +120,7 @@ static jKoolQuerying *jkQuerying;
     [activity setPid:123.0];
     [activity setTid:456.0];
     [activity setUser:@"Cathy"];
-    [activity setGeoAddr:@"72.45,80.56"];
+    [activity setGeoAddr:[location getCoordinates]];
     [activity setResource:@"my resource"];
     jkProperty *property_activity_1 = [[jkProperty alloc] initWithName:@"test1 property" andType:@"test1 type" andValue:@"test1 value"];
     jkProperty *property_activity_2 = [[jkProperty alloc] initWithName:@"test2 property" andType:@"test2 type" andValue:@"test2 value"];
