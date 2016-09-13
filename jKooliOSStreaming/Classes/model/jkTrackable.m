@@ -117,14 +117,9 @@
     _appl = appl;
 }
 
-// stringByAppendingFormat:@"%f,%f", location.coordinate.latitude, location.coordinate.longitude]
 // Geo
 - (NSString *)geoAddr {
-    if (!_geoAddr && detectedLocation != nil)
-    {
-        _geoAddr = [NSString stringWithFormat:@"%@,@", detectedLocation.coordinate.latitude, detectedLocation.coordinate.longitude];
-    }
-    else if (!_geoAddr) {
+    if (!_geoAddr) {
         _geoAddr = DefaultGeoAddr;
     }
     
