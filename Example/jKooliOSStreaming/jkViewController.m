@@ -33,6 +33,7 @@
 
 static jKoolWebsocketClient *jkWebsocketClient;
 static jKoolStreaming *jkStreaming ;
+static jKoolQuerying *jkQuerying;
 
 @synthesize queryText;
 
@@ -42,9 +43,14 @@ static jKoolStreaming *jkStreaming ;
     queryText.text = nil;
     // Initialize streaming and specify callback handler.
     [jKoolStreaming setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
-    NSObject *cb = [[jkCallbackHandlerStreaming alloc] initWithViewController:self];
+    NSObject *cbStream = [[jkCallbackHandlerStreaming alloc] initWithViewController:self];
     jkStreaming = [[jKoolStreaming alloc] init];
-    [jkStreaming initializeStream:cb];
+    [jkStreaming initializeStream:cbStream];
+    // Initialize Querying and specify callback handler
+    [jKoolQuerying setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
+    NSObject *cbQuery = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
+    jkQuerying = [[jKoolQuerying alloc] init];
+    [jkQuerying initializeQuery:cbQuery];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,6 +63,7 @@ static jKoolStreaming *jkStreaming ;
     [super viewWillDisappear:YES];
     [jkWebsocketClient unsubscribe];
     [jkStreaming stopStreaming];
+    [jkQuerying stopQuerying];
 }
 
 - (IBAction)stream:(id)sender {
@@ -110,23 +117,15 @@ static jKoolStreaming *jkStreaming ;
     [properties addObject:property_activity_2];
     [activity setProperties:properties];
     [jkStreaming stream:activity forUrl:@"activity"] ;
-    
-    
-    // Give it a little time to finish, then stop streaming.
-    //[NSThread sleepForTimeInterval:10.0f];
-    //[jkStreaming stopStreaming];
 }
 
 - (IBAction)query:(id)sender {
     
-    // Initialize Streaming and specify callback handler
-    [jKoolQuerying setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
-    NSObject *cb = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
-    
     // Query
-    jKoolQuerying *jkQuerying = [[jKoolQuerying alloc] init];
+
     NSString *query = @"get events";
-    [jkQuerying query:query withMaxRows:50 forHandler:cb];
+    [jkQuerying query:query withMaxRows:50];
+
     
 
 }
@@ -142,6 +141,7 @@ static jKoolStreaming *jkStreaming ;
     [jkWebsocketClient unsubscribe];
 }
 
+// Uncomment if you wish for this ViewController to be the handler.
 /*- (IBAction)query:(id)sender {
     
     // Initialize Streaming and specify callback handler
