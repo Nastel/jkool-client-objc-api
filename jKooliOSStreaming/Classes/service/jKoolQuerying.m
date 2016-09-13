@@ -23,6 +23,9 @@
 @implementation jKoolQuerying
 
 static NSString *token = nil;
+static NSURLSessionConfiguration *defaultConfigObject;
+static NSURLSession *defaultSession;
+static NSURL *url;
 
 + (NSString*)token {
     return token;
@@ -34,12 +37,20 @@ static NSString *token = nil;
     }
 }
 
-- (void)query:(NSString *)query withMaxRows:(int) maxRows forHandler:(NSObject *) handler{
+- (void)initializeQuery:(NSObject *) handler {
+    defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+    defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: self delegateQueue: [NSOperationQueue mainQueue]];
+    if (handler != nil)
+    {
+        [self setSendResponse:handler];
+    }
+    
+}
+
+- (void)query:(NSString *)query withMaxRows:(int) maxRows {
     query = [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSString *queryUrl = [NSString stringWithFormat:@"%@?jk_query=%@&jk_maxRows=%i&jk_token=%@", QueryingUrl, query, maxRows, token];
-    NSURL *url = [NSURL URLWithString:queryUrl];
-    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
-    NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: self delegateQueue: [NSOperationQueue mainQueue]];
+    url = [NSURL URLWithString:queryUrl];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60000.0];
     [request setHTTPMethod:@"GET"];
     // As an alternative, token can also be set in the header
@@ -47,12 +58,12 @@ static NSString *token = nil;
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     NSURLSessionDataTask * dataTask = [defaultSession dataTaskWithRequest:request];
     [dataTask resume];
-    if (handler != nil)
-    {
-        [self setSendResponse:handler];
-    }
 }
 
+- (void) stopQuerying
+{
+    defaultSession.invalidateAndCancel;
+}
 
 
 @end

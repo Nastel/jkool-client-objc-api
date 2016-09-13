@@ -26,8 +26,10 @@
 
 @interface jKoolQuerying : jKoolService
 
-- (void)query:(NSString *)query withMaxRows:(int) maxRows forHandler:(NSObject *) handler;
+- (void)query:(NSString *)query withMaxRows:(int) maxRows;
 + (NSString*)token;
 + (void)setToken:(NSString*)jkToken;
+- (void) stopQuerying;
+- (void)initializeQuery:(NSObject *) handler;
 
 @end
