@@ -26,24 +26,28 @@
 #import "jkSnapshot.h"
 #import "jkCallbackHandlerStreaming.h"
 #import "jkCallbackHandlerQuery.h"
+#import "jkCallbackHandlerQuery2.h"
 #import "jkCallbackHandlerWebsocket.h"
 #import "jKoolWebsocketClient.h"
 #import "jkLocation.h"
 
 @implementation jkViewController
 
-static jKoolWebsocketClient *jkWebsocketClient;
-static jKoolStreaming *jkStreaming ;
-static jKoolQuerying *jkQuerying;
-static jkLocation *location;
+jKoolWebsocketClient *jkWebsocketClient;
+jKoolStreaming *jkStreaming ;
+jKoolQuerying *jkQuerying1;
+jKoolQuerying *jkQuerying2;
+jkLocation *location;
 
 
 @synthesize queryText;
+@synthesize queryText2;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     queryText.text = nil;
+    queryText2.text = nil;
     
     // Initialize streaming and specify callback handler.
     [jKoolStreaming setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
@@ -52,12 +56,18 @@ static jkLocation *location;
     [jkStreaming initializeStream:cbStream];
    
     // Initialize Querying and specify callback handler
-    [jKoolQuerying setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
+    //[jKoolQuerying setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
     NSObject *cbQuery = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
-    jkQuerying = [[jKoolQuerying alloc] init];
-    //[jkQuerying initializeQuery:cbQuery];
+    NSObject *cbQuery2 = [[jkCallbackHandlerQuery2 alloc] initWithViewController:self];
+    jkQuerying1 = [[jKoolQuerying alloc] init];
+    [jkQuerying1 setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
+    [jkQuerying1 initializeQuery:cbQuery];
     // Or to use this ViewController as the handler
-    [jkQuerying initializeQuery:self];
+    //[jkQuerying initializeQuery:self];
+    
+    jkQuerying2 = [[jKoolQuerying alloc] init];
+    [jkQuerying2 setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
+    [jkQuerying2 initializeQuery:cbQuery2];
     
     // Kick-off locationing
     location = [[jkLocation alloc] init];
@@ -75,7 +85,8 @@ static jkLocation *location;
     [super viewWillDisappear:YES];
     [jkWebsocketClient unsubscribe];
     [jkStreaming stopStreaming];
-    [jkQuerying stopQuerying];
+    [jkQuerying1 stopQuerying];
+    [jkQuerying2 stopQuerying];
 }
 
 - (IBAction)stream:(id)sender {
@@ -130,13 +141,17 @@ static jkLocation *location;
 - (IBAction)query:(id)sender {
     
     // Query
-    NSString *query = @"get events";
-    [jkQuerying query:query withMaxRows:50];
+    NSString *query1 = @"get snapshots";
+    [jkQuerying1 query:query1 withMaxRows:50];
+    
+    NSString *query2 = @"get events";
+    [jkQuerying2 query:query2 withMaxRows:50];
 }
 
 - (IBAction)subscribe:(id)sender {
     NSObject *cb = [[jkCallbackHandlerWebsocket alloc] initWithViewController:self];
     queryText.text = nil;
+    queryText2.text = nil;
     jkWebsocketClient = [[jKoolWebsocketClient alloc] init];
     [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"  withSubId:@"$sub/9577682d-26ae-4f50-8293-cd4640a368f6"  forHandler:cb];
 }

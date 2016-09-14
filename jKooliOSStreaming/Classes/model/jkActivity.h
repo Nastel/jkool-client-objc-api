@@ -20,7 +20,6 @@
 #import <Foundation/Foundation.h>
 #import "jkTrackable.h"
 #import "jkConstants.h"
-//#import "jKoolService.h"
 
 @interface jkActivity : jkTrackable
 {

@@ -23,8 +23,10 @@
 @interface jkViewController : UIViewController 
 {
     IBOutlet UITextView *queryText;
+    IBOutlet UITextView *queryText2;
 }
 @property (retain) UITextView * queryText;
+@property (retain) UITextView * queryText2;
 - (IBAction)stream:(id)sender;
 - (IBAction)query:(id)sender;
 

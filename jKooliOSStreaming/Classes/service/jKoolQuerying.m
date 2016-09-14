@@ -21,21 +21,13 @@
 #import "jkConstants.h"
 
 @implementation jKoolQuerying
-
-static NSString *token = nil;
-static NSURLSessionConfiguration *defaultConfigObject;
-static NSURLSession *defaultSession;
-static NSURL *url;
-
-+ (NSString*)token {
-    return token;
+{
+    NSURLSessionConfiguration *defaultConfigObject;
+    NSURLSession *defaultSession;
+    NSURL *url;
 }
 
-+ (void)setToken:(NSString*)jkToken {
-    if(token != jkToken) {
-        token = jkToken;
-    }
-}
+@synthesize token;
 
 - (void)initializeQuery:(NSObject *) handler {
     defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];

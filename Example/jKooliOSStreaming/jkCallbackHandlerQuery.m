@@ -32,7 +32,6 @@
     
     NSString * str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     ((jkViewController *)[self vc]).queryText.text = str;
-
 }
 
 @end
