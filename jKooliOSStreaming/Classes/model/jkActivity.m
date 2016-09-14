@@ -81,10 +81,4 @@
      return values;
 }
 
-//- (void) stream: (jKoolStreaming *) jkStreaming forHandler: (NSObject *) handler {
-//    [jkStreaming stream:self] ;
-//}
-
-
-
 @end

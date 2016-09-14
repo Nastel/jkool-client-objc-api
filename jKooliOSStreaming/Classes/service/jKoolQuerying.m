@@ -53,7 +53,6 @@ static NSURL *url;
     url = [NSURL URLWithString:queryUrl];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60000.0];
     [request setHTTPMethod:@"GET"];
-    // As an alternative, token can also be set in the header
     [request setValue:token forHTTPHeaderField:@"token"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     NSURLSessionDataTask * dataTask = [defaultSession dataTaskWithRequest:request];

@@ -30,8 +30,6 @@ NSString *const DefaultEncoding = @"none";
 NSString *const DefaultMimeType =@"text/plain";
 NSString *const StreamingUrl = @"https://data.jkoolcloud.com/jesl/";
 NSString *const QueryingUrl = @"https://jkool.jkoolcloud.com/jkool-service/jkql";
-//NSString *const StreamingUrl = @"http://test.jkoolcloud.com:6580/jesl/event";
-//NSString *const QueryingUrl = @"http://test.jkoolcloud.com/jkool-service/jkql";
 
 @implementation jkConstants
 

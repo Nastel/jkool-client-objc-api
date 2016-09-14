@@ -41,9 +41,5 @@
 - (id)initWithName: (NSString*)name andTimeUsecAsLong:(long)timeUsec andTrackingId:(NSString*)trackingId;
 - (id)initWithNameAndTimeUsec: (NSString*)name andTimeUsecAsDate:(NSDate*)timeUsec andTrackingId:(NSString*)trackingId;
 - (NSString *) path;
-//- (void) stream: (jKoolStreaming *) jkStreaming forHandler: (NSObject *) handler;
-
-
-
 
 @end
