@@ -60,7 +60,7 @@ jkProperty.h //jKool Property
 jkActivity.h //jKool Activity
 jkSnapshot.h //jKool Snapshot
 ```
-Callback objects
+Callback Objects
 ```objective-c
 jKoolCallbackHandler.h //Callback Interface
 ```
