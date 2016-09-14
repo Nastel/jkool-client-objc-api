@@ -1,6 +1,6 @@
 # jKooliOSStreaming
 
-Welcome to jKool’s iOS streaming Api. The purpose of this Api is to allow streaming to, querying from, and subscribing to data in a jKool repository. In order to use this Api, you will need a jKool account and the account’s access token. If you do not have a jKool account, you can register for one for free at this link … This Readme describes how to use the Api. Please see the example app in this Cocoa Pod which contain fully functioning code for querying, streaming, and  subscribing. This Api is based on jKools Restful interface. You can see details about this interface and design your streamed data to use it by reading the documentation at this link …. When using this Api, many fields will be defaulted for you. If you wish not to have the defaulted values please set them yourself. What the fields are defaulted to can be found at the bottom of this Readme.
+Welcome to jKool’s iOS streaming Api. The purpose of this Api is to allow streaming to, querying from, and subscribing to data in a jKool repository. In order to use this Api, you will need a jKool account and the account’s access token. If you do not have a jKool account, you can register for one for free at this linhttps://www.jkoolcloud.com/signup/signup. This Readme describes how to use the Api. Please see the example app in this Cocoa Pod which contain fully functioning code for querying, streaming, and  subscribing. This Api is based on jKools Restful interface. You can see details about this interface and design your streamed data to use it by reading the documentation at this link https://www.jkoolcloud.com/download/jkool-model.pdf. When using this Api, many fields will be defaulted for you. If you wish not to have the defaulted values please set them yourself. What the fields are defaulted to can be found at the bottom of this Readme.
 
 ## Example
 
@@ -20,6 +20,23 @@ Include this Api by putting the following in your PodFile:
 ```ruby
 pod 'jKooliOSStreaming'
 ```
+## Info.plist 
+To use this Api, some enhancements will need to be made to your app's info.plist.
+If using the Api's locationing, add the following to your app's 'Required device capabilities':
+```objective-c
+location-services
+gps
+```
+If streaming, add the following to 'App Transport Security Settings'
+```objective-c
+Allow Arbirtary Loads
+Exception Domain of data.jkoolcloud.com with NSIncludesSubdomains set to YES
+```
+If querying, add the following to 'App Transport Security Settings'
+```objective-c
+Allow ArbitraryLoads
+Exception Domain of jkool.jkoolcloud.com wiht NSIncludesSubdomains set to YES.
+```
 
 ##Initialize
 Depending on which portions of the Api you wish to use, import the following into your app:
@@ -29,24 +46,24 @@ For Streaming:
 jKoolStreaming.h //Streaming Api
 jkCallbackHandlerStreaming.h //Streaming Callback Handler Interface
 ```
-For Querying:
+For Querying
 ```objective-c
 jKoolQuerying.h //Querying Api
 jkCallbackHandlerQuery.h //Querying Callback Handler Interface
 ```
-For Subscribing:
+For Subscribing
 ```objective-c
 jkCallbackHandlerWebsocket.h //Subscription Api
 jKoolWebsocketClient.h //Subscription Callback Handler Interface
 ```
-jKool Objects:
+jKool Objects
 ```objective-c
 jkEvent.h //jKool Event
 jkProperty.h //jKool Property
 jkActivity.h //jKool Activity
 jkSnapshot.h //jKool Snapshot
 ```
-jKool Locationing:
+jKool Locationing
 ```objective-c
 jkLocation.h //Import if you wish to use jKool locationing to automatically detect and store device location on jKool activities and events.
 ```
@@ -68,7 +85,7 @@ jkStreaming = [[jKoolStreaming alloc] init];
 [jkStreaming initializeStream:cbStream];
 ```
 ## Initialize Querying
-To Query, you will need to initialize the jKool Streaming interface and your Callback Handler as follows:
+To Query, you will need to initialize the jKool Querying interface and your Callback Handler as follows:
 ```objective-c
 // Initialize Querying and specify callback handler
 [jKoolQuerying setToken:@“your-token”];
@@ -90,35 +107,75 @@ To initialize jKool Locationing, do the following:
 location = [[jkLocation alloc] init];
 [location kickOffLocationing];
 ```
-## To Stream:
-Populate your jKool objects. These objects include: Activities, Events, Properties and Snapshots. 
+## To Stream
+Populate your jKool objects. These objects include: 
+* Activities
+* Events
+* Properties
+* Snapshots. 
+
 Stream each of the objects as follows:
 ```objective-c
 [jkStreaming stream:activity forUrl:@"activity"] ;
-[jkStreaming stream:activity forUrl:@“event”] ;
+[jkStreaming stream:event forUrl:@“event”] ;
 ```
 (Please note that Properties and Snapshots are part of the Activities and Events)
 
-## To Query:
+## To Query
 ```objective-c
 // Query
 NSString *query = @"get events";
 [jkQuerying query:query withMaxRows:50];
 ```
-## To Subscribe:
+(Please note that the query string can contain any JKQL syntax. Please refer to the JKQL Query Language http://www.jkoolcloud.com/download/jKQL%20User%20Guide.pdf)
+## To Subscribe
 ```objective-c
 [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@“your-token”  withSubId:@“your-subscription-id”  forHandler:cbWebsocket];
 ```
+(Please note that subscriptions can contain any JKQL syntax.)
 ## Create your Callback Handlers:
 * Callback Handlers must subclass: jKoolCallbackHandler
 * Callback Handlers must implement the handlejKoolResponse method.
 
+Callback handlers can be separate objects or they can be the ViewController that is doing the streaming, querying, subscribing. If using the same ViewController, simply specify 'self' as the handler. The situation where separate callback handlers will be necessary is when the results of a callback need to go to more than one destination within the same View Controller. The example app within this Cocoa Pod contains separate call back handlers as well as a commented out example call to a callback handler method that is within the calling ViewController (and 'self' is being used).
+
+## Disconnecting
+```objective-c
+To close connections, please do the following:
+[jkWebsocketClient unsubscribe];
+[jkStreaming stopStreaming];
+[jkQuerying stopQuerying];
+```
+
+## Seeing results
 As stated above, please see the Example app in this pod. It contains a complete working app with all of the above mentioned code in it. Simply replace your access token where “your-token” is specified in order to see the app working. We recommend you do the following:
 * Stream some data.
 * View the streamed data in jKool by logging into your jKool repository.
 * Query your streamed data with the app to see it appear in the app.
 * Subscribe to your streamed data.
 * With the subscription, you can see data in real time as it is streamed. If you then install the app on another device or use one of jKool several other Api’s to stream data, you will see the data being streamed in real time in the first app.
+ 
+## Defaulted Fields
+* Data Center
+* Server
+* Tid
+* Network Address
+* Application
+* Geo
+* Comp Code
+* Severity 
+* Type
+* Source FQN
+* Time
+* Start Time
+* End Time
+* Elapsed Time
+* Status
+* Msg Charset
+* Msg Encoding
+* Msg Mime Type
+* Msg Size
+* Msg Tag
 
 ## Support
 If you have any questions or concerns, please reach out to us by emailing support@jkoolcloud.com. We will get back to you as quickly as possible. 
