@@ -81,18 +81,18 @@ jkLocation *location; // if using jKool locationing.
 To Stream, you will need to initialize the jKool Streaming interface and your Callback Handler as follows:
 ```objective-c
 // Initialize streaming and specify callback handler.
-[jKoolStreaming setToken:@“your-token”];
 NSObject *cbStream = [[<your-callback-handler> alloc] initWithViewController:self];
 jkStreaming = [[jKoolStreaming alloc] init];
+[jkStreaming setToken:@“your-token”];
 [jkStreaming initializeStream:cbStream];
 ```
 ## Initialize Querying
 To Query, you will need to initialize the jKool Querying interface and your Callback Handler as follows:
 ```objective-c
 // Initialize Querying and specify callback handler
-[jKoolQuerying setToken:@“your-token”];
 NSObject *cbQuery = [[<your-callback-handler> alloc] initWithViewController:self];
 jkQuerying = [[jKoolQuerying alloc] init];
+[jkQuerying setToken:@“your-token”];
 [jkQuerying initializeQuery:cbQuery];
 ```
 ## Initialize Subscribing
