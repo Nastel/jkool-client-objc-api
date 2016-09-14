@@ -136,6 +136,7 @@ NSString *query = @"get events";
 ## Create your Callback Handlers:
 * Callback Handlers must subclass: jKoolCallbackHandler
 * Callback Handlers must implement the handlejKoolResponse method.
+
 Callback handlers can be separate objects or they can be the ViewController that is doing the streaming, querying, subscribing. If using the same ViewController, simply specify 'self' as the handler. The situation where separate callback handlers will be necessary is when the results of a callback need to go to more than one destination within the same View Controller. The example app within this Cocoa Pod contains separate call back handlers as well as a commented out call to a callback handler method that is within the calling ViewController (and 'self' is being used).
 
 ## Disconnecting
