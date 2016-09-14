@@ -110,8 +110,8 @@ NSString *query = @"get events";
 [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@“your-token”  withSubId:@“your-subscription-id”  forHandler:cbWebsocket];
 ```
 ## Create your Callback Handlers:
-Callback Handlers must subclass: jKoolCallbackHandler
-Callback Handlers must implement the handlejKoolResponse method.
+* Callback Handlers must subclass: jKoolCallbackHandler
+* Callback Handlers must implement the handlejKoolResponse method.
 
 As stated above, please see the Example app in this pod. It contains a complete working app with all of the above mentioned code in it. Simply replace your access token where “your-token” is specified in order to see the app working. We recommend you do the following:
 * Stream some data.
