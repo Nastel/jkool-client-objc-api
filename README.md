@@ -115,6 +115,7 @@ NSString *query = @"get events";
 ```objective-c
 [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@“your-token”  withSubId:@“your-subscription-id”  forHandler:cbWebsocket];
 ```
+(Please note that subscriptions can contain any JKQL syntax.)
 ## Create your Callback Handlers:
 * Callback Handlers must subclass: jKoolCallbackHandler
 * Callback Handlers must implement the handlejKoolResponse method.
