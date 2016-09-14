@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "jKooliOSStreaming/Classes/**/*"
+  "source_files": "jKooliOSStreaming/Classes/**/*",
+  "dependencies": {
+    "SocketRocket": [
+
+    ]
+  }
 }

@@ -28,7 +28,6 @@
 #import "jkCallbackHandlerQuery.h"
 #import "jkCallbackHandlerWebsocket.h"
 #import "jKoolWebsocketClient.h"
-#import "jkAppDelegate.h"
 #import "jkLocation.h"
 
 @implementation jkViewController
@@ -56,7 +55,9 @@ static jkLocation *location;
     [jKoolQuerying setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
     NSObject *cbQuery = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
     jkQuerying = [[jKoolQuerying alloc] init];
-    [jkQuerying initializeQuery:cbQuery];
+    //[jkQuerying initializeQuery:cbQuery];
+    // Or to use this ViewController as the handler
+    [jkQuerying initializeQuery:self];
     
     // Kick-off locationing
     location = [[jkLocation alloc] init];
@@ -129,12 +130,8 @@ static jkLocation *location;
 - (IBAction)query:(id)sender {
     
     // Query
-
     NSString *query = @"get events";
     [jkQuerying query:query withMaxRows:50];
-
-    
-
 }
 
 - (IBAction)subscribe:(id)sender {
@@ -148,46 +145,10 @@ static jkLocation *location;
     [jkWebsocketClient unsubscribe];
 }
 
-// Uncomment if you wish for this ViewController to be the handler.
-/*- (IBAction)query:(id)sender {
-    
-    // Initialize Streaming and specify callback handler
-    [jKoolQuerying setToken:@"your-token"];
-   
-    
-    // Query
-    jKoolQuerying *jkQuerying = [[jKoolQuerying alloc] init];
-    NSString *query = @"get events";
-    [jkQuerying query:query withMaxRows:50 forHandler:self];
-    
-    
-}*/
-
+// If using this ViewController as the handler.
 - (void) handlejKoolResponse:(NSData *) data  {
-    
     NSString * str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:@"jKool Data"
-                                  message:str
-                                  preferredStyle:UIAlertControllerStyleActionSheet
-                                  ];
-    
-    UIAlertAction* ok = [UIAlertAction
-                         actionWithTitle:@"OK"
-                         style:UIAlertActionStyleDefault
-                         handler:^(UIAlertAction * action)
-                         {
-                             [alert dismissViewControllerAnimated:YES completion:nil];
-                             
-                         }];
-    
-    
-    [alert addAction:ok];
-    
-    alert.popoverPresentationController.sourceView = self.view;
-    alert.popoverPresentationController.sourceRect = CGRectMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0, 1.0, 1.0);
-    
-    [self presentViewController:alert animated:YES completion:nil];
+    queryText.text = str;
 }
 
 
