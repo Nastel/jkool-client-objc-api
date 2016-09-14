@@ -91,11 +91,15 @@ location = [[jkLocation alloc] init];
 [location kickOffLocationing];
 ```
 ## To Stream:
-Populate your jKool objects. These objects include: Activities, Events, Properties and Snapshots. 
+Populate your jKool objects. These objects include: 
+* Activities
+* Events
+* Properties
+* Snapshots. 
 Stream each of the objects as follows:
 ```objective-c
 [jkStreaming stream:activity forUrl:@"activity"] ;
-[jkStreaming stream:activity forUrl:@“event”] ;
+[jkStreaming stream:event forUrl:@“event”] ;
 ```
 (Please note that Properties and Snapshots are part of the Activities and Events)
 
