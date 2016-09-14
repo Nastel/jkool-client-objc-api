@@ -96,8 +96,9 @@ Stream each of the objects as follows:
 ```objective-c
 [jkStreaming stream:activity forUrl:@"activity"] ;
 [jkStreaming stream:activity forUrl:@“event”] ;
-(Please note that Properties and Snapshots are part of the Activities and Events)
 ```
+(Please note that Properties and Snapshots are part of the Activities and Events)
+
 ## To Query:
 ```objective-c
 // Query
