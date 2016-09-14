@@ -96,6 +96,7 @@ Populate your jKool objects. These objects include:
 * Events
 * Properties
 * Snapshots. 
+
 Stream each of the objects as follows:
 ```objective-c
 [jkStreaming stream:activity forUrl:@"activity"] ;
