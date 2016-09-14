@@ -20,24 +20,14 @@
 #import "jKoolStreaming.h"
 #import "jkConstants.h"
 
-static NSMutableString *g_token = nil;
-static NSURLSessionConfiguration *defaultConfigObject;
-static NSURLSession *defaultSession;
-static NSURL *url;
-
 @implementation jKoolStreaming
-
-+ (NSString*)token {
-    extern NSMutableString *g_token;
-    return g_token;
+{
+    NSURLSessionConfiguration *defaultConfigObject;
+    NSURLSession *defaultSession;
+    NSURL *url;
 }
 
-+ (void)setToken:(NSString*)jkToken {
-    extern NSMutableString *g_token;
-    if(g_token == nil || ![g_token isEqualToString: jkToken]) {
-        g_token = [NSMutableString stringWithString: jkToken];
-    }
-}
+@synthesize token;
 
 - (void)initializeStream:(NSObject *) handler {
     defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -58,7 +48,7 @@ static NSURL *url;
     NSLog(@"%@",strData);
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     [request setHTTPMethod:@"POST"];
-    [request addValue:g_token forHTTPHeaderField:@"token"];
+    [request addValue:token forHTTPHeaderField:@"token"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody: requestData];
     NSURLSessionDataTask * dataTask = [defaultSession dataTaskWithRequest:request];

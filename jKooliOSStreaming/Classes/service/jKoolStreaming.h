@@ -28,8 +28,7 @@
 
 - (void)stream:(jkTrackable *)trackable  forUrl:(NSString*) path;
 - (void)initializeStream:(NSObject *) handler;
-+ (NSString*)token;
-+ (void)setToken:(NSString*)jkToken;
 - (void) stopStreaming;
+@property NSString *token;
 
 @end
