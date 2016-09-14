@@ -32,7 +32,7 @@ If streaming, add the following to 'App Transport Security Settings'
 Allow Arbirtary Loads
 Exception Domain of data.jkoolcloud.com with NSIncludesSubdomains set to YES
 ```
-If querying, add the following to 'App Transport Security Settings':
+If querying, add the following to 'App Transport Security Settings'
 ```objective-c
 Allow ArbitraryLoads
 Exception Domain of jkool.jkoolcloud.com wiht NSIncludesSubdomains set to YES.
