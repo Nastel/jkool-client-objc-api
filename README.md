@@ -120,6 +120,7 @@ NSString *query = @"get events";
 * Callback Handlers must subclass: jKoolCallbackHandler
 * Callback Handlers must implement the handlejKoolResponse method.
 * 
+
 ## Disconnecting
 ```objective-c
 To close connections, please do the following:
