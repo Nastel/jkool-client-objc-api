@@ -29,24 +29,24 @@ For Streaming:
 jKoolStreaming.h //Streaming Api
 jkCallbackHandlerStreaming.h //Streaming Callback Handler Interface
 ```
-For Querying:
+For Querying
 ```objective-c
 jKoolQuerying.h //Querying Api
 jkCallbackHandlerQuery.h //Querying Callback Handler Interface
 ```
-For Subscribing:
+For Subscribing
 ```objective-c
 jkCallbackHandlerWebsocket.h //Subscription Api
 jKoolWebsocketClient.h //Subscription Callback Handler Interface
 ```
-jKool Objects:
+jKool Objects
 ```objective-c
 jkEvent.h //jKool Event
 jkProperty.h //jKool Property
 jkActivity.h //jKool Activity
 jkSnapshot.h //jKool Snapshot
 ```
-jKool Locationing:
+jKool Locationing
 ```objective-c
 jkLocation.h //Import if you wish to use jKool locationing to automatically detect and store device location on jKool activities and events.
 ```
@@ -90,7 +90,7 @@ To initialize jKool Locationing, do the following:
 location = [[jkLocation alloc] init];
 [location kickOffLocationing];
 ```
-## To Stream:
+## To Stream
 Populate your jKool objects. These objects include: 
 * Activities
 * Events
@@ -104,14 +104,14 @@ Stream each of the objects as follows:
 ```
 (Please note that Properties and Snapshots are part of the Activities and Events)
 
-## To Query:
+## To Query
 ```objective-c
 // Query
 NSString *query = @"get events";
 [jkQuerying query:query withMaxRows:50];
 ```
 (Please note that the query string can contain any JKQL syntax. Please refer to the JKQL Query Language here ...)
-## To Subscribe:
+## To Subscribe
 ```objective-c
 [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@“your-token”  withSubId:@“your-subscription-id”  forHandler:cbWebsocket];
 ```
