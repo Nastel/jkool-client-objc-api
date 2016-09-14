@@ -44,17 +44,14 @@ Depending on which portions of the Api you wish to use, import the following int
 For Streaming:
 ```objective-c
 jKoolStreaming.h //Streaming Api
-jkCallbackHandlerStreaming.h //Streaming Callback Handler Interface
 ```
 For Querying
 ```objective-c
 jKoolQuerying.h //Querying Api
-jkCallbackHandlerQuery.h //Querying Callback Handler Interface
 ```
 For Subscribing
 ```objective-c
 jkCallbackHandlerWebsocket.h //Subscription Api
-jKoolWebsocketClient.h //Subscription Callback Handler Interface
 ```
 jKool Objects
 ```objective-c
@@ -63,17 +60,22 @@ jkProperty.h //jKool Property
 jkActivity.h //jKool Activity
 jkSnapshot.h //jKool Snapshot
 ```
+Callback Objects
+```objective-c
+jKoolCallbackHandler.h //Callback Interface
+```
+
 jKool Locationing
 ```objective-c
 jkLocation.h //Import if you wish to use jKool locationing to automatically detect and store device location on jKool activities and events.
 ```
 
-Define static variables at the top of any implementation file that wishes to use the api. Do so as follows:
+Define your jKool instance variables at the top of any implementation file that wishes to use the api. Do so as follows:
 ```objective-c
-static jKoolWebsocketClient *jkWebsocketClient; // for subscriptions
-static jKoolStreaming *jkStreaming ; // for streaming
-static jKoolQuerying *jkQuerying; // for querying
-static jkLocation *location; // if using jKool locationing.
+jKoolWebsocketClient *jkWebsocketClient; // for subscriptions
+jKoolStreaming *jkStreaming ; // for streaming
+jKoolQuerying *jkQuerying; // for querying
+jkLocation *location; // if using jKool locationing.
 ```
 ## Initialize Streaming
 To Stream, you will need to initialize the jKool Streaming interface and your Callback Handler as follows:
@@ -137,7 +139,7 @@ NSString *query = @"get events";
 * Callback Handlers must subclass: jKoolCallbackHandler
 * Callback Handlers must implement the handlejKoolResponse method.
 
-Callback handlers can be separate objects or they can be the ViewController that is doing the streaming, querying, subscribing. If using the same ViewController, simply specify 'self' as the handler. The situation where separate callback handlers will be necessary is when the results of a callback need to go to more than one destination within the same View Controller. The example app within this Cocoa Pod contains separate call back handlers as well as a commented out example call to a callback handler method that is within the calling ViewController (and 'self' is being used).
+Callback handlers can be separate objects or they can be the ViewController that is doing the streaming, querying, subscribing. If using the same ViewController, simply specify 'self' as the handler. The situation where separate callback handlers will be necessary is when you're working with multiple streams of data. The example app within this Cocoa Pod contains separate call back handlers as well as a commented out example call to a callback handler method that is within the calling ViewController (and 'self' is being used).
 
 ## Disconnecting
 ```objective-c
