@@ -68,7 +68,7 @@ jkStreaming = [[jKoolStreaming alloc] init];
 [jkStreaming initializeStream:cbStream];
 ```
 ## Initialize Querying
-To Query, you will need to initialize the jKool Streaming interface and your Callback Handler as follows:
+To Query, you will need to initialize the jKool Querying interface and your Callback Handler as follows:
 ```objective-c
 // Initialize Querying and specify callback handler
 [jKoolQuerying setToken:@“your-token”];
