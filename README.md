@@ -128,26 +128,26 @@ As stated above, please see the Example app in this pod. It contains a complete 
 * With the subscription, you can see data in real time as it is streamed. If you then install the app on another device or use one of jKool several other Api’s to stream data, you will see the data being streamed in real time in the first app.
  
 ## Defaulted Fields
-*Data Center
-*Server
-*Tid
-*Network Address
-*Application
-*Geo
-*Comp Code
-*Severity 
-*Type
-*Source FQN
-*Time
-*Start Time
-*End Time
-*Elapsed Time
-*Status
-*Msg Charset
-*Msg Encoding
-*Msg Mime Type
-*Msg Size
-*Msg Tag
+* Data Center
+* Server
+* Tid
+* Network Address
+* Application
+* Geo
+* Comp Code
+* Severity 
+* Type
+* Source FQN
+* Time
+* Start Time
+* End Time
+* Elapsed Time
+* Status
+* Msg Charset
+* Msg Encoding
+* Msg Mime Type
+* Msg Size
+* Msg Tag
 
 ## Support
 If you have any questions or concerns, please reach out to us by emailing support@jkoolcloud.com. We will get back to you as quickly as possible. 
