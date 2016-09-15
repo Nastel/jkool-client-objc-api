@@ -56,7 +56,6 @@ jkLocation *location;
     [jkStreaming initializeStream:cbStream];
    
     // Initialize Querying and specify callback handler
-    //[jKoolQuerying setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
     NSObject *cbQuery = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
     NSObject *cbQuery2 = [[jkCallbackHandlerQuery2 alloc] initWithViewController:self];
     jkQuerying1 = [[jKoolQuerying alloc] init];
@@ -153,7 +152,7 @@ jkLocation *location;
     queryText.text = nil;
     queryText2.text = nil;
     jkWebsocketClient = [[jKoolWebsocketClient alloc] init];
-    [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"  withSubId:@"$sub/9577682d-26ae-4f50-8293-cd4640a368f6"  forHandler:cb];
+    [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@"your-token"  withSubId:@"your-subscription-id"  forHandler:cb];
 }
 
 - (IBAction)unsubscribe:(id)sender {
