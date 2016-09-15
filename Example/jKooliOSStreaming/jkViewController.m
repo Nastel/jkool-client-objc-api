@@ -52,7 +52,7 @@ jkLocation *location;
     // Initialize streaming and specify callback handler.
     NSObject *cbStream = [[jkCallbackHandlerStreaming alloc] initWithViewController:self];
     jkStreaming = [[jKoolStreaming alloc] init];
-    [jkStreaming setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
+    [jkStreaming setToken:@"your-token"];
     [jkStreaming initializeStream:cbStream];
    
     // Initialize Querying and specify callback handler
@@ -60,13 +60,13 @@ jkLocation *location;
     NSObject *cbQuery = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
     NSObject *cbQuery2 = [[jkCallbackHandlerQuery2 alloc] initWithViewController:self];
     jkQuerying1 = [[jKoolQuerying alloc] init];
-    [jkQuerying1 setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
+    [jkQuerying1 setToken:@"your-token"];
     [jkQuerying1 initializeQuery:cbQuery];
     // Or to use this ViewController as the handler
     //[jkQuerying initializeQuery:self];
     
     jkQuerying2 = [[jKoolQuerying alloc] init];
-    [jkQuerying2 setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
+    [jkQuerying2 setToken:@"your-token"];
     [jkQuerying2 initializeQuery:cbQuery2];
     
     // Kick-off locationing
