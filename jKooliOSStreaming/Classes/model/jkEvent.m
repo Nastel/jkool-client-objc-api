@@ -156,7 +156,7 @@
     {
         [properties addObject: @"mime-type"];
     }
-    if ([self msgAgeUsec ]!= nil)
+    if ([self msgAgeUsec ] > 0)
     {
         [properties addObject:  @"msg-age"];
     }
@@ -190,9 +190,9 @@
     {
         [values addObject: [NSString stringWithFormat:@"%@", [self msgMimeType]]];
     }
-    if ([self msgAgeUsec] != nil && [self msgAgeUsec] > 0)
+    if ([self msgAgeUsec] > 0 && [self msgAgeUsec] > 0)
     {
-        [values addObject: [NSString stringWithFormat:@"%i", [self msgAgeUsec]]];
+        [values addObject: [NSString stringWithFormat:@"%ld", [self msgAgeUsec]]];
     }
     return values;
 }

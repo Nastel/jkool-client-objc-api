@@ -62,6 +62,5 @@
 - (void)setTimeUsecViaDate:(NSDate *)timeUsec;
 - (NSMutableArray *) valueList;
 - (NSMutableArray *) propertyList;
-- (NSString *) path;
 
 @end

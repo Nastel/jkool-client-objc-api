@@ -72,7 +72,8 @@
 
 - (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error {
     //[self connectWebSocket];
-    [_sendResponse handlejKoolResponse:[NSString stringWithFormat:@"Failed with error:%@", error]];
+    NSData* data = [[NSString stringWithFormat:@"Failed with error:%@", error] dataUsingEncoding:NSUTF8StringEncoding];
+    [_sendResponse handlejKoolResponse:data];
 }
 
 - (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean {

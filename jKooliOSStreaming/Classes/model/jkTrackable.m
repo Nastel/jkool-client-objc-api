@@ -78,8 +78,6 @@
 
 // Server
 - (NSString *)server {
-    NSString *username = [[UIDevice currentDevice] name];
-    mach_port_t machTID = pthread_mach_thread_np(pthread_self());
     if (!_server) {
         _server = DefaultServer;
     }
@@ -307,11 +305,11 @@
     {
         [properties addObject: @"source-url"];
     }
-    if ([self reasonCode] != nil)
+    if ([self reasonCode] > 0)
     {
         [properties addObject: @"reason-code"];
     }
-    if ([self waitTimeUsec] != nil)
+    if ([self waitTimeUsec] > 0)
     {
         [properties addObject: @"wait-time-usec"];
     }
@@ -323,11 +321,11 @@
     {
         [properties addObject:@"properties"];
     }
-    if ([self tid] != nil)
+    if ([self tid] > 0)
     {
         [properties addObject:@"tid"];
     }
-    if ([self pid] != nil)
+    if ([self pid] > 0)
     {
         [properties addObject:@"pid"];
     }
@@ -370,11 +368,11 @@
     {
         [values addObject: [NSString stringWithFormat:@"%@", [self sourceUrl]]];
     }
-    if ([self reasonCode] != nil)
+    if ([self reasonCode] > 0)
     {
         [values addObject: [NSString stringWithFormat:@"%i", [self reasonCode]]];
     }
-    if ([self waitTimeUsec] != nil)
+    if ([self waitTimeUsec] > 0)
     {
         [values addObject: [NSString stringWithFormat:@"%ld", [self waitTimeUsec]]];
     }
@@ -391,12 +389,12 @@
         }
         [values addObject:propertyArray];
     }
-    if ([self tid] != nil)
+    if ([self tid] > 0)
     {
-        [values addObject: [NSString stringWithFormat:@"%i", [self tid]]];    }
-    if ([self pid] != nil)
+        [values addObject: [NSString stringWithFormat:@"%ld", [self tid]]];    }
+    if ([self pid] > 0)
     {
-        [values addObject: [NSString stringWithFormat:@"%i", [self pid]]];
+        [values addObject: [NSString stringWithFormat:@"%ld", [self pid]]];
     }
     if ([self exception] != nil)
     {
