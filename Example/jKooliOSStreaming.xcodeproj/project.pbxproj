@@ -146,7 +146,6 @@
 				4A0F913F1D89EB4D006362F6 /* jkCallbackHandlerQuery2.m */,
 				4A71A83C1D86E0EA00CB765F /* jkCallbackHandlerWebsocket.h */,
 				4A71A83D1D86E0EA00CB765F /* jkCallbackHandlerWebsocket.m */,
-				4A53D3481D7F6227007274F3 /* jkCallbackHandlerQuery.h */,
 				4A53D3491D7F6227007274F3 /* jkCallbackHandlerQuery.m */,
 				4A53D3451D7F44CE007274F3 /* jkCallbackHandlerStreaming.h */,
 				4A53D3461D7F44CE007274F3 /* jkCallbackHandlerStreaming.m */,
@@ -156,6 +155,7 @@
 				6003F5A5195388D20070C39A /* jkViewController.h */,
 				6003F5A6195388D20070C39A /* jkViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				4A53D3481D7F6227007274F3 /* jkCallbackHandlerQuery.h */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for jKooliOSStreaming";
