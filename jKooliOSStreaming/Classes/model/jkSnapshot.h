@@ -24,11 +24,11 @@
 
 }
 
-@property NSString * category;
-@property NSString * name;
-@property long long timeUsec;
-@property NSArray *  properties;
-@property enum EventTypes type;
+@property (retain, nonatomic) NSString * category;
+@property (retain, nonatomic) NSString * name;
+@property (nonatomic) long long timeUsec;
+@property (retain, nonatomic) NSArray *  properties;
+@property (nonatomic) enum EventTypes type;
 - (void)setTimeUsecViaDate:(NSDate *)timeUsec;
 - (NSMutableArray *) propertyList;
 - (NSMutableArray *) valueList;

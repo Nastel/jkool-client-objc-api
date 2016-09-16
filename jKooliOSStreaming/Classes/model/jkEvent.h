@@ -22,17 +22,14 @@
 
 
 @interface jkEvent : jkTrackable 
-{
 
-}
-
-@property (retain) NSString * msgText;
-@property (retain) NSString * msgTag;
-@property (retain) NSString *  msgCharset;
-@property (retain) NSString *  msgEncoding;
-@property (retain) NSString *  msgMimeType;
-@property long msgAgeUsec;
-@property int msgSize;
+@property (retain, nonatomic) NSString * msgText;
+@property (retain, nonatomic) NSString * msgTag;
+@property (retain, nonatomic) NSString *  msgCharset;
+@property (retain, nonatomic) NSString *  msgEncoding;
+@property (retain, nonatomic) NSString *  msgMimeType;
+@property (nonatomic) long msgAgeUsec;
+@property (nonatomic) int msgSize;
 
 - (NSMutableArray *) propertyList;
 - (NSMutableArray *) valueList;

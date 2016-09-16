@@ -23,10 +23,10 @@
 {
 
 }
-@property NSString * name;
-@property NSString * type;
-@property NSObject * value;
-@property NSString * valueType;
+@property (retain, nonatomic) NSString * name;
+@property (retain, nonatomic) NSString * type;
+@property (retain, nonatomic) NSObject * value;
+@property (retain, nonatomic) NSString * valueType;
 
 - (bool) isvalid;
 - (id)initWithName: (NSString*)name andType:(NSString*)type andValue:(NSString*)value;

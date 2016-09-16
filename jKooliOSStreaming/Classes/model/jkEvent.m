@@ -56,7 +56,7 @@
     return _msgEncoding;
 }
 
-- (void)setMsgEncoding:(NSString *)msgEncoding:(NSString *)msgEncoding {
+- (void)setMsgEncoding:(NSString *)msgEncoding {
     _msgEncoding = msgEncoding;
 }
 // Msg Mime Type
@@ -68,7 +68,7 @@
     return _msgMimeType;
 }
 
-- (void)setMsgMimeType:(NSString *)msgMimeType:(NSString *)msgMimeType {
+- (void)setMsgMimeType:(NSString *)msgMimeType {
     _msgMimeType = msgMimeType;
 }
 // Msg Size

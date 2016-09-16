@@ -23,41 +23,41 @@
 
 @interface jkTrackable : NSObject <CLLocationManagerDelegate>
 
-@property enum CompCodes compCode;
-@property enum Severities jkSeverity;
-@property enum EventTypes type;
+@property (nonatomic) enum CompCodes compCode;
+@property (nonatomic) enum Severities jkSeverity;
+@property (nonatomic) enum EventTypes type;
 
-@property long long timeUsec;
-@property long long startTimeUsec;
-@property long long endTimeUsec;
-@property long elapsedTimeUsec;
-@property long waitTimeUsec;
-@property long pid;
-@property long tid;
+@property (nonatomic) long long timeUsec;
+@property (nonatomic) long long startTimeUsec;
+@property (nonatomic) long long endTimeUsec;
+@property (nonatomic) long elapsedTimeUsec;
+@property (nonatomic) long waitTimeUsec;
+@property (nonatomic) long pid;
+@property (nonatomic) long tid;
 
-@property int reasonCode;
+@property (nonatomic) int reasonCode;
 
-@property (retain) NSString * trackingId;
-@property (retain) NSString * sourceUrl;
-@property (retain) NSString * exception;
-@property (retain) NSString * parentTrackId;
+@property (retain, nonatomic) NSString * trackingId;
+@property (retain, nonatomic) NSString * sourceUrl;
+@property (retain, nonatomic) NSString * exception;
+@property (retain, nonatomic) NSString * parentTrackId;
 
 
-@property (retain) NSString * dataCenter;
-@property (retain) NSString * geoAddr;
-@property (retain) NSString * eventName;
-@property (retain) NSString * appl;
+@property (retain, nonatomic) NSString * dataCenter;
+@property (retain, nonatomic) NSString * geoAddr;
+@property (retain, nonatomic) NSString * eventName;
+@property (retain, nonatomic) NSString * appl;
 
-@property (retain) NSString * location;
-@property (retain) NSString * resource;
-@property (retain) NSString * server;
-@property (retain) NSString * netAddr;
-@property (retain) NSString * user;
-@property (retain) NSString *sourceFqn;
+@property (retain, nonatomic) NSString * location;
+@property (retain, nonatomic) NSString * resource;
+@property (retain, nonatomic) NSString * server;
+@property (retain, nonatomic) NSString * netAddr;
+@property (retain, nonatomic) NSString * user;
+@property (retain, nonatomic) NSString *sourceFqn;
 
-@property (retain) NSString * corrId;
-@property NSMutableArray * properties;
-@property NSMutableArray * snapshots;
+@property (retain, nonatomic) NSString * corrId;
+@property (retain, nonatomic) NSMutableArray * properties;
+@property (retain, nonatomic) NSMutableArray * snapshots;
 
 - (void)setTimeUsecViaDate:(NSDate *)timeUsec;
 - (NSMutableArray *) valueList;
