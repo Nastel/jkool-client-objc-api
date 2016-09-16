@@ -33,8 +33,8 @@
 
 @synthesize vc;
 
-- (id)initWithViewController: (UIViewController *) theVc  {
-    [self setVc:theVc];
+- (id)initWithViewController: (UIViewController *) vc  {
+    [self setVc:vc];
     return self;
 }
 

@@ -152,7 +152,7 @@ jkLocation *location;
     queryText.text = nil;
     queryText2.text = nil;
     jkWebsocketClient = [[jKoolWebsocketClient alloc] init];
-    [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@"your-token"  withSubId:@"your-subscription-id"  forHandler:cb];
+    [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@"your-token"  withSubId:@"your-sub-id"  forHandler:cb];
 }
 
 - (IBAction)unsubscribe:(id)sender {
