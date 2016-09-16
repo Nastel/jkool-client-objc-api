@@ -130,7 +130,7 @@ Stream each of the objects as follows:
 NSString *query = @"get events";
 [jkQuerying query:query withMaxRows:50];
 ```
-(Please note that the query string can contain any JKQL syntax. Please refer to the JKQL Query Language http://www.jkoolcloud.com/download/jKQL%20User%20Guide.pdf)
+(Please note that the query string can contain any JKQL syntax. Please refer to the [JKQL Query Language](http://www.jkoolcloud.com/download/jKQL%20User%20Guide.pdf))
 ## To Subscribe
 ```objective-c
 [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@“your-token”  withSubId:@“your-subscription-id”  forHandler:cbWebsocket];
