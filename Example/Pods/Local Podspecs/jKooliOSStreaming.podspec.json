@@ -1,6 +1,6 @@
 {
   "name": "jKooliOSStreaming",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "jKool Streaming, Querying and Subscriptions.",
   "description": "jKool is a big-data solution that allows you to easily store (via our streaming Api’s) your data in our hosted Cassandra repository and then analyze it visually via our User Interface.  jKool can analyze fast data such as logs, metrics, transactions in real-time, etc. As a result, you can focus on finding insight and opportunities in your data. This iOS Api will allow you to stream, query and subscribe to jKool data from within your iOS apps. For more information on jKool, please visit www.jkoolcloud.com",
   "homepage": "https://github.com/Nastel/jKooliOSStreaming",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Nastel/jKooliOSStreaming.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "8.0"

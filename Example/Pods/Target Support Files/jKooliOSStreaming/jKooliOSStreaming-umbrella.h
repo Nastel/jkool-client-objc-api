@@ -14,6 +14,7 @@
 #import "jKoolService.h"
 #import "jKoolStreamDeviceInfo.h"
 #import "jKoolStreaming.h"
+#import "jKoolWebsocketCallbackHandler.h"
 #import "jKoolWebsocketClient.h"
 #import "JsonParser.h"
 

@@ -15,14 +15,31 @@
  *
  * CopyrightVersion 1.0
  *
- */ 
+ */
 
-@import UIKit;
 #import "jKoolWebsocketCallbackHandler.h"
+#import "jKoolStreaming.h"
+#import "jKoolQuerying.h"
+#import "jkEvent.h"
+#import "jkProperty.h"
+#import "jkActivity.h"
+#import "jkSnapshot.h"
 
-@interface jkCallbackHandlerWebsocket : jKoolWebsocketCallbackHandler
+@interface jKoolWebsocketCallbackHandler ()
 
-//- (void) handlejKoolResponse:(NSData *) data;
-- (void) handlejKoolResponse:(NSString *) str;
+@end
+
+@implementation jKoolWebsocketCallbackHandler
+
+@synthesize vc;
+
+- (id)initWithViewController: (UIViewController *) vc  {
+    [self setVc:vc];
+    return self;
+}
+
+- (void) handlejKoolResponse:(NSString *) str {
+
+}
 
 @end

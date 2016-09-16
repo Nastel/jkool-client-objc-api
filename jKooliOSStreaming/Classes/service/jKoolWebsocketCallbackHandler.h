@@ -17,18 +17,13 @@
 *
 */
 
-#import <UIKit/UIKit.h>
-#import <SocketRocket/SRWebSocket.h>
-#import "jKoolWebsocketCallbackHandler.h"
+@import UIKit;
 
-@interface jKoolWebsocketClient : NSObject
+@interface jKoolWebsocketCallbackHandler : NSObject
 
-@property NSString *token;
-@property NSString *subId;
-@property NSString *subscribeUrl;
-@property jKoolWebsocketCallbackHandler *sendResponse;
+@property (retain) UIViewController * vc;
 
-- (void)subscribe:(NSString *)jkQuery withMaxRows:(int) maxRows withToken:(NSString *) token withSubId:(NSString *) subId forHandler:(NSObject *) handler;
-- (void)unsubscribe;
+- (void) handlejKoolResponse:(NSString *) str;
+- (id)initWithViewController: (UIViewController *) vc;
 
 @end

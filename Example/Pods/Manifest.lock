@@ -1,5 +1,5 @@
 PODS:
-  - jKooliOSStreaming (0.0.1):
+  - jKooliOSStreaming (0.0.2):
     - SocketRocket
   - SocketRocket (0.5.1)
 
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  jKooliOSStreaming: f84d2575fe2cfba79117058064553407f3f0e168
+  jKooliOSStreaming: be4a0956b7520a7ab9f241c2fce5e412a00b620f
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
 PODFILE CHECKSUM: ba4e9780b9a692e30fe2c16cdbb68d3472a767e6

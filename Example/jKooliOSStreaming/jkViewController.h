@@ -29,6 +29,8 @@
 @property (retain) UITextView * queryText2;
 - (IBAction)stream:(id)sender;
 - (IBAction)query:(id)sender;
+- (IBAction)subscribe:(id)sender;
+- (IBAction)unsubscribe:(id)sender;
 
 
 @end
