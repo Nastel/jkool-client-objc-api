@@ -22,11 +22,8 @@
 #import "jkConstants.h"
 
 @interface jkActivity : jkTrackable
-{
 
-}
-
-@property enum Statuses jkStatus;
+@property (nonatomic) enum Statuses jkstatus;
 
 - (id)initWithName: (NSString*)name;
 - (id)initWithName: (NSString*)name andTrackingId:(NSString*)trackingId;

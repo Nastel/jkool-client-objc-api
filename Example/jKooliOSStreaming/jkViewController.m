@@ -122,7 +122,7 @@ jkLocation *location;
     
     // Stream Activity
     jkActivity *activity = [[jkActivity alloc] initWithName:@"test activity"];
-    [activity setJkStatus:JK_END];
+    [activity setJkstatus:JK_END];
     [activity setReasonCode:9];
     [activity setException:@"my exception"];
     [activity setUser:@"Cathy"];

@@ -23,21 +23,21 @@
 
 @implementation jkActivity
 
-@synthesize jkStatus = _jkStatus;
+@synthesize jkstatus = _jkstatus;
 
-- (enum Statuses)jkStatus {
-    if (!_jkStatus && [self exception] != nil) {
-        _jkStatus = JK_END;
+- (enum Statuses)jkstatus {
+    if (!_jkstatus && [self exception] != nil) {
+        _jkstatus = JK_END;
     }
     else
     {
-        _jkStatus = JK_EXCEPTION;
+        _jkstatus = JK_EXCEPTION;
     }
-    return _jkStatus;
+    return _jkstatus;
 }
 
-- (void)setStatus:(enum Statuses)jkStatus {
-    _jkStatus = jkStatus;
+- (void)setJkstatus:(enum Statuses)jkstatus {
+    _jkstatus = jkstatus;
 }
 
 - (id)init {
@@ -77,7 +77,7 @@
 
 - (NSMutableArray *) valueList {
     NSMutableArray * values = [super valueList];
-   [values addObject: [NSString stringWithFormat:@"%@", [jkConstants formatStatusString:[self jkStatus]]]];
+   [values addObject: [NSString stringWithFormat:@"%@", [jkConstants formatStatusString:[self jkstatus]]]];
      return values;
 }
 
