@@ -1,7 +1,7 @@
 # jKool Streaming & Query API for iOS
 
 Welcome to jKool’s iOS streaming Api. The purpose of this Api is to allow streaming to, querying from, and subscribing to data in a jKool repository. In order to use this Api, you will need a jKool account and the account’s access token. If you do not have a jKool account, you can [register](https://www.jkoolcloud.com/signup/signup) free. 
-See the example app in this Cocoa Pod which contains fully functioning code for querying, streaming, and  subscribing. This API is based on secure jKool Restful interface. See the [documentation](https://www.jkoolcloud.com/download/jkool-model.pdf) for information about data model, terms and concepts.
+See the example app in this Cocoa Pod which contains fully functioning code for querying, streaming, and  subscribing. This API is based on secure jKool Restful interface. See [jKool Model Guide](https://www.jkoolcloud.com/download/jkool-model.pdf) for information about data model, terms and concepts.
 
 ## Example
 
