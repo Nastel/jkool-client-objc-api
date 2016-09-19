@@ -1,6 +1,0 @@
-framework module jKooliOSStreaming {
-  umbrella header "jKooliOSStreaming-umbrella.h"
-
-  export *
-  module * { export * }
-}

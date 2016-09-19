@@ -241,7 +241,7 @@ limitations under the License.
 
 </string>
 			<key>Title</key>
-			<string>jKooliOSStreaming</string>
+			<string>jkool-client-objc-api</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
