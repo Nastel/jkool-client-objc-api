@@ -1,21 +1,12 @@
 #
-# Be sure to run `pod lib lint jKooliOSStreaming.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'jKooliOSStreaming'
-  s.version          = '0.0.2'
+  s.name             = 'jkool-client-objc-api'
+  s.version          = '0.1.0'
   s.summary          = 'jKool Streaming, Querying and Subscriptions.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+#
+#
 
   s.description      = <<-DESC
 jKool is a big-data solution that allows you to easily store (via our streaming Api’s) your data in our hosted Cassandra repository and then analyze it visually via our User Interface.  jKool can analyze fast data such as logs, metrics, transactions in real-time, etc. As a result, you can focus on finding insight and opportunities in your data. This iOS Api will allow you to stream, query and subscribe to jKool data from within your iOS apps. For more information on jKool, please visit www.jkoolcloud.com
