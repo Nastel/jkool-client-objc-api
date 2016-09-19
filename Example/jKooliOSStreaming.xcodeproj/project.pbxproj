@@ -73,7 +73,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A581792096671690AE11DA01 /* jKooliOSStreaming.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = jKooliOSStreaming.podspec; path = ../jKooliOSStreaming.podspec; sourceTree = "<group>"; };
+		A581792096671690AE11DA01 /* jkool-client-objc-api.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "jkool-client-objc-api.podspec"; path = "../jkool-client-objc-api.podspec"; sourceTree = "<group>"; };
 		BAA11B215C60076BEDEF90D3 /* Pods_jKooliOSStreaming_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jKooliOSStreaming_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26DE93538264F6A8E841E3C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FDC6B33CB38AED2B1A127A80 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				A581792096671690AE11DA01 /* jKooliOSStreaming.podspec */,
+				A581792096671690AE11DA01 /* jkool-client-objc-api.podspec */,
 				F26DE93538264F6A8E841E3C /* README.md */,
 				FDC6B33CB38AED2B1A127A80 /* LICENSE */,
 			);
