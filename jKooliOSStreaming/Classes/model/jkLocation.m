@@ -41,7 +41,6 @@ CLLocationManager *locationManager;
      didUpdateLocations:(NSArray *)locations {
     {
         _detectedLocation = [locations lastObject];
-        NSLog([NSString stringWithFormat:@"%f,%f",_detectedLocation.coordinate.latitude, _detectedLocation.coordinate.longitude]);
         [locationManager stopUpdatingLocation];
 
     }}
