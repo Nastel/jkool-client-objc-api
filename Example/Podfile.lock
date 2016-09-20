@@ -1,5 +1,5 @@
 PODS:
-  - jkool-client-objc-api (0.1.0):
+  - jkool-client-objc-api (0.1.1):
     - SocketRocket
   - SocketRocket (0.5.1)
 
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  jkool-client-objc-api: eef64b4eb3ff852335c500f84fe073de937f3409
+  jkool-client-objc-api: 84c2dcb729aef0cc2b68eeef6b8c6714ca2e88f8
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
 PODFILE CHECKSUM: eecafad21b3d7b7536c3f906a205bba9979fa999
