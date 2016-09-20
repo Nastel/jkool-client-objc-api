@@ -17,8 +17,6 @@
 #import "jKoolWebsocketCallbackHandler.h"
 #import "jKoolWebsocketClient.h"
 #import "JsonParser.h"
-#import "UIApplication+UIApplication_jk.h"
-#import "UIViewController+UIViewController_jk.h"
 
 FOUNDATION_EXPORT double jkool_client_objc_apiVersionNumber;
 FOUNDATION_EXPORT const unsigned char jkool_client_objc_apiVersionString[];

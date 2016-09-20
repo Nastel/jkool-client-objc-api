@@ -1,12 +1,8 @@
 use_frameworks!
-
 target 'jKooliOSStreaming_Example' do
-  pod ‘jkool-client-objc-api’,  :path => '../'
+  pod 'jkool-client-objc-api',  :path => '../'
   pod 'SocketRocket'
-
   target 'jKooliOSStreaming_Tests' do
     inherit! :search_paths
-
-
   end
 end
