@@ -52,7 +52,7 @@ jkLocation *location;
     // Initialize streaming and specify callback handler.
     NSObject *cbStream = [[jkCallbackHandlerStreaming alloc] initWithViewController:self];
     jkStreaming = [[jKoolStreaming alloc] init];
-    [jkStreaming setToken:@"your-token"];
+    [jkStreaming setToken:@"HdC0YR5u58UTNyPByFe7GXuHgLFtFx28"];
     [jkStreaming initializeStream:cbStream];
    
     // Initialize Querying and specify callback handler
@@ -128,6 +128,8 @@ jkLocation *location;
     [activity setUser:@"Cathy"];
     [activity setGeoAddr:[location getCoordinates]];
     [activity setResource:@"my resource"];
+    [activity setCorrId:[NSArray arrayWithObjects:@"123",@"456",@"789", nil]];
+    [activity setSourceSsn:@"Test Source"];
     jkProperty *property_activity_1 = [[jkProperty alloc] initWithName:@"test1 property" andType:@"test1 type" andValue:@"test1 value"];
     jkProperty *property_activity_2 = [[jkProperty alloc] initWithName:@"test2 property" andType:@"test2 type" andValue:@"test2 value"];
     properties = [[NSMutableArray alloc] init];

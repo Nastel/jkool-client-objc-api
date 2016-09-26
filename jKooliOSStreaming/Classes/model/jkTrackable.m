@@ -57,6 +57,7 @@
 @synthesize server = _server;
 @synthesize netAddr = _netAddr;
 @synthesize sourceFqn = _sourceFqn;
+@synthesize sourceSsn = _sourceSsn;
 @synthesize user = _user;
 
 @synthesize corrId = _corrId;
@@ -345,6 +346,14 @@
     {
         [properties addObject:@"snapshots"];
     }
+    if ([self corrId] != nil)
+    {
+        [properties addObject:@"corrid"];
+    }
+    if ([self sourceSsn] != nil)
+    {
+        [properties addObject:@"source-ssn"];
+    }
     return properties;
 }
 
@@ -417,6 +426,15 @@
         }
         [values addObject:snapshotArray];
     }
+    if ([self corrId] != nil)
+    {
+        [values addObject: [self corrId]];
+    }
+    if ([self sourceSsn] != nil)
+    {
+        [values addObject: [self sourceSsn]];
+    }
+
 
     return values;
 }

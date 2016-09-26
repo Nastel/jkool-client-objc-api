@@ -54,8 +54,9 @@
 @property (retain, nonatomic) NSString * netAddr;
 @property (retain, nonatomic) NSString * user;
 @property (retain, nonatomic) NSString *sourceFqn;
+@property (retain, nonatomic) NSString *sourceSsn;
 
-@property (retain, nonatomic) NSString * corrId;
+@property (retain, nonatomic) NSArray* corrId;
 @property (retain, nonatomic) NSMutableArray * properties;
 @property (retain, nonatomic) NSMutableArray * snapshots;
 
