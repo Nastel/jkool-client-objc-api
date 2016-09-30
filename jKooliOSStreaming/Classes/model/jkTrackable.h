@@ -47,6 +47,7 @@
 @property (retain, nonatomic) NSString * geoAddr;
 @property (retain, nonatomic) NSString * eventName;
 @property (retain, nonatomic) NSString * appl;
+@property (retain, nonatomic) NSString * deviceName;
 
 @property (retain, nonatomic) NSString * location;
 @property (retain, nonatomic) NSString * resource;

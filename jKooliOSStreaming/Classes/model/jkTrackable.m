@@ -51,6 +51,8 @@
 @synthesize dataCenter = _dataCenter;
 @synthesize geoAddr = _geoAddr;
 @synthesize eventName = _eventName;
+@synthesize deviceName = _deviceName;
+
 
 @synthesize location = _location;
 @synthesize resource = _resource;
@@ -88,6 +90,19 @@
 
 - (void)setServer:(NSString *)server {
     _server = server;
+}
+
+// Server
+- (NSString *)deviceName {
+    if (!_deviceName) {
+        _deviceName = [[UIDevice currentDevice] name];
+    }
+    
+    return _deviceName;
+}
+
+- (void)setDeviceName:(NSString *)deviceName {
+    _deviceName = deviceName;
 }
 
 // Tid
@@ -186,7 +201,7 @@
 // Source FQN
 - (NSString *)sourceFqn {
     if (!_sourceFqn) {
-        _sourceFqn = [NSString stringWithFormat:@"APPL=%@#SERVER=%@#NETADDR=%@#DATACENTER=%@#GEOADDR=%@", [self appl], [self server], [self netAddr], [self dataCenter], [self geoAddr]];
+        _sourceFqn = [NSString stringWithFormat:@"APPL=%@#SERVER=%@#NETADDR=%@#DATACENTER=%@#GEOADDR=%@#DEVICE=%@", [self appl], [self server], [self netAddr], [self dataCenter], [self geoAddr], [self deviceName]];
 
     }
     
