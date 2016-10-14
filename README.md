@@ -75,12 +75,21 @@ var location:jkLocation; // if using jKool locationing.
 ```
 ## Initialize Streaming
 To Stream, you will need to initialize the jKool Streaming interface and your Callback Handler as follows:
+
+Obj-c
 ```objective-c
 // Initialize streaming and specify callback handler.
 NSObject *cbStream = [[<your-callback-handler> alloc] initWithViewController:self];
 jkStreaming = [[jKoolStreaming alloc] init];
 [jkStreaming setToken:@“your-token”];
 [jkStreaming initializeStream:cbStream];
+```
+Swift
+```swift
+let cbStream : jkCallback = jkCallback.init(viewController: self);
+let jkStreaming : jKoolStreaming = jKoolStreaming ();
+jkStreaming.token = "your-token"
+jkStreaming.initializeStream(cbStream);
 ```
 ## Initialize Querying
 To Query, you will need to initialize the jKool Querying interface and your Callback Handler as follows:
@@ -97,25 +106,43 @@ jkQuerying = [[jKoolQuerying alloc] init];
 Swift
 ```swift
 // Initialize Querying and specify callback handler
-let cbQuery : jkCallback = jkCallback.init(viewController: self);
+let cbQuery : <your-callback-handler> = <your-callback-handler>.init(viewController: self);
 let jkQuerying : jKoolQuerying = jKoolQuerying ();
 jkQuerying.token = "your-token"
 jkQuerying.initializeQuery(cbQuery);
 ```
 ## Initialize Subscribing
 To Subscribe, you will need to initialize the jKool Subscription interface and your Callback Handler as follows:
+
+Obj-c
 ```objective-c
 // Initialize Subscription
 NSObject *cbWebsocket = [[<your-callback-handler> alloc] initWithViewController:self];
 jkWebsocketClient = [[jKoolWebsocketClient alloc] init];
 ```
+Swift
+```objective-c
+// Initialize Subscription
+let cbWebsocket : <your-callback-handler> = <your-callback-handler>.init(viewController: self);
+let jkWebsocketClient : jKoolWebsocketClient.init();
+```
 ## Initialize jKool Locationing
+
+Obj-c
 ```objective-c
 To initialize jKool Locationing, do the following:
 // Kick-off locationing
 location = [[jkLocation alloc] init];
 [location kickOffLocationing];
 ```
+Swift
+```swift
+To initialize jKool Locationing, do the following:
+// Kick-off locationing
+let location : jkLocation.init();
+location.kickOffLocationing();
+```
+
 ## To Stream
 Populate your jKool objects. These objects include: 
 * Activities
