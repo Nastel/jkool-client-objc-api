@@ -151,9 +151,16 @@ Populate your jKool objects. These objects include:
 * Snapshots. 
 
 Stream each of the objects as follows:
+
+Obj-c
 ```objective-c
 [jkStreaming stream:activity forUrl:@"activity"] ;
 [jkStreaming stream:event forUrl:@“event”] ;
+```
+Swift
+```swift
+jkStreaming.stream(activity,forUrl:"activity");
+jkStreaming,stream(event,forUrl:“event”);
 ```
 (Please note that Properties and Snapshots are part of the Activities and Events)
 
