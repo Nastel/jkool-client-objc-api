@@ -21,6 +21,10 @@ Include this Api by putting the following in your PodFile:
 ```ruby
 pod 'jkool-client-objc-api'
 ```
+
+##Bridging for Swift:
+If you wish this CocoaPod to work in a Swift app, you simply need to create a Bridge.m file and include the following headers. When creating Bridge.m, click the option to 'Create Bridging Header'. The code examples in this ReadMe are in both Swift and Objective-c.
+
 ##Initialize
 Depending on which portions of the Api you wish to use, import the following into your app:
 
@@ -54,11 +58,20 @@ jkLocation.h //Import if you wish to use jKool locationing to automatically dete
 ```
 
 Define your jKool instance variables at the top of any implementation file that wishes to use the api. Do so as follows:
+
+Obj-c
 ```objective-c
 jKoolWebsocketClient *jkWebsocketClient; // for subscriptions
 jKoolStreaming *jkStreaming ; // for streaming
 jKoolQuerying *jkQuerying; // for querying
 jkLocation *location; // if using jKool locationing.
+```
+Swift
+```swift
+var jkWebsocketClient:jKoolWebsocketClient; // for subscriptions
+var jkStreaming:jKoolStreaming; // for streaming
+var jkQuerying:jKoolQuerying; // for querying
+var location:jkLocation; // if using jKool locationing.
 ```
 ## Initialize Streaming
 To Stream, you will need to initialize the jKool Streaming interface and your Callback Handler as follows:
@@ -71,12 +84,23 @@ jkStreaming = [[jKoolStreaming alloc] init];
 ```
 ## Initialize Querying
 To Query, you will need to initialize the jKool Querying interface and your Callback Handler as follows:
+
+Obj-c
 ```objective-c
 // Initialize Querying and specify callback handler
 NSObject *cbQuery = [[<your-callback-handler> alloc] initWithViewController:self];
 jkQuerying = [[jKoolQuerying alloc] init];
 [jkQuerying setToken:@“your-token”];
 [jkQuerying initializeQuery:cbQuery];
+```
+
+Swift
+```swift
+// Initialize Querying and specify callback handler
+let cbQuery : jkCallback = jkCallback.init(viewController: self);
+let jkQuerying : jKoolQuerying = jKoolQuerying ();
+jkQuerying.token = "your-token"
+jkQuerying.initializeQuery(cbQuery);
 ```
 ## Initialize Subscribing
 To Subscribe, you will need to initialize the jKool Subscription interface and your Callback Handler as follows:
@@ -107,10 +131,17 @@ Stream each of the objects as follows:
 (Please note that Properties and Snapshots are part of the Activities and Events)
 
 ## To Query
+
+Obj-c
 ```objective-c
 // Query
 NSString *query = @"get events";
 [jkQuerying query:query withMaxRows:50];
+```
+Swift
+```swift
+// Query
+jkQuerying.query("get events", withMaxRows: 50);
 ```
 (Please note that the query string can contain any JKQL syntax. Please refer to the [JKQL Query Language](http://www.jkoolcloud.com/download/jKQL%20User%20Guide.pdf))
 ## To Subscribe
