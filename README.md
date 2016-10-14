@@ -196,17 +196,16 @@ jkWebsocketClient.subscribe("subscribe to events":withMaxRows:10.withToken:“yo
 Callback handlers can be separate objects or they can be the ViewController that is doing the streaming, querying, subscribing. If using the same ViewController, simply specify 'self' as the handler. The situation where separate callback handlers will be necessary is when you're working with multiple streams of data. The example app within this Cocoa Pod contains separate call back handlers as well as a commented out example call to a callback handler method that is within the calling ViewController (and 'self' is being used).
 
 ## Disconnecting
+To close connections, please do the following:
 
 Obj-c
 ```objective-c
-To close connections, please do the following:
 [jkWebsocketClient unsubscribe];
 [jkStreaming stopStreaming];
 [jkQuerying stopQuerying];
 ```
 Swift
 ```swift
-To close connections, please do the following:
 jkWebsocketClient.unsubscribe();
 jkStreaming.stopStreaming();
 jkQuerying.stopQuerying();
