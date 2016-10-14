@@ -79,7 +79,7 @@ To Stream, you will need to initialize the jKool Streaming interface and your Ca
 Obj-c
 ```objective-c
 // Initialize streaming and specify callback handler.
-NSObject *cbStream = [[<your-callback-handler> alloc] initWithViewController:self];
+<your-callback-handler> *cbStream = [[<your-callback-handler> alloc] initWithViewController:self];
 jkStreaming = [[jKoolStreaming alloc] init];
 [jkStreaming setToken:@“your-token”];
 [jkStreaming initializeStream:cbStream];
@@ -97,7 +97,7 @@ To Query, you will need to initialize the jKool Querying interface and your Call
 Obj-c
 ```objective-c
 // Initialize Querying and specify callback handler
-NSObject *cbQuery = [[<your-callback-handler> alloc] initWithViewController:self];
+<your-callback-handler> *cbQuery = [[<your-callback-handler> alloc] initWithViewController:self];
 jkQuerying = [[jKoolQuerying alloc] init];
 [jkQuerying setToken:@“your-token”];
 [jkQuerying initializeQuery:cbQuery];
@@ -117,7 +117,7 @@ To Subscribe, you will need to initialize the jKool Subscription interface and y
 Obj-c
 ```objective-c
 // Initialize Subscription
-NSObject *cbWebsocket = [[<your-callback-handler> alloc] initWithViewController:self];
+<your-callback-handler> *cbWebsocket = [[<your-callback-handler> alloc] initWithViewController:self];
 jkWebsocketClient = [[jKoolWebsocketClient alloc] init];
 ```
 Swift
