@@ -21,6 +21,10 @@ Include this Api by putting the following in your PodFile:
 ```ruby
 pod 'jkool-client-objc-api'
 ```
+
+##Bridging for Swift:
+If you wish this CocoaPod to work in a Swift app, you simply need to create a Bridge.m file and include the following headers. When creating Bridge.m, click the option to 'Create Bridging Header'. The code examples in this ReadMe are in both Swift and Objective-c.
+
 ##Initialize
 Depending on which portions of the Api you wish to use, import the following into your app:
 
@@ -54,44 +58,91 @@ jkLocation.h //Import if you wish to use jKool locationing to automatically dete
 ```
 
 Define your jKool instance variables at the top of any implementation file that wishes to use the api. Do so as follows:
+
+Obj-c
 ```objective-c
 jKoolWebsocketClient *jkWebsocketClient; // for subscriptions
 jKoolStreaming *jkStreaming ; // for streaming
 jKoolQuerying *jkQuerying; // for querying
 jkLocation *location; // if using jKool locationing.
 ```
+Swift
+```swift
+var jkWebsocketClient:jKoolWebsocketClient; // for subscriptions
+var jkStreaming:jKoolStreaming; // for streaming
+var jkQuerying:jKoolQuerying; // for querying
+var location:jkLocation; // if using jKool locationing.
+```
 ## Initialize Streaming
 To Stream, you will need to initialize the jKool Streaming interface and your Callback Handler as follows:
+
+Obj-c
 ```objective-c
 // Initialize streaming and specify callback handler.
-NSObject *cbStream = [[<your-callback-handler> alloc] initWithViewController:self];
+<your-callback-handler> *cbStream = [[<your-callback-handler> alloc] initWithViewController:self];
 jkStreaming = [[jKoolStreaming alloc] init];
 [jkStreaming setToken:@“your-token”];
 [jkStreaming initializeStream:cbStream];
 ```
+Swift
+```swift
+let cbStream : jkCallback = jkCallback.init(viewController: self);
+let jkStreaming : jKoolStreaming = jKoolStreaming ();
+jkStreaming.token = "your-token"
+jkStreaming.initializeStream(cbStream);
+```
 ## Initialize Querying
 To Query, you will need to initialize the jKool Querying interface and your Callback Handler as follows:
+
+Obj-c
 ```objective-c
 // Initialize Querying and specify callback handler
-NSObject *cbQuery = [[<your-callback-handler> alloc] initWithViewController:self];
+<your-callback-handler> *cbQuery = [[<your-callback-handler> alloc] initWithViewController:self];
 jkQuerying = [[jKoolQuerying alloc] init];
 [jkQuerying setToken:@“your-token”];
 [jkQuerying initializeQuery:cbQuery];
 ```
+
+Swift
+```swift
+// Initialize Querying and specify callback handler
+let cbQuery : <your-callback-handler> = <your-callback-handler>.init(viewController: self);
+let jkQuerying : jKoolQuerying = jKoolQuerying ();
+jkQuerying.token = "your-token"
+jkQuerying.initializeQuery(cbQuery);
+```
 ## Initialize Subscribing
 To Subscribe, you will need to initialize the jKool Subscription interface and your Callback Handler as follows:
+
+Obj-c
 ```objective-c
 // Initialize Subscription
-NSObject *cbWebsocket = [[<your-callback-handler> alloc] initWithViewController:self];
+<your-callback-handler> *cbWebsocket = [[<your-callback-handler> alloc] initWithViewController:self];
 jkWebsocketClient = [[jKoolWebsocketClient alloc] init];
 ```
+Swift
+```objective-c
+// Initialize Subscription
+let cbWebsocket : <your-callback-handler> = <your-callback-handler>.init(viewController: self);
+let jkWebsocketClient : jKoolWebsocketClient.init();
+```
 ## Initialize jKool Locationing
+
+Obj-c
 ```objective-c
 To initialize jKool Locationing, do the following:
 // Kick-off locationing
 location = [[jkLocation alloc] init];
 [location kickOffLocationing];
 ```
+Swift
+```swift
+To initialize jKool Locationing, do the following:
+// Kick-off locationing
+let location : jkLocation.init();
+location.kickOffLocationing();
+```
+
 ## To Stream
 Populate your jKool objects. These objects include: 
 * Activities
@@ -100,22 +151,42 @@ Populate your jKool objects. These objects include:
 * Snapshots. 
 
 Stream each of the objects as follows:
+
+Obj-c
 ```objective-c
 [jkStreaming stream:activity forUrl:@"activity"] ;
 [jkStreaming stream:event forUrl:@“event”] ;
 ```
+Swift
+```swift
+jkStreaming.stream(activity,forUrl:"activity");
+jkStreaming.stream(event,forUrl:“event”);
+```
 (Please note that Properties and Snapshots are part of the Activities and Events)
 
 ## To Query
+
+Obj-c
 ```objective-c
 // Query
 NSString *query = @"get events";
 [jkQuerying query:query withMaxRows:50];
 ```
+Swift
+```swift
+// Query
+jkQuerying.query("get events", withMaxRows: 50);
+```
 (Please note that the query string can contain any JKQL syntax. Please refer to the [JKQL Query Language](http://www.jkoolcloud.com/download/jKQL%20User%20Guide.pdf))
 ## To Subscribe
+
+Obj-c
 ```objective-c
 [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@“your-token”  withSubId:@“your-subscription-id”  forHandler:cbWebsocket];
+```
+Swift
+```swift
+jkWebsocketClient.subscribe("subscribe to events":withMaxRows:10.withToken:“your-token”,withSubId:“your-subscription-id”, forHandler:cbWebsocket);
 ```
 (Please note that subscriptions can contain any JKQL syntax.)
 ## Create your Callback Handlers:
@@ -125,11 +196,19 @@ NSString *query = @"get events";
 Callback handlers can be separate objects or they can be the ViewController that is doing the streaming, querying, subscribing. If using the same ViewController, simply specify 'self' as the handler. The situation where separate callback handlers will be necessary is when you're working with multiple streams of data. The example app within this Cocoa Pod contains separate call back handlers as well as a commented out example call to a callback handler method that is within the calling ViewController (and 'self' is being used).
 
 ## Disconnecting
-```objective-c
 To close connections, please do the following:
+
+Obj-c
+```objective-c
 [jkWebsocketClient unsubscribe];
 [jkStreaming stopStreaming];
 [jkQuerying stopQuerying];
+```
+Swift
+```swift
+jkWebsocketClient.unsubscribe();
+jkStreaming.stopStreaming();
+jkQuerying.stopQuerying();
 ```
 
 ## Seeing results
