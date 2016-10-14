@@ -160,7 +160,7 @@ Obj-c
 Swift
 ```swift
 jkStreaming.stream(activity,forUrl:"activity");
-jkStreaming,stream(event,forUrl:“event”);
+jkStreaming.stream(event,forUrl:“event”);
 ```
 (Please note that Properties and Snapshots are part of the Activities and Events)
 
@@ -179,8 +179,14 @@ jkQuerying.query("get events", withMaxRows: 50);
 ```
 (Please note that the query string can contain any JKQL syntax. Please refer to the [JKQL Query Language](http://www.jkoolcloud.com/download/jKQL%20User%20Guide.pdf))
 ## To Subscribe
+
+Obj-c
 ```objective-c
 [jkWebsocketClient subscribe:@"subscribe to events" withMaxRows:10 withToken:@“your-token”  withSubId:@“your-subscription-id”  forHandler:cbWebsocket];
+```
+Swift
+```swift
+jkWebsocketClient.subscribe("subscribe to events":withMaxRows:10.withToken:“your-token”,withSubId:“your-subscription-id”, forHandler:cbWebsocket);
 ```
 (Please note that subscriptions can contain any JKQL syntax.)
 ## Create your Callback Handlers:
