@@ -50,19 +50,19 @@ jkLocation *location;
     queryText2.text = nil;
     
     // Initialize streaming and specify callback handler.
-    NSObject *cbStream = [[jkCallbackHandlerStreaming alloc] initWithViewController:self];
+    jkCallbackHandlerStreaming *cbStream = [[jkCallbackHandlerStreaming alloc] initWithViewController:self];
     jkStreaming = [[jKoolStreaming alloc] init];
     [jkStreaming setToken:@"your-token"];
     [jkStreaming initializeStream:cbStream];
    
     // Initialize Querying and specify callback handler
-    NSObject *cbQuery = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
-    NSObject *cbQuery2 = [[jkCallbackHandlerQuery2 alloc] initWithViewController:self];
+    jkCallbackHandlerQuery *cbQuery = [[jkCallbackHandlerQuery alloc] initWithViewController:self];
+    jkCallbackHandlerQuery2 *cbQuery2 = [[jkCallbackHandlerQuery2 alloc] initWithViewController:self];
     jkQuerying1 = [[jKoolQuerying alloc] init];
     [jkQuerying1 setToken:@"your-token"];
     [jkQuerying1 initializeQuery:cbQuery];
     // Or to use this ViewController as the handler
-    //[jkQuerying initializeQuery:self];
+    //[jkQuerying1 initializeQuery:self];
     
     jkQuerying2 = [[jKoolQuerying alloc] init];
     [jkQuerying2 setToken:@"your-token"];
@@ -150,7 +150,7 @@ jkLocation *location;
 }
 
 - (IBAction)subscribe:(id)sender {
-    NSObject *cb = [[jkCallbackHandlerWebsocket alloc] initWithViewController:self];
+    jkCallbackHandlerWebsocket *cb = [[jkCallbackHandlerWebsocket alloc] initWithViewController:self];
     queryText.text = nil;
     queryText2.text = nil;
     jkWebsocketClient = [[jKoolWebsocketClient alloc] init];
